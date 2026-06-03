@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATERRIZA CDMX · Guía práctica para foráneos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400;1,9..144,500&family=DM+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#EDE7DA;--bg-2:#E4DBC9;--ink:#17140E;--ink-soft:#5b5446;--rosa:#E20E6B;--rosa-deep:#A60B4E;
+    --line:rgba(23,20,14,.16);--barato:#7E9B6E;--medio:#D99A2B;--caro:#E20E6B;
+    --serif:"Fraunces",Georgia,serif;--display:"Bricolage Grotesque",sans-serif;--mono:"DM Mono",monospace;--body:"Hanken Grotesk",sans-serif}
+  *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.55}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:9998;mix-blend-mode:multiply;opacity:.05;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+  ::selection{background:var(--rosa);color:var(--bg)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .mono{font-family:var(--mono);text-transform:uppercase;letter-spacing:.14em;font-size:.72rem}
+  a{color:var(--rosa-deep)}
+  header.bar{position:sticky;top:0;z-index:900;background:var(--bg);border-bottom:1.5px solid var(--ink)}
+  .barin{display:flex;align-items:center;gap:18px;max-width:1180px;margin:0 auto;padding:12px 24px}
+  .brand{font-family:var(--display);font-weight:800;letter-spacing:-.02em;font-size:1.15rem;flex:0 0 auto;cursor:pointer}
+  .brand b{color:var(--rosa)}
+  .tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
+  .tabs button{font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em;font-size:.66rem;white-space:nowrap;border:none;background:transparent;color:var(--ink-soft);padding:8px 11px;border-radius:30px;cursor:pointer;transition:.2s}
+  .tabs button:hover{color:var(--ink)}.tabs button.on{background:var(--ink);color:var(--bg)}
+  .tab{display:none;padding:54px 0 90px;animation:fade .5s}.tab.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  h1.big{font-family:var(--display);font-weight:800;letter-spacing:-.04em;line-height:.85;font-size:clamp(3rem,12vw,9rem)}
+  h1.big .x{color:var(--rosa);font-family:var(--serif);font-style:italic;font-weight:400}
+  h2.sh{font-family:var(--display);font-weight:800;letter-spacing:-.03em;font-size:clamp(1.8rem,5vw,3.2rem);line-height:.98}
+  .kick{font-family:var(--mono);text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;color:var(--rosa);margin-bottom:14px;display:flex;gap:10px;align-items:center}
+  .kick .dot{width:8px;height:8px;border-radius:50%;background:var(--rosa);display:inline-block}
+  .lede{font-family:var(--serif);font-size:clamp(1.2rem,2.6vw,1.7rem);line-height:1.35;max-width:38ch;margin-top:18px}.lede em{color:var(--rosa-deep)}
+  .sec-head{border-bottom:1.5px solid var(--ink);padding-bottom:14px;margin-bottom:34px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px}
+  .sec-head .idx{font-family:var(--mono);font-size:.78rem;color:var(--rosa)}
+  p.body{font-size:1.02rem;line-height:1.6;max-width:66ch;margin:14px 0;color:#2b271f}.prose b{font-family:var(--display)}
+  h3.kick3{font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;color:var(--rosa);margin:30px 0 12px;display:flex;align-items:center;gap:8px}
+  h3.kick3::before{content:"";width:22px;height:1.5px;background:var(--rosa)}
+  .hero{min-height:60vh;display:flex;flex-direction:column;justify-content:center}
+  .schoolbox{margin-top:42px;border:1.5px solid var(--ink);padding:28px}
+  .schoolbox .q{font-family:var(--display);font-weight:800;font-size:clamp(1.3rem,3vw,2rem);letter-spacing:-.02em;margin-bottom:6px}
+  .schoolbox .qs{color:var(--ink-soft);font-size:.95rem;margin-bottom:20px}
+  .schoolgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+  .schoolgrid button{font-family:var(--body);font-weight:600;text-align:left;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);padding:12px 14px;border-radius:10px;cursor:pointer;transition:.18s;font-size:.92rem;line-height:1.15}
+  .schoolgrid button small{display:block;font-family:var(--mono);font-size:.56rem;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-top:4px}
+  .schoolgrid button:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .schoolgrid button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}.schoolgrid button.on small{color:rgba(255,255,255,.6)}
+  #persona{margin-top:22px;border:1.5px solid var(--rosa);background:rgba(226,14,107,.05);padding:22px 24px;display:none}#persona.show{display:block}
+  #persona .pt{font-family:var(--serif);font-size:1.25rem;line-height:1.35}#persona .pt b{font-family:var(--display);color:var(--rosa-deep)}
+  #persona .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  #persona .chip{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;border:1.5px solid var(--ink);padding:7px 12px;border-radius:30px;background:var(--bg)}#persona .chip b{font-family:var(--display);color:var(--rosa)}
+  .gobtn{margin-top:16px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;background:var(--rosa);color:var(--bg);border:none;padding:12px 20px;border-radius:30px;cursor:pointer}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);border:1.5px solid var(--ink);margin-top:48px}
+  .stat{padding:24px 20px;border-right:1.5px solid var(--ink)}.stat:last-child{border-right:none}
+  .stat .num{font-family:var(--display);font-weight:800;font-size:clamp(2.1rem,5vw,3.4rem);line-height:1;letter-spacing:-.03em}.stat .num small{font-size:.4em;color:var(--rosa)}
+  .stat .lbl{margin-top:8px;color:var(--ink-soft);font-size:.84rem;max-width:22ch}
+  @media(max-width:780px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:none}.stat:nth-child(-n+2){border-bottom:1.5px solid var(--ink)}}
+  .maplayout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}@media(max-width:900px){.maplayout{grid-template-columns:1fr}}
+  .mapcard{border:1.5px solid var(--ink);padding:16px;background:var(--bg)}
+  svg.cdmx{width:100%;height:auto;display:block;touch-action:manipulation}
+  svg.cdmx path.alc{cursor:pointer;stroke:#fff;stroke-width:1;transition:fill-opacity .2s,stroke-width .15s}
+  svg.cdmx path.alc:hover{fill-opacity:.95!important;stroke:var(--ink);stroke-width:2}
+  svg.cdmx path.alc.sel{stroke:var(--ink);stroke-width:3}
+  svg.cdmx path.alc.dim{fill-opacity:.12!important}
+  svg.cdmx path.alc.reco{stroke:var(--ink);stroke-width:3;stroke-dasharray:6 4}
+  svg.cdmx text{font-family:"DM Mono",monospace;pointer-events:none;fill:#1c1813;font-size:9.5px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-family:var(--mono);font-size:.64rem;text-transform:uppercase;letter-spacing:.08em}
+  .legend span{display:flex;align-items:center;gap:6px}.legend i{width:13px;height:13px;border:1.5px solid var(--ink);display:inline-block;border-radius:3px}
+  .budget{margin-top:16px;border-top:1px solid var(--line);padding-top:14px}
+  .budget label{font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:.68rem;color:var(--ink-soft)}
+  .budget input{width:100%;accent-color:var(--rosa);margin-top:8px}
+  .budget .bv{font-family:var(--display);font-weight:800;font-size:1.3rem;margin-top:4px}.budget .bn{font-size:.85rem;color:var(--ink-soft)}
+  .detail{border:1.5px solid var(--ink);padding:24px;min-height:320px}
+  .detail .dn{font-family:var(--display);font-weight:800;font-size:1.9rem;letter-spacing:-.02em;line-height:1}
+  .detail .badge{display:inline-block;font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;padding:4px 10px;border-radius:30px;color:#fff;margin-top:10px}
+  .detail .row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+  .detail .row .k{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rosa);flex:0 0 36%}
+  .detail .row .v{text-align:right}.detail .row .v b{font-family:var(--display)}
+  .detail .empty{color:var(--ink-soft);font-family:var(--serif);font-size:1.15rem;font-style:italic}
+  .ranklist{margin-top:36px;border-top:1.5px solid var(--ink)}
+  .rrow{display:grid;grid-template-columns:30px 1fr auto auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);cursor:pointer}
+  .rrow:hover{padding-left:8px;transition:.2s}.rrow .ri{font-family:var(--mono);color:var(--rosa);font-size:.78rem}
+  .rrow .rn{font-family:var(--display);font-weight:600;font-size:1.02rem}.rrow .rt{width:12px;height:12px;border-radius:3px;border:1.5px solid var(--ink)}.rrow .rp{font-family:var(--mono);font-size:.8rem}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:var(--line);border:1.5px solid var(--ink);margin:26px 0}
+  .card{background:var(--bg);padding:22px}
+  .card h3{font-family:var(--display);font-weight:800;font-size:1.12rem;letter-spacing:-.01em;margin-bottom:6px}
+  .card .kk{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rosa);display:block;margin-bottom:10px}
+  .card p{font-size:.9rem;line-height:1.5;color:#2b271f}.card .big{font-family:var(--display);font-weight:800;font-size:1.8rem;letter-spacing:-.02em}
+  .card a{font-size:.85rem;font-weight:600}
+  .callout{border-left:4px solid var(--rosa);background:rgba(226,14,107,.05);padding:15px 18px;margin:20px 0;font-size:.95rem;line-height:1.5}.callout b{font-family:var(--display)}
+  .callout.warn{border-color:#C7892B;background:rgba(199,137,43,.08)}
+  table.tbl{width:100%;border-collapse:collapse;margin:22px 0;font-size:.88rem}
+  table.tbl th,table.tbl td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.tbl th{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rosa)}table.tbl td b{font-family:var(--display)}
+  .mlines{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin:24px 0}
+  .ml{border:1.5px solid var(--ink);padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+  .ml .badge{flex:0 0 auto;width:30px;height:30px;border-radius:50%;color:#fff;font-family:var(--display);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+  .ml .mlb{font-family:var(--display);font-weight:700;font-size:.98rem;line-height:1.1}
+  .ml .mln{font-size:.8rem;color:var(--ink-soft);margin-top:4px;line-height:1.3}
+  .steps{counter-reset:st;margin:20px 0}
+  .step{counter-increment:st;display:flex;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+  .step::before{content:counter(st);font-family:var(--display);font-weight:800;color:var(--rosa);font-size:1.3rem;flex:0 0 28px}
+  .step .sh{font-family:var(--display);font-weight:700;font-size:1.05rem}.step p{font-size:.92rem;color:#2b271f;margin-top:3px;line-height:1.45}
+  .toggle{display:inline-flex;border:1.5px solid var(--ink);border-radius:40px;overflow:hidden;margin:8px 0 18px}
+  .toggle button{font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;border:none;background:transparent;color:var(--ink);padding:10px 18px;cursor:pointer}
+  .toggle button.on{background:var(--ink);color:var(--bg)}
+  .togbox{border:1.5px solid var(--line);padding:18px 20px;font-size:.95rem;line-height:1.55}
+  .filter{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+  .filter button{font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:9px 16px;border-radius:40px;cursor:pointer}.filter button.on{background:var(--ink);color:var(--bg)}
+  .unis{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:var(--line);border:1.5px solid var(--ink)}
+  .uni{background:var(--bg);padding:22px;cursor:pointer;transition:.25s}.uni:hover{background:var(--bg-2)}.uni.feat{background:var(--ink);color:var(--bg)}
+  .uni .tg{font-family:var(--mono);font-size:.58rem;text-transform:uppercase;letter-spacing:.12em;color:var(--rosa);border:1px solid var(--rosa);padding:2px 8px;border-radius:30px}.uni.feat .tg{color:var(--bg);border-color:var(--bg)}
+  .uni .un{font-family:var(--display);font-weight:800;font-size:1.25rem;letter-spacing:-.02em;margin-top:12px;line-height:1.04}
+  .uni .uz{font-size:.84rem;color:var(--ink-soft);margin-top:5px}.uni.feat .uz{color:rgba(255,255,255,.7)}
+  .uni .uv{margin-top:12px;font-size:.82rem;line-height:1.4}.uni .uv strong{font-family:var(--mono);font-size:.56rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rosa);display:block;margin-bottom:3px}.uni.feat .uv strong{color:var(--bg)}
+  .uni .up{font-family:var(--mono);font-size:.76rem;margin-top:9px;color:var(--rosa-deep)}.uni.feat .up{color:#ff8fbe}
+  .calc{display:grid;grid-template-columns:1fr 1fr;border:1.5px solid var(--ink);margin-top:18px}
+  .calc .controls{padding:30px;border-right:1.5px solid var(--ink)}.calc .result{padding:30px;background:var(--ink);color:var(--bg);display:flex;flex-direction:column;justify-content:center}
+  .calc label{display:block;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;color:var(--ink-soft);margin:18px 0 9px}.calc label:first-child{margin-top:0}
+  .modes{display:flex;flex-wrap:wrap;gap:7px}
+  .modes button{font-family:var(--body);font-weight:600;border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:8px 13px;border-radius:40px;cursor:pointer;font-size:.84rem}.modes button.on{background:var(--rosa);border-color:var(--rosa);color:var(--bg)}
+  .calc input[type=range]{width:100%;accent-color:var(--rosa)}.rangeval{font-family:var(--display);font-weight:800;font-size:1.3rem;margin-top:6px}
+  .result .rlbl{font-family:var(--mono);text-transform:uppercase;letter-spacing:.14em;font-size:.7rem;opacity:.7}
+  .result .rbig{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,7vw,4.4rem);line-height:.95;letter-spacing:-.03em;margin:6px 0}.result .rbig small{color:var(--rosa);font-size:.34em;vertical-align:super}
+  .result .rnote{font-family:var(--serif);font-size:1rem;line-height:1.4;margin-top:12px;opacity:.9}.result .rnote b{color:#ff8fbe}
+  @media(max-width:680px){.calc{grid-template-columns:1fr}.calc .controls{border-right:none;border-bottom:1.5px solid var(--ink)}}
+  .emer{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--ink);border:1.5px solid var(--ink);margin:18px 0}
+  .ecard{background:var(--rosa);color:var(--bg);padding:20px}.ecard:nth-child(even){background:var(--ink)}
+  .ecard .en{font-family:var(--display);font-weight:800;font-size:1.7rem;line-height:1}.ecard .ed{font-size:.8rem;margin-top:7px;opacity:.92}
+  .reslist{border-top:1.5px solid var(--ink);margin-top:6px}
+  .resrow{display:grid;grid-template-columns:1fr;gap:2px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .resrow a{font-family:var(--display);font-weight:700;font-size:1.02rem;text-decoration:none}
+  .resrow a:hover{color:var(--rosa)}
+  .resrow .rd{font-size:.86rem;color:var(--ink-soft)}
+  .resgroup{margin-top:30px}
+  .disc{font-size:.76rem;color:var(--ink-soft);margin-top:30px;max-width:76ch;line-height:1.5}
+  footer{border-top:1.5px solid var(--ink);padding:40px 0;margin-top:30px}
+  .fwm{font-family:var(--display);font-weight:800;font-size:clamp(2.4rem,9vw,5rem);letter-spacing:-.04em;line-height:.85}.fwm .x{color:var(--rosa);font-family:var(--serif);font-style:italic;font-weight:400}
+  .fmeta{font-family:var(--mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);margin-top:16px}
+  :focus-visible{outline:3px solid var(--rosa);outline-offset:3px}
+  .brand span{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;margin-left:6px;color:var(--ink-soft);vertical-align:middle}
+  .updatebar{border:1.5px solid var(--ink);background:var(--ink);color:var(--bg);padding:10px 14px;margin:20px 0 0;display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;font-size:.84rem}
+  .updatebar b{font-family:var(--display);color:#ff8fbe}.source-tag{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:5px 9px;font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);background:rgba(255,255,255,.22)}
+  .source-only{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px;line-height:1.4}
+  .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:12px 18px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px}.btn.primary{background:var(--rosa);border-color:var(--rosa);color:var(--bg)}.btn:hover{transform:translateY(-2px);transition:.18s;background:var(--ink);color:var(--bg)}
+  .quickgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:26px 0}.quickcard{border:1.5px solid var(--ink);background:var(--bg);padding:18px;text-align:left;cursor:pointer;min-height:130px;transition:.18s}.quickcard:hover{transform:translateY(-3px);background:var(--bg-2)}.quickcard .ico{font-size:1.6rem}.quickcard h3{font-family:var(--display);font-size:1.2rem;line-height:1;margin:8px 0}.quickcard p{font-size:.88rem;color:var(--ink-soft);line-height:1.38}
+  .brief{border:1.5px solid var(--ink);background:rgba(226,14,107,.045);padding:18px 20px;margin:18px 0 26px}.brief b{font-family:var(--display)}.brief ul{margin:10px 0 0 18px}.brief li{margin:4px 0}
+  details.accord{border-top:1.5px solid var(--line);padding:0}details.accord:last-child{border-bottom:1.5px solid var(--line)}details.accord summary{cursor:pointer;list-style:none;padding:15px 0;font-family:var(--display);font-weight:800;font-size:1.05rem}details.accord summary::-webkit-details-marker{display:none}details.accord summary::after{content:'+';float:right;color:var(--rosa);font-family:var(--display);font-size:1.3rem}details.accord[open] summary::after{content:'–'}details.accord .inside{padding:0 0 18px;color:#2b271f;font-size:.95rem;max-width:76ch}details.accord ul{margin-left:18px}details.accord li{margin:6px 0}
+  .checkgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;margin:14px 0}.check{border:1px solid var(--line);padding:11px 12px;background:rgba(255,255,255,.18);font-size:.9rem}.check::before{content:'✓';color:var(--rosa);font-family:var(--display);font-weight:800;margin-right:8px}
+  .filterbar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 16px}.filterbar button{font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em;font-size:.62rem;border:1.5px solid var(--ink);background:var(--bg);color:var(--ink);padding:8px 12px;border-radius:999px;cursor:pointer}.filterbar button.on{background:var(--ink);color:var(--bg)}svg.cdmx path.alc.hide{fill-opacity:.08!important;stroke-opacity:.25}.tags{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.tag{font-family:var(--mono);font-size:.56rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--line);padding:5px 8px;border-radius:999px;background:rgba(255,255,255,.18);color:var(--ink-soft)}.tag.rosa{border-color:var(--rosa);color:var(--rosa-deep);background:rgba(226,14,107,.06)}
+  .altzones{margin-top:20px}.altzones .rrow{grid-template-columns:1fr auto auto}.note{font-size:.82rem;color:var(--ink-soft);line-height:1.45;max-width:76ch}.mini-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin:18px 0}.mini{border:1.5px solid var(--line);padding:16px;background:rgba(255,255,255,.16)}.mini h3{font-family:var(--display);font-size:1.08rem;margin-bottom:5px}.mini p,.mini li{font-size:.9rem;color:#2b271f;line-height:1.45}.mini ul{margin-left:18px}
+  .decision{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;margin:20px 0}.decision .mini{border-color:var(--ink)}.pillrow{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.pill{border:1px solid var(--line);border-radius:999px;padding:5px 9px;font-size:.72rem;color:var(--ink-soft)}
+  .sources-note{border:1.5px dashed var(--ink);padding:16px;margin-top:24px;background:rgba(255,255,255,.18)}
+  @media(max-width:680px){.hero{min-height:auto;padding-top:25px}.hero-actions .btn{width:100%;justify-content:center}.schoolbox{padding:20px}.tab{padding:34px 0 70px}.detail .row{display:block}.detail .row .v{text-align:left;display:block;margin-top:4px}.updatebar{font-size:.78rem}.tabs button{font-size:.6rem;padding:8px 9px}}
+  .intro-panel{display:grid;grid-template-columns:1.15fr .85fr;gap:1px;border:1.5px solid var(--ink);background:var(--ink);margin:28px 0 38px}
+  .intro-panel > div{background:var(--bg);padding:26px}.intro-panel .profile-card{background:var(--ink);color:var(--bg)}
+  .profile-card .name{font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,4vw,2.8rem);letter-spacing:-.03em;line-height:.95}.profile-card .meta{font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:.68rem;color:#ff8fbe;margin-top:14px;line-height:1.5}
+  .use-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin-top:18px}.use-step{border:1px solid var(--line);padding:14px;background:rgba(255,255,255,.18)}.use-step b{font-family:var(--display);display:block;margin-bottom:4px}
+  .visual-map{border:1.5px solid var(--ink);background:rgba(255,255,255,.16);padding:16px;margin:18px 0}.route-svg{width:100%;height:auto;display:block}.station{font-family:var(--mono);font-size:10px;fill:var(--ink)}.station-dot{fill:var(--bg);stroke:var(--ink);stroke-width:2}.interchange{fill:var(--rosa);stroke:var(--ink);stroke-width:2}.line-label{font-family:var(--display);font-weight:800;font-size:13px;fill:#fff}
+  .mi-card{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;border:1.5px solid var(--ink);padding:18px;background:linear-gradient(135deg,rgba(226,14,107,.08),rgba(255,255,255,.16));margin:18px 0}.mi-plastic{height:78px;border-radius:14px;background:var(--ink);color:var(--bg);padding:14px;box-shadow:6px 6px 0 rgba(23,20,14,.16);position:relative}.mi-plastic b{font-family:var(--display);font-size:1.25rem}.mi-plastic span{position:absolute;right:12px;bottom:10px;font-family:var(--mono);font-size:.62rem;color:#ff8fbe}.mi-card ul{margin-left:18px}.mi-card li{margin:5px 0}
+  .line-legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:16px 0}.line-card{border:1.5px solid var(--line);padding:14px;background:rgba(255,255,255,.16)}.line-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}.line-bubble{min-width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--display);font-weight:800;border:1.5px solid var(--ink)}.line-card h3{font-family:var(--display);font-size:1rem;line-height:1.1}.line-card p{font-size:.87rem;color:#2b271f;line-height:1.4}.line-card .mini-route{font-family:var(--mono);font-size:.7rem;color:var(--rosa-deep);margin-top:8px}
+  .route-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.route-tabs button{border:1.5px solid var(--ink);background:var(--bg);border-radius:999px;padding:9px 12px;font-family:var(--mono);font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}.route-tabs button.on{background:var(--ink);color:var(--bg)}.route-box{border:1.5px solid var(--ink);padding:18px;background:rgba(255,255,255,.14)}.route-box h3{font-family:var(--display);font-size:1.35rem;letter-spacing:-.02em}.route-flow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:14px 0}.route-chip{border:1.5px solid var(--ink);border-radius:999px;padding:8px 12px;background:var(--bg);font-family:var(--display);font-weight:700}.route-arrow{font-family:var(--display);font-weight:800;color:var(--rosa)}
+  .edomex-route-tool{border:1.5px solid var(--ink);padding:18px;background:rgba(255,255,255,.12);margin-top:12px}.route-controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0 14px}.route-controls label{font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:.66rem;color:var(--ink-soft);display:block;margin-bottom:6px}.route-controls select{width:100%;border:1.5px solid var(--ink);background:var(--bg);padding:10px 12px;border-radius:8px;font-family:var(--body);font-size:.95rem}.route-summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.route-summary .mini{margin:0}.sources-strip{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.sources-strip a{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 9px;color:var(--rosa-deep);background:rgba(255,255,255,.18)}.route-tag{font-family:var(--mono);font-size:.56rem;text-transform:uppercase;letter-spacing:.08em;color:var(--rosa-deep);border:1px solid var(--rosa);border-radius:999px;padding:5px 8px;background:rgba(226,14,107,.06);display:inline-block;margin-top:6px}@media(max-width:760px){.route-controls,.route-summary{grid-template-columns:1fr}}
+  .survival-calc{display:grid;grid-template-columns:1fr .9fr;gap:1px;background:var(--ink);border:1.5px solid var(--ink);margin:20px 0}.survival-calc .controls,.survival-calc .survival-result{background:var(--bg);padding:24px}.survival-calc .survival-result{background:var(--ink);color:var(--bg)}.survival-calc label{font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:.68rem;color:var(--ink-soft);display:block;margin:14px 0 7px}.survival-calc input[type=range]{width:100%;accent-color:var(--rosa)}.moneyline{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(255,255,255,.15);padding:9px 0}.moneyline b{font-family:var(--display)}.survival-total{font-family:var(--display);font-weight:800;font-size:clamp(2.5rem,7vw,4.4rem);line-height:.9;letter-spacing:-.04em;margin:12px 0}.range-num{font-family:var(--display);font-weight:800;font-size:1.25rem}.survival-note{font-family:var(--serif);font-size:1rem;line-height:1.4;color:rgba(255,255,255,.85)}
+  .living-mode{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:14px}.living-mode button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:10px 8px;font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}.living-mode button.on{background:var(--ink);color:var(--bg)}.advisor{border:1px solid rgba(255,255,255,.22);padding:12px;margin-top:12px;font-size:.9rem;line-height:1.35;color:rgba(255,255,255,.9)}.advisor b{font-family:var(--display);color:#ff8fbe}
+  .kit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin-top:16px}.kit-item{border:1.5px solid var(--line);padding:14px;background:rgba(255,255,255,.16)}.kit-item span{font-size:1.4rem}.kit-item b{font-family:var(--display);display:block;margin-top:6px}.kit-item p{font-size:.86rem;color:var(--ink-soft);line-height:1.35;margin-top:3px}
+  .footer-credit{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);margin-top:16px;line-height:1.6}
+  @media(max-width:780px){.intro-panel,.mi-card,.survival-calc{grid-template-columns:1fr}.mi-plastic{max-width:220px}.route-flow{display:block}.route-arrow{display:block;margin:5px 0}.visual-map{padding:10px}}
+  .metro-explorer{border:1.5px solid var(--ink);background:rgba(255,255,255,.14);padding:18px;margin:18px 0 28px}
+  .metro-toolbar{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:14px}.metro-toolbar b{font-family:var(--display);font-size:1.25rem}.metro-toolbar p{font-size:.9rem;color:var(--ink-soft);max-width:70ch;margin-top:3px}
+  .metro-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:16px}.metro-buttons{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}.metro-buttons button{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--ink);color:#fff;font-family:var(--display);font-weight:800;cursor:pointer;box-shadow:2px 2px 0 rgba(23,20,14,.16)}.metro-buttons button.on{outline:4px solid rgba(226,14,107,.25);transform:translateY(-2px)}
+  .metro-canvas-wrap{border:1px solid var(--line);background:#f7f1e6;padding:10px;overflow:auto}.metro-minimap{min-width:720px;width:100%;height:auto;display:block}.metro-line-path{fill:none;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;opacity:.25;cursor:pointer}.metro-line-path.active{opacity:1;stroke-width:13}.metro-station-dot{fill:var(--bg);stroke:var(--ink);stroke-width:1.8}.metro-station-dot.transfer{fill:var(--rosa)}.metro-station-label{font-family:var(--mono);font-size:8.5px;fill:var(--ink);paint-order:stroke;stroke:#f7f1e6;stroke-width:3px;stroke-linejoin:round}.metro-panel{border:1.5px solid var(--ink);padding:16px;background:var(--bg);min-height:260px}.metro-panel .line-title{font-family:var(--display);font-weight:800;font-size:1.6rem;letter-spacing:-.02em}.metro-panel .terminales{font-family:var(--mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--rosa-deep);margin:5px 0 12px}.station-list{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}.station-pill{font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:4px 7px;background:rgba(255,255,255,.22)}.station-pill.transfer{border-color:var(--rosa);color:var(--rosa-deep);font-weight:700}.metro-planner{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:end;border-top:1px solid var(--line);margin-top:16px;padding-top:16px}.metro-planner label{font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:.62rem;color:var(--ink-soft);display:block;margin-bottom:6px}.metro-planner select{width:100%;padding:10px;border:1.5px solid var(--ink);background:var(--bg);font-family:var(--body)}.metro-route-result{border:1px dashed var(--ink);margin-top:12px;padding:12px;font-size:.92rem;background:rgba(255,255,255,.2)}.route-step{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 9px;margin:3px;background:var(--bg)}.route-step.transfer{border-color:var(--rosa);color:var(--rosa-deep);font-weight:700}
+  .real-map-grid{grid-template-columns:1.25fr .75fr}.metro-explorer.real{background:rgba(255,255,255,.18)}.metro-map-actions{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px}.metro-map-actions .btn{padding:8px 12px;font-size:.62rem}.real-map-frame{border:1.5px solid var(--ink);background:#fff;overflow:auto;max-height:640px;padding:10px;cursor:grab}.real-map-frame:active{cursor:grabbing}.real-metro-map{display:block;width:100%;min-width:680px;transform-origin:top left;transition:transform .18s ease}.attribution{font-size:.74rem;color:var(--ink-soft);line-height:1.4;margin-top:8px;max-width:84ch}.attribution a{font-weight:700}.metro-panel .source-mini{font-size:.72rem;color:var(--ink-soft);border-top:1px solid var(--line);margin-top:12px;padding-top:10px;line-height:1.4}
+  @media(max-width:860px){.real-map-grid{grid-template-columns:1fr}.real-metro-map{min-width:760px}.real-map-frame{max-height:520px}}
+  .cheap-food-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin:18px 0}.food-option{border:1.5px solid var(--line);padding:16px;background:rgba(255,255,255,.18)}.food-option span{font-size:1.6rem}.food-option b{font-family:var(--display);display:block;font-size:1.08rem;margin-top:4px}.food-option p{font-size:.9rem;color:#2b271f;line-height:1.4;margin:4px 0}.food-option small{font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--rosa-deep);font-size:.58rem}
+  @media(max-width:860px){.metro-grid,.metro-planner{grid-template-columns:1fr}.metro-toolbar{display:block}.metro-toolbar .btn{margin-top:10px}.metro-minimap{min-width:760px}}
+  .metro-lines-section{margin:0 0 26px;border-top:1.5px solid var(--line);border-bottom:1.5px solid var(--line);padding:18px 0 22px}
+  .metro-lines-section h3{font-family:var(--display);font-weight:800;font-size:1.25rem;letter-spacing:-.02em;margin-bottom:8px}
+  .metro-lines-section .inside{max-width:none;padding:0}
+  .metro-lines-section > p{max-width:78ch;margin:0 0 14px;color:#2b271f;font-size:.98rem}
+  .line-legend{grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:14px 0 0}
+  .line-card{padding:14px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between}
+  .line-card h3{font-size:.98rem}.line-card p{font-size:.86rem}.line-card .mini-route{font-size:.72rem;line-height:1.35;color:#2b271f;background:rgba(226,14,107,.06);border-left:3px solid var(--rosa);padding:8px 9px;margin-top:10px}
+  .line-label-small{display:block;font-family:var(--mono);font-size:.56rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rosa-deep);margin-bottom:3px}
+  .page-note{font-size:.72rem;color:var(--ink-soft);line-height:1.45;max-width:92ch;margin-top:18px;border-top:1px solid var(--line);padding-top:12px}
+  .page-note b{font-family:var(--display);color:var(--ink-soft)}
+  @media(max-width:1080px){.line-legend{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  @media(max-width:780px){.line-legend{grid-template-columns:repeat(2,minmax(0,1fr))}.line-card{min-height:auto}}
+  @media(max-width:520px){.line-legend{grid-template-columns:1fr}}
+  #transporte details.accord .inside{max-width:none;width:100%;}
+  #transporte .edomex-route-tool{width:100%;max-width:none;display:block;}
+  #transporte .route-tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;}
+  #transporte .route-tabs button{width:100%;text-align:center;}
+  #transporte .route-box{width:100%;padding:22px;}
+  #transporte .route-flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,max-content));align-items:center;gap:8px 10px;}
+  #transporte .route-chip{white-space:normal;text-align:center;}
+  #transporte .route-summary{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+  #transporte .metro-route-result{padding:20px 22px;}
+  #transporte .metro-route-title{font-family:var(--display);font-weight:800;font-size:1.25rem;margin-bottom:12px;}
+  #transporte .route-source-note{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--rosa-deep);margin-top:12px;}
+  @media(max-width:760px){#transporte .route-flow{display:flex;flex-wrap:wrap}.metro-planner{grid-template-columns:1fr}}
+  .tab{padding:38px 0 58px}
+  .sec-head{margin-bottom:22px}
+  .brief{margin:14px 0 20px;padding:14px 18px}
+  .cards,.mini-cols,.decision,.checkgrid{margin:16px 0}
+  .compact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;margin:16px 0 20px}
+  .info-card{border:1.5px solid var(--ink);background:rgba(255,255,255,.14);padding:16px;min-height:150px}
+  .info-card h3{font-family:var(--display);font-size:1.18rem;line-height:1.05;margin-bottom:8px}
+  .info-card p{font-size:.9rem;line-height:1.42;color:#2b271f;margin:6px 0}
+  .info-card .kk{font-family:var(--mono);font-size:.58rem;text-transform:uppercase;letter-spacing:.11em;color:var(--rosa);display:block;margin-bottom:8px}
+  .info-card a{font-weight:700;font-size:.86rem}
+  .phone{font-family:var(--display);font-weight:800;font-size:1.2rem;color:var(--rosa-deep);margin:7px 0 2px}
+  .source-mini{font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:8px}
+  .hotline-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;margin:16px 0 20px}
+  .hotline{border:1.5px solid var(--ink);padding:16px;background:var(--bg);display:flex;flex-direction:column;gap:4px;min-height:132px}
+  .hotline .num{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1;color:var(--rosa)}
+  .hotline b{font-family:var(--display);font-size:1.02rem}.hotline p{font-size:.86rem;line-height:1.35;color:#2b271f;margin:0}
+  .two-col-tight{display:grid;grid-template-columns:1.1fr .9fr;gap:10px;align-items:start}
+  #tramites .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;margin:16px 0}
+  #tramites .step{border:1.5px solid var(--line);padding:14px;background:rgba(255,255,255,.12)}
+  #tramites .step::before{font-size:1.15rem;flex:0 0 24px}
+  #tramites .step p{margin-top:3px}
+  #seguridad .mini-cols{grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px}
+  #seguridad .mini{padding:14px;min-height:auto}
+  #comunidad .cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-bottom:14px}
+  details.accord summary{padding:12px 0}.inside{padding-bottom:12px!important}
+  @media(max-width:840px){.two-col-tight{grid-template-columns:1fr}.tab{padding:30px 0 46px}}
+  .zone-food-picker{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end;border:1.5px solid var(--ink);padding:16px;margin:14px 0 16px;background:rgba(255,255,255,.14)}
+  .zone-food-picker label{display:block;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:.62rem;color:var(--ink-soft);margin-bottom:7px}
+  .zone-food-picker select{width:100%;border:1.5px solid var(--ink);background:var(--bg);color:var(--ink);border-radius:8px;padding:10px 12px;font-family:var(--body);font-size:.95rem}
+  .food-zone-result{border:1.5px solid var(--ink);padding:18px;margin:12px 0 24px;display:grid;grid-template-columns:1.1fr .9fr;gap:16px;background:linear-gradient(135deg,rgba(226,14,107,.055),rgba(255,255,255,.10))}
+  .food-zone-result h3{font-family:var(--display);font-size:1.55rem;letter-spacing:-.02em;line-height:1;margin-bottom:8px}
+  .food-place-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:7px;margin-top:10px}.food-place{border:1px solid var(--line);padding:10px 12px;background:rgba(255,255,255,.18)}
+  .food-place b{font-family:var(--display)}.food-place span{display:block;color:var(--ink-soft);font-size:.85rem;margin-top:2px}.food-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.food-actions a{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--line);border-radius:999px;padding:6px 9px;text-decoration:none;background:rgba(255,255,255,.2)}
+  .food-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;margin:14px 0 22px}.food-option{border:1.5px solid var(--line);padding:16px;background:rgba(255,255,255,.15)}.food-option span{font-size:1.35rem}.food-option b{font-family:var(--display);display:block;font-size:1.12rem;margin:6px 0 4px}.food-option p{font-size:.9rem;line-height:1.38;color:#2b271f}.food-option small{display:block;font-family:var(--mono);font-size:.57rem;text-transform:uppercase;letter-spacing:.08em;color:var(--rosa-deep);margin-top:8px;line-height:1.3}
+  .compact-decision{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.compact-decision .mini{padding:14px}.compact-checks{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .site-preview-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:8px;margin:14px 0 24px}.site-preview{border:1.5px solid var(--ink);padding:18px;background:rgba(255,255,255,.14)}.site-top{display:flex;gap:12px;align-items:center;margin-bottom:10px}.site-logo{width:42px;height:42px;border-radius:12px;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;box-shadow:4px 4px 0 rgba(23,20,14,.12)}.site-preview h3{font-family:var(--display);font-size:1.22rem;line-height:1;margin:0}.site-preview small{font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em;font-size:.56rem;color:var(--rosa-deep)}.site-preview p{font-size:.9rem;line-height:1.38;margin:8px 0;color:#2b271f}.preview-box{border:1px solid var(--line);padding:10px;background:rgba(255,255,255,.18);font-size:.84rem;line-height:1.35;margin:10px 0}.preview-box b{font-family:var(--display);display:block}.preview-box span{color:var(--ink-soft)}.site-preview a{font-weight:700;font-size:.86rem}
+  .rent-compare-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px;margin:14px 0 20px}.rent-step{border:1.5px solid var(--line);padding:14px;background:rgba(255,255,255,.16)}.rent-step b{font-family:var(--display);font-size:1.05rem;display:block}.rent-step span{display:block;font-size:.88rem;color:var(--ink-soft);line-height:1.35;margin-top:4px}
+  @media(max-width:780px){.zone-food-picker,.food-zone-result{grid-template-columns:1fr}.site-preview-grid{grid-template-columns:1fr}}
+  .health-paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin:16px 0 24px}
+  .health-card{border:1.5px solid var(--ink);padding:18px;background:rgba(255,255,255,.13);min-height:100%}
+  .health-card.urgent{background:rgba(226,14,107,.07)}
+  .health-card h3{font-family:var(--display);font-size:1.25rem;line-height:1;margin:8px 0 8px}.health-card p,.health-card li{font-size:.9rem;line-height:1.38;color:#2b271f}.health-card ul{margin:6px 0 10px 18px}.health-card b{font-family:var(--display)}.health-card small{display:block;font-family:var(--mono);font-size:.58rem;text-transform:uppercase;letter-spacing:.08em;color:var(--rosa);margin-top:10px}.health-card a{font-weight:700;font-size:.86rem}
+  .health-decision{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;margin:14px 0 24px}.health-decision>div{border:1.5px solid var(--line);padding:16px;background:rgba(255,255,255,.16)}.health-decision b{font-family:var(--display);font-size:1.08rem}.health-decision p{font-size:.9rem;line-height:1.38;margin:6px 0;color:#2b271f}.health-decision span{display:block;border-top:1px solid var(--line);padding-top:8px;font-size:.84rem;color:var(--ink-soft)}
+  .compact-checks{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.compact-checks .check{padding:10px 12px}
+
+  /* --- Mejor lectura de rutas de transporte --- */
+  .metro-route-result{border:1.5px dashed var(--ink);padding:18px 20px;background:rgba(255,255,255,.18)}
+  .route-help{font-size:.9rem;color:var(--ink-soft);line-height:1.4;margin:0 0 14px;max-width:82ch}
+  .simple-route-title{font-family:var(--display);font-weight:800;font-size:1.45rem;line-height:1.05;margin-bottom:6px;letter-spacing:-.02em}
+  .simple-route-sub{font-size:.9rem;color:var(--ink-soft);margin-bottom:14px}
+  .route-steps-clean{display:grid;gap:10px;margin-top:12px}
+  .route-step-clean{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start;border:1.5px solid var(--line);background:rgba(255,255,255,.18);padding:13px 14px;border-radius:16px}
+  .route-num{width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800}
+  .route-step-clean h4{font-family:var(--display);font-size:1.05rem;line-height:1.1;margin:0 0 4px}
+  .route-step-clean p{font-size:.93rem;line-height:1.4;color:#2b271f;margin:0}
+  .line-pill{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--ink);border-radius:999px;padding:5px 10px;font-family:var(--display);font-weight:800;background:var(--bg);margin:2px 4px 2px 0}
+  .transfer-note{font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--rosa-deep);margin-top:10px}
+  .edomex-route-tool{padding:22px}
+  #transporte .route-tabs{display:none!important}
+  #transporte .route-box{border:1.5px solid var(--ink);background:rgba(255,255,255,.16);padding:22px;margin-top:14px}
+  .edomex-simple-head{border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:14px}
+  .edomex-simple-head h3{font-family:var(--display);font-weight:800;font-size:1.55rem;line-height:1.05;margin:0 0 4px;letter-spacing:-.02em}
+  .edomex-simple-head p{font-size:.92rem;color:var(--ink-soft);margin:0;line-height:1.35}
+  .edomex-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+  .edomex-step{border:1.5px solid var(--line);padding:15px;background:rgba(255,255,255,.18);min-height:120px}
+  .edomex-step .label{font-family:var(--mono);font-size:.58rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rosa);display:block;margin-bottom:8px}
+  .edomex-step b{font-family:var(--display);font-size:1.12rem;line-height:1.05;display:block;margin-bottom:6px}
+  .edomex-step p{font-size:.9rem;line-height:1.35;color:#2b271f;margin:0}
+  .route-list-clean{display:grid;gap:8px;margin-top:12px}
+  .route-list-item{display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start;border:1px solid var(--line);background:rgba(255,255,255,.22);padding:11px 12px;border-radius:12px}
+  .route-list-item span{width:28px;height:28px;border-radius:50%;background:var(--rosa);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:.9rem}
+  .route-list-item p{margin:0;font-size:.94rem;line-height:1.35;color:#2b271f}
+  .route-warning{border-left:4px solid var(--rosa);background:rgba(226,14,107,.06);padding:11px 13px;margin-top:14px;font-size:.88rem;line-height:1.35;color:#2b271f}
+  @media(max-width:820px){.edomex-steps{grid-template-columns:1fr}.route-step-clean{grid-template-columns:36px 1fr}.simple-route-title,.edomex-simple-head h3{font-size:1.25rem}}
+
+</style>
+</head>
+<body>
+<header class="bar"><div class="barin"><div class="brand" onclick="go('inicio')" aria-label="Ir al inicio">ATERRI<b>Z</b>A <span>CDMX</span></div><nav class="tabs" id="tabs"></nav></div></header>
+<main class="wrap">
+  <section class="tab active" id="inicio">
+    <div class="hero">
+      <div class="kick"><span class="dot"></span> Guía práctica · CDMX · Ed. 2026</div>
+      <h1 class="big">ATERRI<span class="x">Z</span>A <span style="font-size:.35em;letter-spacing:-.04em">CDMX</span></h1>
+      <p class="lede">Llegar a la CDMX puede ser complicado cuando vienes de otro lugar. <em>Por eso reuní información práctica sobre renta, transporte, gastos, seguridad, salud y adaptación a la ciudad, tomando en cuenta testimonios de personas foráneas que ya pasaron por este proceso.</em></p>
+      <div class="hero-actions">
+        <button class="btn primary" onclick="go('guia')">Empezar guía rápida</button>
+        <button class="btn" onclick="go('mapa')">Comparar zonas para vivir</button>
+        <button class="btn" onclick="go('transporte')">Calcular mi gasto mensual</button>
+      </div>
+      <div class="schoolbox">
+        <div class="q">¿En qué escuela estudias?</div>
+        <div class="qs">Elige tu escuela y te recomendamos zonas cercanas. Los precios son rangos: cambian por colonia, temporada, servicios incluidos y cercanía al transporte.</div>
+        <div class="schoolgrid" id="schoolgrid"></div>
+        <div id="persona"><div class="pt" id="personaText"></div><div class="chips" id="personaChips"></div><button class="gobtn" onclick="go('mapa')">Comparar estas zonas →</button></div>
+      </div>
+    </div>
+
+    <div class="intro-panel" id="quien-soy">
+      <div>
+        <div class="kick"><span class="dot"></span> Quién soy · por qué hice esta guía</div>
+        <h2 class="sh">Una guía para llegar con más claridad</h2>
+        <p class="body">Soy <b>Fátima Yatziri Oviedo Contreras</b>. Hice esta guía porque mudarse a la CDMX no solo implica encontrar una escuela o un lugar donde vivir. También significa aprender a moverse, organizar los gastos, ubicar zonas seguras y saber qué hacer ante una emergencia. Son cosas que muchas veces se aprenden hasta que ya estás ahí.</p>
+        <p class="body">La realicé con testimonios de personas foráneas y con información consultada en fuentes oficiales. La idea es que puedas revisarla por partes: primero identificar qué necesitas resolver, después comparar zonas y finalmente revisar rutas, gastos y trámites.</p>
+      </div>
+      <div class="profile-card">
+        <div class="name">Fátima Yatziri<br>Oviedo Contreras</div>
+        <div class="meta">Materia: Sustentabilidad<br>Proyecto final<br>ATERRIZA CDMX · guía práctica para foráneos</div>
+        <div class="use-steps">
+          <div class="use-step"><b>1. Ubica</b> Tu escuela, zona y ruta.</div>
+          <div class="use-step"><b>2. Calcula</b> Renta, transporte y gastos base.</div>
+          <div class="use-step"><b>3. Verifica</b> Fuentes oficiales antes de decidir.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="num" data-to="20">0</div><div class="lbl">testimonios de foráneos en CDMX</div></div>
+      <div class="stat"><div class="num" data-to="10">0</div><div class="lbl">estados de origen</div></div>
+      <div class="stat"><div class="num" data-to="75"><small>%</small></div><div class="lbl">usa Metro o Metrobús a diario</div></div>
+      <div class="stat"><div class="num" data-to="16">0</div><div class="lbl">alcaldías para comparar</div></div>
+    </div>
+    <p class="body" style="margin-top:38px;max-width:76ch">Algo que se repitió en varios testimonios fue que no necesitas conocer toda la ciudad desde el primer día. Lo más importante es resolver tres cosas: <b>dónde vivir, cómo moverte y qué hacer si algo sale mal</b>. A partir de eso, adaptarte se vuelve más sencillo.</p>
+  </section>
+
+  <section class="tab" id="guia">
+    <div class="sec-head"><h2 class="sh">¿Qué necesitas resolver primero?</h2><div class="idx mono">Guía rápida</div></div>
+    <p class="body">Elige el tema que necesites revisar. Cada tarjeta te lleva directamente a la información correspondiente.</p>
+    <div class="quickgrid">
+      <button class="quickcard" onclick="go('mapa')"><div class="ico">🏠</div><h3>Dónde vivir</h3><p>Compara alcaldías por renta, transporte, suelo y ambiente estudiantil.</p></button>
+      <button class="quickcard" onclick="go('transporte')"><div class="ico">🚇</div><h3>Cómo moverme</h3><p>Tarjeta MI, rutas, hora pico y cálculo mensual.</p></button>
+      <button class="quickcard" onclick="go('supervivencia')"><div class="ico">💸</div><h3>Cuánto gastaré</h3><p>Calcula renta, comida, transporte, servicios y extras.</p></button>
+      <button class="quickcard" onclick="go('salud')"><div class="ico">🩺</div><h3>Si me enfermo</h3><p>Árbol de decisión: leve, consulta, urgencia o sin seguro.</p></button>
+      <button class="quickcard" onclick="go('seguridad')"><div class="ico">🛡️</div><h3>Seguridad</h3><p>Hábitos de cuidado para moverte con más seguridad.</p></button>
+      <button class="quickcard" onclick="go('comunidad')"><div class="ico">🫂</div><h3>Hacer amigos</h3><p>Actividades, grupos, cultura gratis y apoyo emocional.</p></button>
+      <button class="quickcard" onclick="go('tramites')"><div class="ico">📄</div><h3>Trámites</h3><p>CURP, RFC, NSS, cuenta bancaria y comprobante.</p></button>
+      <button class="quickcard" onclick="go('sismos')"><div class="ico">🎒</div><h3>Sismos</h3><p>Antes, durante, después y mochila básica.</p></button>
+    </div>
+    <h3 class="kick3">Errores comunes del foráneo</h3>
+    <div class="checkgrid">
+      <div class="check">Rentar sin visitar o sin videollamada real.</div><div class="check">Vivir lejos solo porque es barato.</div><div class="check">No calcular transporte de ida y regreso.</div><div class="check">No tener contacto de emergencia en CDMX.</div><div class="check">No revisar cómo volver de noche.</div><div class="check">Confiarse de precios demasiado bajos.</div><div class="check">No preguntar qué servicios incluye la renta.</div><div class="check">No guardar copias de documentos.</div>
+    </div>
+  </section>
+
+  <section class="tab" id="supervivencia">
+    <div class="sec-head"><h2 class="sh">Calculadora de gastos mensuales</h2><div class="idx mono">Renta + comida + transporte</div></div>
+    <div class="survival-calc" aria-label="Calculadora mensual para sobrevivir en CDMX">
+      <div class="controls">
+        <label>Modo de vivienda</label><div class="living-mode" id="livingMode"><button class="on" data-mode="roomie">Roomie</button><button data-mode="solo">Solo</button><button data-mode="familia">Con familia</button></div>
+        <label for="rentRange">Renta mensual</label><input id="rentRange" type="range" min="0" max="30000" step="500" value="6500"><div class="range-num">$<span id="rentVal">6,500</span></div>
+        <label for="foodRange">Comida y despensa</label><input id="foodRange" type="range" min="0" max="15000" step="500" value="3200"><div class="range-num">$<span id="foodVal">3,200</span></div>
+        <label for="transportRange">Transporte</label><input id="transportRange" type="range" min="0" max="15000" step="500" value="550"><div class="range-num">$<span id="transportVal">550</span></div>
+        <label for="servicesRange">Servicios / internet / celular</label><input id="servicesRange" type="range" min="0" max="15000" step="500" value="900"><div class="range-num">$<span id="servicesVal">900</span></div>
+        <label for="extraRange">Emergencias y extras</label><input id="extraRange" type="range" min="0" max="15000" step="500" value="1000"><div class="range-num">$<span id="extraVal">1,000</span></div>
+      </div>
+      <div class="survival-result">
+        <div class="rlbl">Presupuesto mensual estimado</div>
+        <div class="survival-total">$<span id="survivalTotal">12,150</span></div>
+        <div id="survivalBreakdown"></div>
+        <p class="survival-note">Consejo: una renta baja no siempre conviene si implica hacer varios transbordos, pasar demasiado tiempo en el transporte o regresar por zonas poco seguras.</p><div class="advisor" id="budgetAdvisor"></div>
+      </div>
+    </div>
+    <h3 class="kick3">Kit básico para vivir solo</h3>
+    <div class="kit-grid">
+      <div class="kit-item"><span>🔌</span><b>Power bank</b><p>Para rutas largas y emergencias.</p></div>
+      <div class="kit-item"><span>💳</span><b>Tarjeta MI + respaldo</b><p>Ten saldo y una tarjeta bancaria/contactless si aplica.</p></div>
+      <div class="kit-item"><span>🧾</span><b>Copias digitales</b><p>INE, CURP, seguro, contrato y contactos.</p></div>
+      <div class="kit-item"><span>🧴</span><b>Botiquín básico</b><p>Suero, curitas, medicamentos personales y alergias.</p></div>
+      <div class="kit-item"><span>🎒</span><b>Mochila de emergencia</b><p>Agua, lámpara, dinero, documentos y silbato.</p></div>
+      <div class="kit-item"><span>📍</span><b>Ruta de regreso</b><p>Siempre revisa cómo volver antes de salir.</p></div>
+    </div>
+  </section>
+
+  <section class="tab" id="mapa">
+    <div class="sec-head"><h2 class="sh">Compara zonas para rentar</h2><div class="idx mono">Renta, transporte y estilo de vida</div></div>
+    <p class="body">Toca una alcaldía para ver renta estimada, colonias recomendadas, conectividad, suelo, ambiente y precauciones. Color: <b style="color:var(--barato)">verde = más barato</b>, <b style="color:#b07d1e">ámbar = intermedio</b>, <b style="color:var(--rosa)">rosa = más caro</b>.</p>
+    <div class="callout warn"><b>Ojo con los precios:</b> los precios cambian según colonia, temporada, cercanía al Metro, estado del edificio y servicios incluidos.</div>
+    <div class="filterbar" id="zoneFilters" aria-label="Filtros del mapa">
+      <button class="on" data-filter="all">Todas</button><button data-filter="barato">Más barato</button><button data-filter="conectado">Mejor conectado</button><button data-filter="universidades">Cerca de universidades</button><button data-filter="suelo">Suelo más firme</button><button data-filter="vida">Vida estudiantil</button><button data-filter="precaucion">Más precaución</button><button data-filter="sinmetro">Sin Metro</button>
+    </div>
+    <div class="maplayout">
+      <div><div class="mapcard">
+        <svg class="cdmx" id="cdmx" role="img" aria-label="Mapa interactivo de las 16 alcaldías de CDMX"></svg>
+        <div class="legend"><span><i style="background:var(--barato)"></i> Más barato</span><span><i style="background:var(--medio)"></i> Intermedio</span><span><i style="background:var(--caro)"></i> Más caro</span><span><i style="border-style:dashed"></i> Recomendada para tu escuela</span></div>
+        <div class="budget"><label for="bud">¿Cuánto puedo pagar de renta?</label><input type="range" id="bud" min="2500" max="10000" step="500" value="10000"><div class="bv">$<span id="budv">10,000</span> / mes</div><div class="bn" id="budnote">Mostrando todas las alcaldías.</div></div>
+      </div></div>
+      <div class="detail" id="detail"><p class="empty">← Toca una alcaldía o usa la lista alternativa para ver renta, transporte, suelo y recomendaciones.</p></div>
+    </div>
+    <div class="ranklist" id="ranklist"></div>
+    <div class="altzones"><h3 class="kick3">Lista alternativa por alcaldía</h3><p class="note">También puedes consultar las zonas sin usar el mapa. Esto ayuda en celular y accesibilidad.</p><div id="altZoneList"></div></div>
+  </section>
+
+  <section class="tab" id="universidades">
+    <div class="sec-head"><h2 class="sh">Universidades</h2><div class="idx mono">Pública o privada · dónde vivir</div></div>
+    <p class="body">Toca una escuela para ver sus zonas recomendadas en el mapa. Filtra por tipo:</p>
+    <div class="filter" id="filter"><button class="on" data-f="all">Todas</button><button data-f="pub">Públicas</button><button data-f="priv">Privadas</button></div>
+    <div class="unis" id="unis"></div>
+  </section>
+
+  <section class="tab" id="transporte">
+    <div class="sec-head"><h2 class="sh">Moverte sin perderte</h2><div class="idx mono">Metro · MI · Edomex ↔ CDMX</div></div>
+
+    <section class="metro-lines-section" aria-labelledby="metro-lines-title">
+      <h3 id="metro-lines-title">Las 12 líneas del Metro explicadas</h3>
+      <p>Primero revisa las líneas por color, terminales y zonas que conectan. Después usa el mapa interactivo para ubicar visualmente los transbordos y planear una ruta guía.</p>
+      <div class="inside"><div class="line-legend" id="lineLegend"></div></div>
+    </section>
+
+    <h3 class="kick3">Mapa interactivo real del Metro</h3>
+    <div class="metro-explorer real" id="metroExplorer" aria-label="Explorador interactivo del Metro CDMX">
+      <div class="metro-toolbar">
+        <div>
+          <b>Mapa real + explorador por línea</b>
+        </div>
+        <a class="btn" href="https://commons.wikimedia.org/wiki/File:Mexico_City_metro.svg" target="_blank" rel="noopener">Ver archivo original ↗</a>
+      </div>
+      <div class="metro-grid real-map-grid">
+        <div>
+          <div class="metro-buttons" id="metroLineButtons" aria-label="Selecciona una línea del Metro"></div>
+          <div class="metro-map-actions" aria-label="Controles de mapa">
+            <button class="btn" type="button" id="metroZoomOut">− Alejar</button>
+            <button class="btn" type="button" id="metroZoomReset">Restablecer</button>
+            <button class="btn" type="button" id="metroZoomIn">+ Acercar</button>
+          </div>
+          <div class="real-map-frame" id="metroMapFrame">
+            <img id="metroRealMap" class="real-metro-map" src="https://upload.wikimedia.org/wikipedia/commons/2/25/Mexico_City_metro.svg" alt="Mapa del sistema del Metro de Ciudad de México" loading="lazy" onerror="this.style.display='none';var f=document.getElementById('metroMapFallback');if(f)f.style.display='block';">
+            <div id="metroMapFallback" style="display:none;padding:26px;text-align:center;font-size:.92rem;color:var(--ink-soft);line-height:1.5">No se pudo cargar el mapa (revisa tu conexión a internet).<br>Puedes abrirlo aquí: <a href="https://commons.wikimedia.org/wiki/File:Mexico_City_metro.svg" target="_blank" rel="noopener">Mapa del Metro CDMX ↗</a></div>
+          </div>
+          <p class="attribution">Mapa de referencia del Metro (<a href="https://commons.wikimedia.org/wiki/File:Mexico_City_metro.svg" target="_blank" rel="noopener">Wikimedia Commons</a>, dominio público). A veces cambia el servicio, así que checa los avisos oficiales del Metro.</p>
+        </div>
+        <aside class="metro-panel" id="metroLineInfo">
+          <p class="empty">Elige una línea del Metro para ver terminales, estaciones y transbordos.</p>
+        </aside>
+      </div>
+      <div class="metro-planner">
+        <div>
+          <label for="metroFrom">Origen</label>
+          <select id="metroFrom"></select>
+        </div>
+        <div>
+          <label for="metroTo">Destino</label>
+          <select id="metroTo"></select>
+        </div>
+        <button class="btn primary" id="metroPlanBtn" type="button">Calcular ruta</button>
+      </div>
+      <div class="metro-route-result" id="metroRouteResult"><p class="route-help">Selecciona origen y destino. La ruta aparecerá en pasos: qué línea tomar, dónde transbordar y dónde bajar.</p></div>
+      <div class="sources-strip"><a href="https://www.metro.cdmx.gob.mx/la-red/mapa-de-la-red" target="_blank" rel="noopener">Metro CDMX</a><a href="https://www.metro.cdmx.gob.mx/mapa-micdmx" target="_blank" rel="noopener">Movilidad Integrada</a></div>
+    </div>
+
+    <h3 class="kick3">Otros sistemas además del Metro</h3>
+    <p class="body" style="font-size:.96rem;max-width:80ch">El Metro no es lo único. Para muchas zonas conviene más Metrobús, Trolebús, Cablebús, Tren Ligero o RTP; y si vienes del Edomex, Tren Suburbano y Mexibús. Casi todos se pagan con la misma <b>Tarjeta MI</b> (excepto Tren Suburbano y Mexibús, que usan tarjeta propia).</p>
+    <div class="compact-grid">
+      <div class="info-card"><span class="kk">BRT · carril confinado</span><h3>Metrobús</h3><p>7 líneas sobre avenidas grandes (Insurgentes, Reforma, ejes). Rápido y frecuente.</p><div class="phone">$6</div><p style="margin-top:0">Al AICM (L4): $30. Transbordos gratis 2 h.</p><a href="https://www.metrobus.cdmx.gob.mx" target="_blank" rel="noopener">metrobus.cdmx.gob.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Eléctrico · STE</span><h3>Trolebús</h3><p>Varias rutas eléctricas; incluye el Trolebús Elevado en Iztapalapa (Constitución de 1917 ↔ Santa Marta).</p><div class="phone">$2–4</div><a href="https://www.ste.cdmx.gob.mx" target="_blank" rel="noopener">ste.cdmx.gob.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Teleférico · STE</span><h3>Cablebús</h3><p>3 líneas en zonas altas: GAM (L1), Iztapalapa (L2) y Bosque de Chapultepec (L3).</p><div class="phone">$7</div><a href="https://www.ste.cdmx.gob.mx" target="_blank" rel="noopener">ste.cdmx.gob.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Tren ligero · STE</span><h3>Tren Ligero</h3><p>Una línea: Tasqueña ↔ Xochimilco. Conecta con Metro L2 y el sur de la ciudad.</p><div class="phone">$3</div><a href="https://www.ste.cdmx.gob.mx" target="_blank" rel="noopener">ste.cdmx.gob.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Autobús · gobierno</span><h3>RTP</h3><p>Red de Transporte de Pasajeros: autobuses por toda la ciudad; de lo más económico. Hay servicio nocturno (Nochebús).</p><div class="phone">$2–4</div><a href="https://www.rtp.cdmx.gob.mx" target="_blank" rel="noopener">rtp.cdmx.gob.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Tren · Edomex ↔ CDMX</span><h3>Tren Suburbano</h3><p>Buenavista ↔ Cuautitlán. Útil si vives al norte del Edomex. Usa <b>tarjeta propia</b>, no la MI.</p><div class="phone">tarifa por distancia</div><a href="https://www.fsuburbanos.com" target="_blank" rel="noopener">fsuburbanos.com ↗</a></div>
+      <div class="info-card"><span class="kk">Bici pública</span><h3>Ecobici</h3><p>Bicis en zona central (Cuauhtémoc, Roma, Condesa y parte de Benito Juárez y Miguel Hidalgo). Planes con descuento estudiante.</p><a href="https://www.ecobici.cdmx.gob.mx" target="_blank" rel="noopener">ecobici.cdmx.gob.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Edomex</span><h3>Mexibús y Mexicable</h3><p>Mexibús: BRT del Estado de México (varias líneas). Mexicable: teleférico en Ecatepec y Naucalpan. Conectan con Metro/Suburbano; usan <b>tarjeta propia</b>.</p><a href="https://sitramytem.edomex.gob.mx/mexibus" target="_blank" rel="noopener">SITRAMyTEM ↗</a></div>
+    </div>
+
+    <h3 class="kick3">Líneas de Metrobús · de dónde a dónde</h3>
+    <div class="line-legend" id="metrobusLegend"></div>
+
+    <h3 class="kick3">Líneas de Cablebús</h3>
+    <div class="line-legend" id="cablebusLegend"></div>
+
+    <h3 class="kick3">Tarjeta de Movilidad Integrada</h3>
+    <div class="mi-card">
+      <div class="mi-plastic"><b>MI</b><br>Movilidad<br>Integrada<span>CDMX</span></div>
+      <div><p><b>¿Dónde comprarla?</b> En taquillas y máquinas de venta/recarga del Metro; también en puntos de Metrobús, Cablebús o Tren Ligero según disponibilidad.</p><ul><li>Sirve para Metro, Metrobús, Trolebús, Cablebús, Tren Ligero y otros sistemas integrados.</li><li>Recarga antes de la hora pico para evitar filas.</li><li>Guarda saldo de emergencia para regresar.</li><li>En estaciones modernizadas puede haber pago contactless, pero no dependas solo de eso.</li></ul></div>
+    </div>
+
+    <h3 class="kick3">Calculadora rápida de transporte</h3>
+    <div class="calc"><div class="controls"><label>Tu transporte principal</label><div class="modes" id="modes"></div><label for="trips">Viajes por día</label><input type="range" id="trips" min="1" max="8" value="2"><div class="rangeval"><span id="tripsv">2</span> viajes</div><label for="days">Días al mes que sales</label><input type="range" id="days" min="8" max="30" value="22"><div class="rangeval"><span id="daysv">22</span> días</div></div><div class="result"><div class="rlbl">Gasto mensual estimado</div><div class="rbig"><small>$</small><span id="total">220</span></div><div class="rnote" id="rnote"></div></div></div>
+
+    <details class="accord" open><summary>Rutas si vives entre Estado de México y CDMX</summary><div class="inside">
+      <div class="edomex-route-tool">
+        <div class="route-controls">
+          <div><label for="edomexOrigin">Desde dónde sales</label><select id="edomexOrigin"></select></div>
+          <div><label for="edomexDest">A dónde vas</label><select id="edomexDest"></select></div>
+        </div>
+        <div class="route-tabs" id="routeTabs"></div>
+        <div class="route-box" id="routeBox"></div>
+        <div class="sources-strip">
+          <a href="https://sitramytem.edomex.gob.mx/mexibus" target="_blank" rel="noopener">Mexibús / SITRAMyTEM</a>
+          <a href="https://www.metro.cdmx.gob.mx/la-red/mapa-de-la-red" target="_blank" rel="noopener">Metro CDMX</a>
+          <a href="https://trenelinsurgente.mx/" target="_blank" rel="noopener">Tren El Insurgente</a>
+          <a href="https://www.semovi.cdmx.gob.mx/tramites-y-servicios/transporte-de-pasajeros/nuevas-tarifas-de-transporte-publico-vigentes" target="_blank" rel="noopener">SEMOVI tarifas</a>
+        </div>
+      </div>
+    </div></details>
+
+    <details class="accord"><summary>Tips para no perderte</summary><div class="inside"><div class="checkgrid"><div class="check">Antes de salir, revisa estación de origen, destino, transbordos y última ruta de regreso.</div><div class="check">Haz captura de pantalla de la ruta si vas a perder internet.</div><div class="check">Evita transbordos muy largos si vas cargando cosas.</div><div class="check">Si no conoces la zona, llega de día la primera vez.</div><div class="check">Ten saldo extra para un Uber/Didi de emergencia.</div><div class="check">Si viajas del Edomex, calcula combi/Mexibús + Metro + regreso.</div></div></div></details>
+  </section>
+
+  <section class="tab" id="vivienda">
+    <div class="sec-head"><h2 class="sh">Dónde vivir y cómo evitar fraudes</h2><div class="idx mono">Renta segura</div></div>
+    <h3 class="kick3">Vista rápida de páginas para buscar renta</h3>
+    <div class="site-preview-grid">
+      <article class="site-preview"><div class="site-top"><span class="site-logo">IG</span><div><h3>Iglu</h3><small>Cuartos administrados · sin aval tradicional</small></div></div><p>Puede servir si llegas por primera vez y necesitas algo más estructurado.</p><div class="preview-box"><b>Qué revisar:</b><span>precio final, servicios incluidos, depósito, reglas de casa, contrato y ubicación exacta antes de pagar.</span></div><a href="https://www.iglu.com.mx" target="_blank" rel="noopener">iglu.com.mx ↗</a></article>
+      <article class="site-preview"><div class="site-top"><span class="site-logo">HO</span><div><h3>Homie</h3><small>Rentas con proceso digital</small></div></div><p>Útil para buscar opciones con filtros, pero compara el costo total.</p><div class="preview-box"><b>Qué revisar:</b><span>comisión, póliza, mantenimiento, servicios, reglas para cancelar y fecha de entrada.</span></div><a href="https://www.homie.mx" target="_blank" rel="noopener">homie.mx ↗</a></article>
+      <article class="site-preview"><div class="site-top"><span class="site-logo">24</span><div><h3>Inmuebles24</h3><small>Buscador grande por colonia y precio</small></div></div><p>Bueno para comparar departamentos, cuartos y zonas con muchas publicaciones.</p><div class="preview-box"><b>Qué revisar:</b><span>fotos repetidas, precio demasiado bajo, anunciante, mapa, antigüedad y si permite visita.</span></div><a href="https://www.inmuebles24.com" target="_blank" rel="noopener">inmuebles24.com ↗</a></article>
+      <article class="site-preview"><div class="site-top"><span class="site-logo">LA</span><div><h3>Lamudi</h3><small>Renta y venta por zona</small></div></div><p>Sirve para ver rangos de precios por alcaldía y comparar con otras páginas.</p><div class="preview-box"><b>Qué revisar:</b><span>si el precio incluye mantenimiento, si es amueblado y si el contacto es verificable.</span></div><a href="https://www.lamudi.com.mx" target="_blank" rel="noopener">lamudi.com.mx ↗</a></article>
+      <article class="site-preview"><div class="site-top"><span class="site-logo">RG</span><div><h3>Roomgo</h3><small>Roomies y cuartos compartidos</small></div></div><p>Puede bajar mucho el costo si no quieres rentar sola o pagar depa completo.</p><div class="preview-box"><b>Qué revisar:</b><span>reglas de limpieza, visitas, ruido, depósito, servicios, contrato y quién vive ahí.</span></div><a href="https://www.roomgo.com.mx" target="_blank" rel="noopener">roomgo.com.mx ↗</a></article>
+      <article class="site-preview"><div class="site-top"><span class="site-logo">FB</span><div><h3>Grupos por colonia o uni</h3><small>Publicaciones directas · más riesgo</small></div></div><p>Útiles para roomies cerca de campus, pero requieren más verificación.</p><div class="preview-box"><b>Qué revisar:</b><span>perfil real, videollamada, contrato, visita, comentarios del grupo y nunca pagar sin comprobar.</span></div><a href="https://www.facebook.com/search/groups/?q=roomies%20cdmx" target="_blank" rel="noopener">buscar grupos ↗</a></article>
+    </div>
+    <h3 class="kick3">Cómo comparar antes de escribirle a alguien</h3>
+    <div class="rent-compare-grid">
+      <div class="rent-step"><b>1. Precio real</b><span>Renta + servicios + mantenimiento + internet + depósito + póliza.</span></div>
+      <div class="rent-step"><b>2. Transporte</b><span>Calcula tiempo a escuela/trabajo de ida, regreso y noche.</span></div>
+      <div class="rent-step"><b>3. Condiciones</b><span>Amueblado, baño, cocina, lavadora, horarios, visitas, mascotas y ruido.</span></div>
+      <div class="rent-step"><b>4. Seguridad del anuncio</b><span>Fotos reales, dirección aproximada, video en vivo y contrato antes de pagar.</span></div>
+    </div>
+    <details class="accord" open><summary>Checklist antes de pagar renta</summary><div class="inside"><div class="checkgrid compact-checks"><div class="check">Visité el lugar o hice videollamada real.</div><div class="check">El precio no es demasiado bueno para ser verdad.</div><div class="check">Hay contrato por escrito.</div><div class="check">Sé qué servicios incluye.</div><div class="check">Revisé humedad, ruido y señal de celular.</div><div class="check">Revisé transporte de día y de noche.</div><div class="check">No pagué apartado sin comprobar que existe.</div><div class="check">Guardé capturas y comprobantes.</div></div></div></details>
+    <details class="accord"><summary>¿Qué hago si no tengo aval?</summary><div class="inside"><p>Busca cuartos administrados, roomies con contrato, póliza jurídica o acuerdos con depósito claro. Antes de aceptar, pregunta si aceptan obligado solidario, póliza, depósito extra o contrato temporal.</p></div></details>
+    <h3 class="kick3">¿Solo o con roomie?</h3><div class="toggle"><button class="on" data-r="solo">Vivir solo</button><button data-r="roomie">Con roomie</button></div><div class="togbox" id="livebox"></div>
+  </section>
+
+  <section class="tab" id="salud">
+    <div class="sec-head"><h2 class="sh">Si me enfermo</h2><div class="idx mono">Con seguro · sin seguro · urgencias</div></div>
+    <h3 class="kick3">¿A dónde ir según tu caso?</h3>
+    <div class="health-paths">
+      <div class="health-card urgent"><span class="kk">Emergencia inmediata</span><h3>911 / urgencias</h3><p>Dolor fuerte de pecho, dificultad para respirar, convulsiones, desmayo, sangrado abundante, accidente, quemadura seria, signos de infarto o EVC, intoxicación o reacción alérgica grave.</p><b>Ir a:</b><ul><li>Llama al 911.</li><li>Hospital de urgencias más cercano.</li><li>Avisa a tu contacto de emergencia.</li></ul></div>
+      <div class="health-card"><span class="kk">Tengo IMSS / Seguro Facultativo</span><h3>UMF del IMSS</h3><p>Para consulta general, receta, incapacidad, seguimiento, medicina preventiva y envío a especialidad.</p><b>Antes de ir:</b><ul><li>Consulta tu vigencia de derechos.</li><li>Ubica tu Unidad de Medicina Familiar.</li><li>Lleva INE, NSS y carnet si ya lo tienes.</li></ul><a href="https://www.imss.gob.mx/faq/vigencia-derechos" target="_blank" rel="noopener">Vigencia IMSS ↗</a> · <a href="https://www.imss.gob.mx/directorio" target="_blank" rel="noopener">Directorio IMSS ↗</a></div>
+      <div class="health-card"><span class="kk">Tengo ISSSTE</span><h3>Clínica familiar / ISSSTE</h3><p>Para consulta, seguimiento de enfermedades, medicina familiar y referencia a hospital o especialidad.</p><b>Antes de ir:</b><ul><li>Ubica tu clínica u hospital.</li><li>Confirma horarios y requisitos.</li><li>ISSSTE-Tel: 55 4000 1000.</li></ul><a href="https://www.issste.gob.mx/transparencia/transparenciafocalizada-um.html" target="_blank" rel="noopener">Directorio ISSSTE ↗</a></div>
+      <div class="health-card"><span class="kk">No tengo seguro</span><h3>Centro de Salud / IMSS-Bienestar</h3><p>Para consulta general, vacunas, medicina preventiva, salud sexual, embarazo, enfermedades respiratorias, diabetes, hipertensión y orientación.</p><b>Ir a:</b><ul><li>Centro de Salud de tu alcaldía.</li><li>Unidad IMSS-Bienestar si aplica.</li><li>Locatel si necesitas que te orienten.</li></ul><a href="https://www.salud.cdmx.gob.mx" target="_blank" rel="noopener">salud.cdmx.gob.mx ↗</a></div>
+    </div>
+    <h3 class="kick3">Decisión rápida</h3>
+    <div class="health-decision">
+      <div><b>Leve</b><p>Gripa leve, dolor leve, malestar estomacal sin datos de alarma, curación pequeña.</p><span>Centro de Salud, UMF, consultorio de farmacia o Locatel.</span></div>
+      <div><b>Consulta pronto</b><p>Fiebre persistente, vómito o diarrea que no mejora, dolor moderado, infección, crisis de ansiedad, falta de medicamento.</p><span>UMF/ISSSTE si tienes seguro; Centro de Salud o IMSS-Bienestar si no tienes.</span></div>
+      <div><b>Urgencia</b><p>Respiración difícil, dolor de pecho, desmayo, convulsión, sangrado abundante, golpe fuerte, embarazo con dolor o sangrado, crisis de salud mental con riesgo.</p><span>911 o urgencias del hospital más cercano. No estás solo: pide ayuda de inmediato.</span></div>
+    </div>
+    <h3 class="kick3">¿Solx o con roomie? Prepárate distinto</h3>
+    <div class="toggle"><button class="on" data-r="solo">Solx</button><button data-r="roomie">Con roomie</button></div>
+    <div class="togbox" id="healthbox"></div>
+    <div class="callout"><b>La altura (2,240 m)</b> puede darte dolor de cabeza, fatiga o náuseas los primeros días, sobre todo si vienes de la costa. Toma mucha agua, evita el alcohol al inicio, descansa y usa bloqueador. En días de contingencia ambiental revisa el aire y reduce ejercicio al aire libre.</div>
+    <p class="note">Esta sección es orientativa y no sustituye a un profesional de salud. Incluye medicamentos solo si ya los usas o si alguien de salud te los indicó.</p>
+  </section>
+
+  <section class="tab" id="seguridad">
+    <div class="sec-head"><h2 class="sh">Seguridad y cuidado</h2><div class="idx mono">Números CDMX · apoyo · denuncia</div></div>
+    <h3 class="kick3">Números importantes en CDMX</h3>
+    <div class="hotline-grid">
+      <div class="hotline"><div class="num">911</div><b>Emergencias</b><p>Policía, ambulancia, incendio, accidente o riesgo inmediato.</p></div>
+      <div class="hotline"><div class="num">089</div><b>Denuncia anónima</b><p>Reporte confidencial de extorsión, narcomenudeo, secuestro, violencia u otros delitos.</p></div>
+      <div class="hotline"><div class="num">*0311</div><b>Locatel</b><p>Trámites CDMX, personas no localizadas, orientación jurídica, médica, psicológica y Línea Mujeres.</p><div class="source-mini">También: 55 5658 1111</div></div>
+      <div class="hotline"><div class="num">*765</div><b>SOS Mujeres</b><p>Atención de emergencias por violencia contra mujeres, 24/7.</p></div>
+      <div class="hotline"><div class="num">55 5533 5533</div><b>Consejo Ciudadano</b><p>Línea de Seguridad y Chat de Confianza; asesoría jurídica y psicológica.</p></div>
+      <div class="hotline"><div class="num">55 5683 2222</div><b>Protección Civil CDMX</b><p>Riesgos, sismos, inundaciones, emergencias urbanas y orientación preventiva.</p></div>
+      <div class="hotline"><div class="num">55 5036 3000</div><b>C5 CDMX</b><p>Centro de atención a emergencias; canal institucional de apoyo y monitoreo.</p></div>
+      <div class="hotline"><div class="num">55 5259 8121</div><b>SAPTEL · apoyo psicológico</b><p>Línea de la Cruz Roja; atención emocional y en crisis, 24/7.</p></div>
+    </div>
+    <h3 class="kick3">Cuidados rápidos por situación</h3>
+    <div class="mini-cols">
+      <div class="mini"><h3>Antes de mudarte</h3><p>Revisa iluminación, transporte nocturno, comercios abiertos y entradas del edificio.</p></div>
+      <div class="mini"><h3>En transporte</h3><p>Mochila al frente, celular guardado en estaciones llenas y ruta de regreso revisada.</p></div>
+      <div class="mini"><h3>De noche</h3><p>Comparte ubicación y confirma cómo volver antes de salir.</p></div>
+      <div class="mini"><h3>Celular perdido</h3><p>Bloquea SIM, IMEI, tarjetas, correo y cuentas bancarias.</p></div>
+    </div>
+    <h3 class="kick3">Links oficiales</h3>
+    <div class="compact-grid">
+      <div class="info-card"><span class="kk">Emergencias</span><h3>C5 CDMX</h3><p>Canales 911, 089 y atención a emergencias.</p><a href="https://www.c5.cdmx.gob.mx/canales-de-atencion-emergencias/emergencias-9-1-1" target="_blank" rel="noopener">c5.cdmx.gob.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Denuncia</span><h3>Denuncia anónima</h3><p>Portal digital confidencial para reportes sin datos personales.</p><a href="https://denunciaanonima.cdmx.gob.mx/" target="_blank" rel="noopener">denunciaanonima.cdmx.gob.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Apoyo</span><h3>Locatel</h3><p>Orientación médica, jurídica, psicológica, trámites y personas no localizadas.</p><a href="https://locatel.cdmx.gob.mx/" target="_blank" rel="noopener">locatel.cdmx.gob.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Riesgos</span><h3>Protección Civil</h3><p>Emergencias, atlas de riesgo, simulacros y unidades por alcaldía.</p><a href="https://www.proteccioncivil.cdmx.gob.mx/" target="_blank" rel="noopener">proteccioncivil.cdmx.gob.mx ↗</a></div>
+    </div>
+  </section>
+
+  <section class="tab" id="comida">
+    <div class="sec-head"><h2 class="sh">Comer y comprar barato</h2><div class="idx mono">Despensa · tianguis · mercado · CEDA</div></div>
+    <p class="body">Aquí puedes revisar opciones de compra según la zona donde vivas y lo que necesites: comida del día, despensa, compras por volumen o algo rápido.</p>
+    <h3 class="kick3">Opciones según tu zona</h3>
+    <div class="zone-food-picker">
+      <div><label for="foodZone">Elige tu zona</label><select id="foodZone" aria-label="Elegir zona para comprar comida barata"></select></div>
+      <div><label for="foodNeed">Qué necesitas comprar</label><select id="foodNeed" aria-label="Elegir necesidad de compra"><option value="diario">Comida del día</option><option value="despensa">Despensa semanal</option><option value="volumen">Comprar por volumen</option><option value="emergencia">Emergencia / noche</option></select></div>
+    </div>
+    <div class="food-zone-result" id="foodZoneResult"></div>
+    <h3 class="kick3">Dónde conviene comprar según tu necesidad</h3>
+    <div class="food-options">
+      <div class="food-option"><span>🥬</span><b>Mercado público</b><p>Fruta, verdura, tortillas, comida corrida, recaudería, pollo, carne y cosas del día.</p></div>
+      <div class="food-option"><span>🛒</span><b>Tianguis / mercado sobre ruedas</b><p>Bueno para fruta y verdura de temporada. Lleva efectivo, bolsa y lista.</p></div>
+      <div class="food-option"><span>📦</span><b>Central de Abasto</b><p>Conviene si compras volumen, fruta, verdura, abarrotes o si vas con roomies.</p></div>
+      <div class="food-option"><span>🏪</span><b>Súper</b><p>Útil para productos empacados, limpieza, farmacia, tarjeta y compras rápidas.</p></div>
+      <div class="food-option"><span>🍲</span><b>Fonda / comida corrida</b><p>Sirve si estudias todo el día y no puedes cocinar. Compara cerca de escuela y casa.</p><small>Tip: revisa higiene y rotación</small></div>
+      <div class="food-option"><span>👥</span><b>Compra con roomies</b><p>Dividan arroz, aceite, jabón, papel, garrafón, verduras, fruta y limpieza.</p><small>Ideal: mayoreo sin desperdiciar</small></div>
+    </div>
+    <h3 class="kick3">Lugares y fuentes para buscar cerca de ti</h3>
+    <div class="compact-grid">
+      <div class="info-card"><span class="kk">Directorio</span><h3>Mercados públicos CDMX</h3><p>Consulta mercados por alcaldía para ubicar opciones cerca de tu renta o escuela.</p><a href="https://www.sedeco.cdmx.gob.mx" target="_blank" rel="noopener">sedeco.cdmx.gob.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Mapa / datos</span><h3>Tianguis CDMX</h3><p>Base pública de tianguis de la Ciudad de México; útil para buscar por zona.</p><a href="https://datos.cdmx.gob.mx/dataset/tianguis-de-la-ciudad-de-mexico" target="_blank" rel="noopener">Datos CDMX ↗</a></div>
+      <div class="info-card"><span class="kk">Mayoreo</span><h3>Central de Abasto</h3><p>Ubicada en Iztapalapa. Úsala si comprarás volumen o vas con alguien que conozca.</p><a href="https://ficeda.com.mx/" target="_blank" rel="noopener">ficeda.com.mx ↗</a></div>
+      <div class="info-card"><span class="kk">Comparar</span><h3>Quién es Quién en los Precios</h3><p>Herramienta de Profeco para comparar precios de productos de consumo regular.</p><a href="https://qqp.profeco.gob.mx/" target="_blank" rel="noopener">Profeco QQP ↗</a></div>
+    </div>
+    <h3 class="kick3">Ruta de decisión rápida</h3>
+    <div class="decision compact-decision">
+      <div class="mini"><h3>Si tienes poco dinero</h3><p>Comida corrida, fonda, mercado, tortillería + guisado sencillo o cocinar huevo, arroz, pasta y verdura.</p></div>
+      <div class="mini"><h3>Si quieres ahorrar la semana</h3><p>Compra base: arroz, pasta, huevo, frijol, verduras de temporada, tortillas y proteína sencilla.</p></div>
+      <div class="mini"><h3>Si vives con roomies</h3><p>Dividan productos grandes y hagan lista común para no repetir ni desperdiciar.</p></div>
+      <div class="mini"><h3>Si eres sensible del estómago</h3><p>Cambia tu dieta poco a poco, toma agua segura y revisa higiene antes de comprar comida preparada.</p></div>
+    </div>
+  </section>
+
+  <section class="tab" id="tramites">
+    <div class="sec-head"><h2 class="sh">Papeleo básico</h2><div class="idx mono">CURP · RFC · NSS · Locatel</div></div>
+    <h3 class="kick3">Dónde encontrar o tramitar lo básico</h3>
+    <div class="compact-grid">
+      <div class="info-card"><span class="kk">Identidad</span><h3>CURP</h3><p>Consulta y descarga tu CURP en el portal oficial, con CURP o con tus datos de nacimiento.</p><a href="https://www.gob.mx/curp/" target="_blank" rel="noopener">gob.mx/curp ↗</a></div>
+      <div class="info-card"><span class="kk">Impuestos</span><h3>RFC / SAT</h3><p>Sirve para trabajo, facturas, banco y constancia de situación fiscal.</p><div class="phone">55 627 22 728</div><a href="https://www.sat.gob.mx/portal/public/tramites/inscripcion-y-aviso-al-rfc" target="_blank" rel="noopener">Inscripción al RFC ↗</a></div>
+      <div class="info-card"><span class="kk">Seguro</span><h3>NSS / IMSS</h3><p>El Número de Seguridad Social se consulta o tramita en línea con CURP y correo personal.</p><a href="https://www.imss.gob.mx/tramites/imss02008" target="_blank" rel="noopener">Tramitar o localizar NSS ↗</a></div>
+      <div class="info-card"><span class="kk">Estudiante</span><h3>Seguro Facultativo</h3><p>Si estudias en escuela pública, la escuela puede darte de alta con tu NSS. Pregunta en servicios escolares.</p><a href="https://www.imss.gob.mx/faq/como-darme-alta-imss" target="_blank" rel="noopener">Alta en IMSS ↗</a></div>
+      <div class="info-card"><span class="kk">Ciudad</span><h3>Trámites CDMX</h3><p>Para dudas de requisitos, costos y opciones presenciales o digitales de trámites de la ciudad.</p><div class="phone">*0311 · 55 5658 1111</div><a href="https://locatel.cdmx.gob.mx/" target="_blank" rel="noopener">Locatel ↗</a></div>
+      <div class="info-card"><span class="kk">Banco</span><h3>Cuenta sin comprobante</h3><p>Bancos digitales (Nu, Hey, Klar) abren cuenta solo con INE y CURP desde la app.</p><a href="https://nu.com.mx" target="_blank" rel="noopener">nu.com.mx ↗</a></div>
+    </div>
+    <h3 class="kick3">Orden práctico para no perderte</h3>
+    <div class="steps">
+      <div class="step"><div><div class="sh">Identificación vigente</div><p>INE, pasaporte o identificación aceptada por el trámite.</p></div></div>
+      <div class="step"><div><div class="sh">CURP descargada</div><p>Guárdala en PDF y en el celular.</p></div></div>
+      <div class="step"><div><div class="sh">RFC / constancia SAT</div><p>Útil para trabajo, renta, banco o facturación.</p></div></div>
+      <div class="step"><div><div class="sh">NSS y escuela</div><p>Entrega tu NSS a servicios escolares si aplica seguro facultativo.</p></div></div>
+      <div class="step"><div><div class="sh">Comprobante</div><p>Contrato, recibo de luz/agua/internet o constancia según el trámite.</p></div></div>
+      <div class="step"><div><div class="sh">Carpeta digital</div><p>Guarda PDFs en la nube y una copia sin datos sensibles en USB.</p></div></div>
+    </div>
+    <details class="accord" open><summary>Qué puedo hacer sin comprobante de domicilio</summary><div class="inside"><p>La consulta de CURP, la localización del NSS y algunas orientaciones iniciales no suelen requerir comprobante. Para RFC, cuenta bancaria, becas, renta o trámites CDMX, revisa el requisito específico porque cambia según la institución.</p></div></details>
+  </section>
+
+  <section class="tab" id="sismos">
+    <div class="sec-head"><h2 class="sh">Sismos</h2><div class="idx mono">Antes · durante · después</div></div>
+    <div class="mini-cols"><div class="mini"><h3>Antes</h3><p>Ubica zonas seguras, salidas, documentos y punto de reunión.</p></div><div class="mini"><h3>Durante</h3><p>Mantén la calma, aléjate de ventanas y sigue las indicaciones del inmueble: no corro, no grito, no empujo.</p></div><div class="mini"><h3>Después</h3><p>Revisa daños, no uses elevador, avisa que estás bien y atiende indicaciones oficiales.</p></div></div>
+    <div class="callout"><b>Alerta sísmica:</b> la oficial es <b>SASMEX</b>; suena en altavoces de la ciudad y, sin app, directamente en muchos celulares. App recomendada: <b>SASSLA</b>. Participa en los simulacros.</div>
+    <details class="accord" open><summary>Mochila de emergencia</summary><div class="inside"><div class="checkgrid"><div class="check">Agua</div><div class="check">Lámpara</div><div class="check">Power bank</div><div class="check">Copias de documentos</div><div class="check">Silbato</div><div class="check">Medicamentos</div><div class="check">Dinero en efectivo</div><div class="check">Snacks</div></div></div></details>
+    <details class="accord"><summary>Suelo explicado fácil</summary><div class="inside"><p><b>Lomas:</b> suelo más firme. <b>Transición:</b> intermedio. <b>Lago:</b> puede amplificar más el movimiento. Aun así, revisa el edificio, mantenimiento y daños previos.</p></div></details>
+  </section>
+
+  <section class="tab" id="comunidad">
+    <div class="sec-head"><h2 class="sh">Armar comunidad</h2><div class="idx mono">Llegar solo no significa tener que adaptarte sin apoyo</div></div>
+    <div class="cards"><div class="card"><span class="kk">Dentro de la uni</span><h3>Clubs y talleres</h3><p>Deporte, cine, idiomas, dibujo, danza o voluntariado. La repetición crea confianza; una actividad fija a la semana es lo que más funciona.</p></div><div class="card"><span class="kk">Fuera de la uni</span><h3>Eventos culturales</h3><p>Museos gratis los domingos, Chapultepec, ferias y conciertos ayudan a conocer la ciudad y gente nueva.</p><a href="https://cartelera.cdmx.gob.mx" target="_blank" rel="noopener">cartelera.cdmx.gob.mx ↗</a></div><div class="card"><span class="kk">Si te sientes solo</span><h3>Pide apoyo</h3><p>Es normal al llegar y casi todos lo viven. Habla con alguien de confianza o busca orientación psicológica de tu escuela. La <b>Línea de la Vida 800 911 2000</b> y <b>SAPTEL 55 5259 8121</b> dan apoyo emocional.</p></div></div>
+    <details class="accord"><summary>Frases chilangas básicas</summary><div class="inside"><p><b>¿Qué onda?</b> = saludo. <b>Va / sale</b> = de acuerdo. <b>No manches</b> = sorpresa. <b>Ahorita</b> = puede ser pronto... o no tan pronto. El <b>albur</b> es un juego de doble sentido; no tienes que participar.</p></div></details>
+  </section>
+
+  <section class="tab" id="recursos">
+    <div class="sec-head"><h2 class="sh">Fuentes y recursos</h2><div class="idx mono">Oficiales + referencias</div></div>
+    <p class="body">Estas son las fuentes que consulté y que conviene revisar directamente cuando necesites confirmar información. Los costos, teléfonos, tarifas y requisitos pueden cambiar.</p>
+    <div id="reslists"></div>
+    <div class="sources-note">Si consultas esta guía más adelante, verifica nuevamente tarifas, teléfonos y precios de renta, porque son datos que pueden cambiar con frecuencia.</div>
+    <p class="disc">Para elaborar esta guía consulté fuentes como INEGI/ENSU, Metro CDMX, Metrobús, STE, SEMOVI, SEDESA, IMSS, ISSSTE, Protección Civil y CIRES/SASMEX, además de testimonios recopilados. También es importante aclarar que la percepción de una zona no significa que todas las experiencias sean iguales.</p>
+  </section>
+
+  <footer>
+    <div class="fwm">ATERRI<span class="x">Z</span>A <span style="font-size:.38em">CDMX</span></div>
+    <div class="fmeta">No estás solo · La ciudad se aprende · Guía de supervivencia CDMX 2026</div>
+    <div class="footer-credit">Fatima Yatziri Oviedo Contreras · Materia: Sustentabilidad · Proyecto final</div>
+    <p class="page-note">Hecho en junio de 2026. Las tarifas las verifiqué en fuentes oficiales y los precios de renta son estimaciones, así que confírmalos antes de tomar una decisión.</p>
+  </footer>
+</main>
+<script>
+const ALC = {"vb": [0, 0, 620.0, 803.0], "paths": {"tlalpan": "M123.6 590.2L144.0 576.9L148.2 559.7L152.1 557.5L157.0 548.3L159.2 553.7L162.5 555.2L172.3 554.6L172.4 538.5L176.2 536.7L176.0 533.1L184.4 533.9L184.8 527.3L176.9 524.7L161.9 530.2L157.9 527.2L154.3 530.2L153.2 529.0L158.4 520.8L156.9 515.8L158.5 511.9L155.9 509.6L156.5 504.2L162.5 492.9L159.6 489.2L160.0 484.3L161.9 481.8L168.7 481.4L174.3 477.5L176.3 464.0L182.4 461.0L186.9 454.9L194.4 452.4L202.0 460.2L220.9 464.1L231.6 468.9L257.4 466.8L283.1 470.3L291.2 477.1L298.6 475.5L305.1 470.3L312.3 472.5L324.2 458.8L351.4 469.9L363.1 472.8L375.6 472.2L375.0 479.9L370.7 482.0L339.0 496.0L314.6 500.8L311.3 525.0L318.2 540.1L313.5 553.4L317.9 559.0L315.6 563.2L308.4 560.7L303.1 562.5L309.1 577.6L303.1 577.8L296.8 593.3L293.4 582.1L279.3 583.5L278.8 588.2L274.1 585.0L274.0 580.7L267.1 583.0L266.5 578.5L264.4 578.3L262.6 585.0L258.5 587.6L259.1 591.7L251.3 590.2L234.5 600.2L239.9 611.5L253.8 622.1L211.0 670.1L184.3 665.7L176.9 661.2L170.6 644.3L179.8 636.3L175.2 633.8L169.3 625.1L176.3 622.1L177.9 617.5L189.7 605.3L202.1 606.4L207.0 603.5L208.5 596.7L200.9 583.2L181.0 582.0L188.3 594.9L188.4 598.5L175.0 608.4L162.7 613.9L156.6 607.4L148.8 609.6L144.9 608.0L143.4 603.1L138.7 600.2L128.7 600.6L123.6 590.2ZM214.9 533.0L224.4 553.3L235.3 543.9L237.1 548.2L245.3 549.7L249.0 546.7L248.5 541.3L236.3 541.9L237.5 531.6L242.1 527.9L247.4 528.2L251.8 525.3L251.7 523.0L243.4 520.0L236.3 521.9L232.9 520.4L233.1 527.7L227.8 532.3L221.4 528.7L214.9 533.0ZM277.1 635.5L288.8 629.7L293.7 614.6L300.2 610.5L301.1 604.3L319.2 609.2L324.7 613.7L332.7 634.6L329.2 641.0L329.0 649.3L322.6 654.0L320.7 659.7L322.1 713.7L315.5 710.5L310.5 701.4L302.4 697.5L302.1 694.0L299.1 692.7L302.1 689.1L301.4 680.5L293.5 667.8L287.6 649.2L281.9 650.8L279.3 654.3L276.8 647.3L277.1 635.5ZM143.3 771.4L162.2 752.4L165.5 743.0L172.4 736.5L180.3 722.7L197.3 713.9L200.1 715.2L211.1 711.6L241.0 715.3L284.7 707.0L287.9 709.4L275.9 736.9L254.5 761.5L245.2 780.9L209.0 803.0L184.1 801.1L143.3 771.4Z", "iztapalapa": "M316.1 380.3L323.0 347.5L342.2 349.8L342.8 339.2L383.6 343.5L394.1 326.4L400.1 327.4L401.3 322.9L427.7 337.2L436.0 338.8L440.7 309.8L498.9 337.6L541.4 363.0L537.7 378.6L561.4 402.3L568.3 412.4L589.4 431.2L527.1 428.4L469.0 448.5L447.2 453.4L438.1 465.0L432.4 463.8L430.7 469.7L435.4 484.0L424.2 496.4L415.2 488.8L385.7 451.5L377.1 436.8L368.7 430.2L358.5 416.9L353.3 402.4L346.2 390.6L343.5 379.4L330.0 377.6L325.8 380.9L316.1 380.3Z", "venustiano": "M334.1 288.7L341.9 242.5L337.6 233.2L343.1 214.4L350.9 217.3L359.1 224.2L375.0 230.3L387.3 227.7L396.8 236.6L406.1 230.0L434.5 238.6L449.1 232.8L452.7 229.0L458.5 242.6L444.3 275.3L441.0 277.2L423.5 278.2L410.1 299.5L380.6 296.1L337.9 303.9L334.1 288.7Z", "milpa_alta": "M371.0 664.4L383.3 649.5L412.6 622.0L484.1 593.0L489.4 594.7L524.4 589.9L539.6 590.0L579.9 619.0L576.0 626.4L579.4 634.4L553.1 634.5L548.4 637.2L548.3 646.1L551.6 651.8L551.6 657.5L555.7 659.1L566.8 657.3L570.3 668.0L567.8 675.8L562.3 677.2L558.9 699.1L555.7 703.7L548.2 709.4L535.0 713.3L527.9 714.0L508.7 709.4L491.4 712.7L482.8 710.5L474.9 711.7L467.3 716.1L446.0 718.8L434.6 703.4L413.0 705.5L411.0 694.8L406.8 687.1L398.4 679.3L399.4 672.2L397.3 665.2L371.0 664.4Z", "coyoacan": "M216.1 463.0L223.4 455.3L222.5 453.8L232.4 436.8L232.8 423.3L229.9 417.9L225.0 418.1L227.8 414.9L238.3 412.5L249.3 401.4L250.9 397.1L254.4 395.8L267.9 376.1L324.9 381.0L329.6 377.5L343.7 379.2L345.4 388.6L353.3 402.3L357.3 415.1L365.7 426.8L378.4 439.2L375.6 472.2L363.1 472.8L351.4 469.9L324.5 459.0L312.2 472.8L305.1 470.6L298.7 475.4L290.9 477.2L283.0 470.3L257.4 466.8L232.6 469.0L216.1 463.0Z", "xochimilco": "M311.0 526.1L314.5 500.3L323.5 500.5L339.0 496.0L374.8 479.9L378.8 439.2L379.7 443.2L396.1 464.9L388.5 473.4L375.8 479.8L373.6 511.0L378.8 508.1L385.5 510.1L388.8 508.5L400.7 512.9L394.9 520.4L392.8 529.6L420.0 537.2L418.9 542.3L423.9 543.8L426.6 537.3L434.9 541.4L450.8 543.1L453.5 538.7L469.4 533.7L479.4 525.8L484.2 532.7L499.1 534.8L508.7 539.3L518.4 550.2L502.2 571.3L495.7 573.3L492.2 571.4L496.3 561.0L492.9 561.9L487.9 557.2L484.7 562.8L481.4 562.2L480.0 565.9L474.8 568.5L465.8 568.3L459.6 571.6L456.7 566.4L450.9 570.0L442.0 567.9L437.0 557.2L430.6 554.1L429.6 560.6L419.1 567.5L415.2 566.2L417.8 569.5L410.4 567.0L404.7 572.0L402.6 586.6L406.9 604.7L400.0 607.3L392.8 615.4L385.3 615.0L383.6 619.5L378.5 620.2L374.4 616.0L365.8 614.7L363.2 608.0L353.8 605.9L357.2 602.4L352.7 598.0L348.3 600.3L347.5 608.4L340.2 611.9L334.3 608.9L340.1 602.5L343.2 593.5L340.9 590.9L329.0 587.7L331.7 572.6L346.7 572.3L351.6 562.0L343.1 559.9L340.1 563.4L330.9 567.0L331.4 558.3L334.9 558.3L335.9 554.6L333.0 551.1L326.2 551.3L317.2 547.3L318.0 539.8L311.0 526.1ZM320.7 659.7L322.9 653.7L329.1 648.9L329.2 640.9L332.5 634.7L331.4 632.5L337.2 632.0L343.2 624.6L351.8 630.1L359.0 629.8L356.4 634.4L354.3 651.0L357.7 658.1L327.7 716.3L322.1 713.7L320.7 659.7ZM304.7 568.5L309.7 569.5L310.0 564.9L315.6 563.0L317.8 559.3L319.6 562.8L318.9 568.4L327.6 572.3L323.4 580.3L310.0 579.4L304.7 568.5Z", "gam": "M260.9 99.5L262.3 98.0L286.5 106.1L288.9 105.0L287.8 103.1L291.7 97.6L288.0 94.9L288.7 92.7L298.9 77.6L284.3 70.1L289.3 61.1L288.6 57.1L294.5 50.6L300.3 51.3L307.2 40.9L315.4 38.7L320.7 34.3L321.0 31.8L314.7 29.7L319.3 18.7L325.6 10.5L335.8 6.9L340.9 0.0L347.4 1.2L349.8 3.5L349.5 14.9L340.2 18.7L333.9 35.9L338.5 36.0L339.7 47.2L345.5 48.4L341.3 53.8L343.0 55.8L341.5 64.7L344.4 66.1L347.7 63.4L350.4 64.4L336.7 83.3L332.0 81.7L322.3 86.8L324.0 89.2L321.6 91.9L323.9 94.7L321.9 105.9L323.6 110.5L329.6 112.8L335.5 111.0L345.0 123.5L342.5 125.4L342.3 130.6L347.4 138.1L348.5 145.6L352.8 145.6L363.9 139.1L368.6 132.9L381.0 129.2L432.0 151.6L425.9 167.2L451.7 230.0L434.4 238.6L406.4 230.0L396.6 237.1L387.3 227.6L375.0 230.3L359.3 224.3L350.7 217.2L326.3 206.3L311.4 205.9L281.3 120.9L263.2 111.0L268.2 105.4L260.9 99.5Z", "alvaro_obregon": "M81.5 447.6L101.3 411.8L120.7 404.6L128.9 396.6L135.6 394.4L131.6 373.7L123.1 369.7L123.4 366.5L120.1 366.7L116.5 363.3L118.9 360.2L118.4 354.1L131.5 349.8L154.8 331.5L160.8 331.3L164.5 328.3L167.3 321.4L236.7 304.8L236.6 309.0L242.5 321.1L237.4 338.7L238.5 369.4L249.5 372.6L255.8 370.3L258.5 366.9L267.9 376.1L254.4 396.0L250.8 397.4L249.4 401.3L238.1 412.7L226.1 416.8L230.5 417.9L232.9 423.4L232.5 436.9L223.3 452.5L224.5 454.1L216.1 462.9L199.8 459.1L194.1 451.7L192.2 442.0L193.3 438.5L205.9 428.3L212.9 415.2L210.9 413.2L202.2 413.5L183.4 421.2L167.8 432.6L163.5 432.6L158.2 426.0L141.0 429.3L125.3 449.3L123.6 454.3L119.9 452.8L109.5 457.6L103.1 453.8L94.6 455.1L90.8 451.4L88.2 453.8L85.7 447.6L81.5 447.6Z", "iztacalco": "M320.4 312.4L323.1 305.5L330.9 305.8L380.0 296.1L410.1 299.5L423.5 278.2L444.3 275.3L436.6 339.0L427.7 337.1L402.0 323.2L400.5 327.8L393.8 326.8L383.6 343.8L343.6 339.3L342.7 350.1L323.0 347.5L329.9 313.6L320.4 312.4Z", "benito_juarez": "M238.4 369.8L237.4 338.8L242.5 321.7L241.5 318.0L262.0 314.0L291.3 304.3L320.1 305.3L320.9 312.3L329.9 312.8L316.1 380.3L270.8 377.5L258.8 367.5L249.6 372.6L238.4 369.8Z", "miguel_hidalgo": "M134.1 320.3L140.1 315.3L140.7 308.2L158.4 293.9L168.4 290.7L174.7 279.6L189.6 265.0L184.0 260.3L185.0 256.3L182.8 253.0L174.7 249.9L173.4 243.4L170.2 240.7L178.4 240.3L188.9 235.1L188.4 232.8L191.3 231.2L192.0 227.5L201.6 220.2L206.4 202.6L211.3 197.9L223.3 192.6L237.9 196.7L239.4 197.2L239.0 206.2L243.1 208.0L243.0 213.0L280.1 219.9L276.9 240.5L259.5 271.7L262.4 274.2L249.1 297.6L268.7 305.2L269.8 311.2L241.5 318.0L236.4 305.2L228.4 305.9L189.0 317.6L167.3 321.3L164.1 328.8L153.2 332.8L153.2 320.3L142.8 320.0L135.4 323.1L134.1 320.3Z", "tlahuac": "M424.2 496.4L435.4 483.9L430.6 469.5L432.7 463.0L438.3 464.7L447.0 453.4L527.1 428.4L529.6 440.3L527.5 450.8L530.9 453.6L541.6 453.1L544.2 450.4L557.5 446.9L559.2 438.1L566.8 438.6L570.4 431.0L589.4 431.2L593.3 434.7L585.5 445.5L583.2 460.4L579.0 463.4L566.6 540.6L530.7 529.6L518.6 550.1L527.6 550.3L578.9 567.5L577.5 581.6L620.0 595.9L616.6 608.3L603.8 604.3L599.3 609.8L586.0 610.7L577.2 616.4L539.6 590.1L524.6 589.9L506.2 593.2L511.4 577.6L523.8 559.7L518.0 549.7L504.7 537.2L507.5 536.7L509.6 525.5L517.0 516.6L510.1 500.8L482.4 499.5L476.7 518.8L446.3 505.4L431.2 501.2L424.2 496.4Z", "azcapotzalco": "M192.7 189.8L209.4 131.6L217.7 125.2L251.6 137.4L259.7 139.5L265.9 135.8L290.4 145.3L311.5 205.4L300.4 209.3L287.5 207.9L281.3 215.1L280.0 219.9L242.3 212.8L242.9 208.2L238.9 206.6L238.6 197.0L223.4 192.6L214.5 196.0L192.7 189.8Z", "cuajimalpa": "M0.0 473.2L3.2 462.5L11.5 453.4L17.0 439.7L21.3 437.0L20.4 431.5L25.7 421.0L24.7 410.5L29.4 399.8L28.8 388.1L30.6 385.0L32.8 385.1L37.2 378.1L44.1 378.9L41.4 374.9L48.0 375.7L52.2 373.4L57.8 375.4L62.7 372.4L61.7 368.7L65.7 370.3L72.0 361.0L74.0 362.5L81.8 359.1L87.0 351.2L94.1 348.7L96.1 343.6L99.5 343.9L112.6 331.9L114.6 327.5L125.7 321.0L124.3 319.1L126.1 312.7L133.8 310.0L136.7 303.3L137.8 309.0L139.9 305.0L140.1 315.3L134.3 319.8L134.6 322.3L141.3 321.0L141.5 318.6L144.8 321.3L153.5 320.3L153.2 332.8L131.5 349.8L118.5 354.0L118.9 360.2L116.9 363.2L120.0 366.6L123.5 366.0L123.8 369.9L131.6 373.7L135.8 394.6L128.9 396.9L120.7 404.6L101.3 412.2L81.1 447.8L72.3 436.0L72.3 432.5L76.2 429.4L77.1 420.8L68.0 417.8L63.6 420.9L55.4 419.7L51.2 422.4L41.2 439.2L34.7 440.6L30.8 449.5L30.5 461.0L32.9 466.7L32.1 468.4L27.3 468.3L26.5 476.8L21.6 486.9L14.5 487.5L9.6 467.4L0.0 473.2Z", "cuauhtemoc": "M248.7 298.3L260.6 277.7L261.8 273.8L258.9 272.8L276.9 240.5L280.9 215.9L286.8 208.4L300.4 209.3L313.5 204.7L326.3 206.3L343.1 214.4L337.6 233.2L341.9 242.4L334.1 288.6L337.9 303.9L321.5 306.3L291.2 304.3L269.8 311.2L268.4 305.1L248.7 298.3Z", "magdalena": "M111.8 468.4L118.3 453.5L124.1 452.4L140.9 429.3L158.3 426.0L163.3 432.4L167.8 432.6L177.4 424.1L190.8 418.1L202.3 413.4L215.2 413.3L205.4 429.0L192.6 439.5L193.7 453.9L187.2 454.9L182.7 460.9L176.4 464.1L174.3 477.5L170.1 481.1L162.6 481.6L160.0 484.3L159.7 488.8L162.7 492.9L155.9 509.0L158.7 511.6L157.1 515.8L158.4 521.0L153.2 528.8L155.6 531.9L153.6 537.0L158.1 538.0L155.8 541.0L142.8 544.1L135.1 538.4L123.2 540.7L121.3 538.6L117.3 539.0L115.2 533.0L116.6 529.5L113.7 526.6L116.2 523.0L121.7 520.7L124.9 514.4L125.9 511.5L123.9 507.7L128.2 503.7L127.2 496.7L131.8 489.1L128.3 488.8L125.7 477.4L123.1 478.2L121.7 475.1L116.0 473.6L118.3 470.8L116.1 468.5L111.8 468.4Z"}, "cent": {"tlalpan": [226.7, 561.6], "iztapalapa": [460.0, 407.4], "venustiano": [395.3, 258.9], "milpa_alta": [465.4, 654.6], "coyoacan": [298.6, 425.1], "xochimilco": [355.9, 531.1], "gam": [306.9, 116.9], "alvaro_obregon": [197.8, 385.2], "iztacalco": [382.4, 313.0], "benito_juarez": [279.8, 353.1], "miguel_hidalgo": [225.7, 262.7], "tlahuac": [541.0, 522.1], "azcapotzalco": [248.6, 167.6], "cuajimalpa": [80.8, 395.7], "cuauhtemoc": [303.4, 257.6], "magdalena": [149.0, 479.6]}};
+const fmt=n=>n.toLocaleString('es-MX');
+const TABS=[['inicio','Inicio'],['guia','Guía rápida'],['supervivencia','Calculadora'],['mapa','Zonas'],['universidades','Universidades'],['transporte','Transporte'],['vivienda','Vivienda'],['salud','Salud'],['seguridad','Seguridad'],['comida','Comida'],['tramites','Papeleo'],['sismos','Sismos'],['comunidad','Comunidad'],['recursos','Fuentes']];
+const tabsEl=document.getElementById('tabs');
+TABS.forEach(([id,l])=>{const b=document.createElement('button');b.textContent=l;b.dataset.t=id;b.onclick=()=>go(id);tabsEl.appendChild(b)});
+function go(id){document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.id===id));
+  document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===id));
+  window.scrollTo({top:0,behavior:'smooth'});if(id==='mapa')applyReco();}
+go('inicio');
+
+const cio=new IntersectionObserver(es=>es.forEach(en=>{if(!en.isIntersecting)return;
+  const el=en.target,to=+el.dataset.to,t0=performance.now(),dur=1300;
+  (function s(n){let p=Math.min((n-t0)/dur,1);p=1-Math.pow(1-p,3);el.firstChild.nodeValue=fmt(Math.round(to*p));if(p<1)requestAnimationFrame(s)})(t0);cio.unobserve(el);}),{threshold:.5});
+document.querySelectorAll('.num[data-to]').forEach(el=>cio.observe(el));
+
+const Z={
+  azcapotzalco:{n:'Azcapotzalco',t:'barato',room:'$3,000–5,500',depa:'$8,000–13,000',col:'Clavería, San Álvaro, El Rosario',seis:'Transición',metro:'L6, L7',trans:'Metro L6/L7, Tren Suburbano',seg:'Tranquila, residencial-industrial',merc:'Mercados de barrio',uni:'UAM-Azcapotzalco, IPN'},
+  gam:{n:'Gustavo A. Madero',t:'barato',room:'$3,000–5,500',depa:'$8,000–13,000',col:'Lindavista, Zacatenco, Aragón',seis:'Lago / Transición',metro:'L3, L5, L6, LB',trans:'Metro L3/L5/L6/LB, Cablebús',seg:'Muy grande; revisa la colonia',merc:'La Villa, mercados locales',uni:'IPN Zacatenco'},
+  miguel_hidalgo:{n:'Miguel Hidalgo',t:'caro',room:'$5,000–9,000',depa:'$14,000–28,000',col:'Tacubaya, Anáhuac, San Miguel Chapultepec, Escandón',seis:'Lomas (oeste) / Lago',metro:'L1, L2, L7',trans:'Metro L1/L2/L7, Metrobús',seg:'Mejoró mucho (ENSU 2025)',merc:'Mercado de Tacubaya',uni:'CENTRO, Anáhuac (cerca)'},
+  cuauhtemoc:{n:'Cuauhtémoc',t:'caro',room:'$6,000–10,000',depa:'$15,000–30,000',col:'Roma, Condesa, Juárez, Sta. María la Ribera',seis:'Lago',metro:'L1, L2, L3, L8, LB',trans:'Todo: Metro, Metrobús, Ecobici',seg:'Muy viva; cuida cosas de noche',merc:'Medellín, San Juan, La Merced',uni:'La Salle, Claustro de Sor Juana'},
+  venustiano:{n:'Venustiano Carranza',t:'medio',room:'$3,000–5,500',depa:'$9,000–14,000',col:'Jardín Balbuena, Moctezuma',seis:'Lago',metro:'L1, L4, L5, L9, LB',trans:'Metro L1/L4/L5/L9, cerca del AICM',seg:'Mixta; zona de mercados',merc:'Mercado de Jamaica, Sonora',uni:'Cercana al Centro'},
+  cuajimalpa:{n:'Cuajimalpa',t:'caro',room:'$5,000–9,000',depa:'$15,000–32,000',col:'Santa Fe, Contadero, San Mateo',seis:'Lomas (firme)',metro:'sin Metro (Metrobús/auto)',trans:'Poco Metro; transporte concesionado',seg:'Santa Fe: segura pero cara',merc:'Plazas comerciales',uni:'Ibero (Santa Fe)'},
+  alvaro_obregon:{n:'Álvaro Obregón',t:'medio',room:'$4,500–8,000',depa:'$12,000–24,000',col:'San Ángel, Tlacopac, Guadalupe Inn, Olivar',seis:'Lomas (firme)',metro:'L1, L7',trans:'Metro L1, Metrobús, Cablebús',seg:'San Ángel tranquilo; varía mucho',merc:'Mercado de San Ángel',uni:'ITAM, Ibero (cerca)'},
+  benito_juarez:{n:'Benito Juárez',t:'medio',room:'$5,000–8,000',depa:'$12,000–22,000',col:'Narvarte, Del Valle, Portales',seis:'Transición',metro:'L2, L3, L7, L9, L12',trans:'Metro L2/L3/L12, Metrobús',seg:'La mejor percibida (14.8%)',merc:'Mercado de Portales',uni:'UNAM (cerca), La Salle'},
+  iztacalco:{n:'Iztacalco',t:'barato',room:'$3,000–5,000',depa:'$8,000–12,000',col:'Agrícola Oriental, Viaducto',seis:'Lago',metro:'L8, L9',trans:'Metro L8/L9, Metrobús',seg:'Tranquila y céntrica al oriente',merc:'Mercados de barrio',uni:'Conexión rápida al centro'},
+  iztapalapa:{n:'Iztapalapa',t:'barato',room:'$2,800–5,000',depa:'$7,000–11,000',col:'Vicentina, Cerro de la Estrella',seis:'Lago',metro:'L8, L12, LA',trans:'Metro L8/L12/LA, Cablebús, Trolebús',seg:'La más poblada; trayectos largos',merc:'Central de Abasto',uni:'UAM-Iztapalapa'},
+  magdalena:{n:'Magdalena Contreras',t:'medio',room:'$3,500–6,000',depa:'$9,000–15,000',col:'San Jerónimo, Las Águilas',seis:'Lomas (firme)',metro:'sin Metro (combis/RTP)',trans:'Limitado; combis y RTP',seg:'Verde y tranquila, algo aislada',merc:'Mercados locales',uni:'ITAM (cerca)'},
+  coyoacan:{n:'Coyoacán',t:'medio',room:'$4,500–7,500',depa:'$12,000–20,000',col:'Copilco, Coyoacán Centro, Pedregal de Sto. Domingo',seis:'Firme (Pedregal) / Transición',metro:'L3',trans:'Metro L3, Metrobús, Tren Ligero',seg:'Cultural y querida; buena opción',merc:'Mercado de Coyoacán',uni:'UNAM CU, ENAH'},
+  tlalpan:{n:'Tlalpan',t:'medio',room:'$3,500–6,000',depa:'$10,000–16,000',col:'Villa Coapa, Tlalpan Centro, Pedregal',seis:'Lomas / Transición',metro:'Tren Ligero',trans:'Tren Ligero, Metrobús, RTP',seg:'Grande y sureña; partes muy tranquilas',merc:'Mercado de Tlalpan',uni:'ENAH, Tec CCM, UNAM (cerca)'},
+  xochimilco:{n:'Xochimilco',t:'barato',room:'$3,000–5,500',depa:'$8,000–13,000',col:'Barrios de Xochimilco',seis:'Lago / Transición',metro:'Tren Ligero',trans:'Tren Ligero, combis',seg:'Tradicional; lejos del centro',merc:'Mercado de Xochimilco',uni:'UAM-Xochimilco'},
+  tlahuac:{n:'Tláhuac',t:'barato',room:'$2,800–4,800',depa:'$7,000–11,000',col:'Del Mar, La Conchita',seis:'Lago',metro:'L12',trans:'Metro L12, Cablebús',seg:'Periférica; trayectos largos',merc:'Mercados locales',uni:'Lejos de la mayoría de campus'},
+  milpa_alta:{n:'Milpa Alta',t:'barato',room:'$2,500–4,500',depa:'$6,000–9,000',col:'Villa Milpa Alta',seis:'Firme / rural',metro:'sin Metro',trans:'Muy limitado; combis',seg:'Rural y tranquila; muy lejos',merc:'Tianguis locales',uni:'No recomendable para estudiar'},
+};
+const tierColor={barato:'#7E9B6E',medio:'#D99A2B',caro:'#E20E6B'};
+const tierWord={barato:'Más barato',medio:'Intermedio',caro:'Más caro'};
+const roomMin={azcapotzalco:3000,gam:3000,miguel_hidalgo:5000,cuauhtemoc:6000,venustiano:3000,cuajimalpa:5000,alvaro_obregon:4500,benito_juarez:5000,iztacalco:3000,iztapalapa:2800,magdalena:3500,coyoacan:4500,tlalpan:3500,xochimilco:3000,tlahuac:2800,milpa_alta:2500};
+
+const svg=document.getElementById('cdmx');const NS='http://www.w3.org/2000/svg';
+svg.setAttribute('viewBox',ALC.vb.join(' '));
+const shortName={gam:'GAM',miguel_hidalgo:'M.Hidalgo',benito_juarez:'B.Juárez',venustiano:'V.Carranza',alvaro_obregon:'Á.Obregón',magdalena:'M.Contreras',cuauhtemoc:'Cuauht.',azcapotzalco:'Azcapo.',iztacalco:'Iztacalco',iztapalapa:'Iztapalapa',coyoacan:'Coyoacán',tlalpan:'Tlalpan',xochimilco:'Xochimilco',tlahuac:'Tláhuac',milpa_alta:'Milpa Alta',cuajimalpa:'Cuajimalpa'};
+Object.entries(ALC.paths).forEach(([k,d])=>{
+  const p=document.createElementNS(NS,'path');p.setAttribute('d',d);p.setAttribute('class','alc');p.dataset.k=k;
+  p.setAttribute('fill',tierColor[Z[k].t]);p.setAttribute('fill-opacity','.62');
+  p.addEventListener('click',()=>selectZone(k));svg.appendChild(p);
+});
+Object.entries(ALC.cent).forEach(([k,c])=>{const t=document.createElementNS(NS,'text');t.setAttribute('x',c[0]);t.setAttribute('y',c[1]);t.setAttribute('text-anchor','middle');t.textContent=shortName[k]||k;svg.appendChild(t)});
+
+const bud=document.getElementById('bud'),budv=document.getElementById('budv'),budnote=document.getElementById('budnote');
+function applyBudget(){const b=+bud.value;budv.textContent=fmt(b);let c=0;
+  document.querySelectorAll('.alc').forEach(a=>{const ok=roomMin[a.dataset.k]<=b;a.classList.toggle('dim',!ok);if(ok)c++});
+  budnote.textContent=b>=10000?'Mostrando todas las alcaldías.':`Con $${fmt(b)} puedes buscar cuarto en ${c} de 16 alcaldías.`;}
+bud.oninput=applyBudget;applyBudget();
+
+const order=Object.keys(Z).sort((a,b)=>roomMin[a]-roomMin[b]);
+const rl=document.getElementById('ranklist');
+rl.innerHTML='<div class="sec-head" style="margin-bottom:16px"><h2 class="sh" style="font-size:1.5rem">De más barato a más caro</h2><div class="idx mono">cuarto / mes</div></div>';
+order.forEach((k,i)=>{const z=Z[k];const d=document.createElement('div');d.className='rrow';d.onclick=()=>selectZone(k);
+  d.innerHTML=`<div class="ri">${String(i+1).padStart(2,'0')}</div><div class="rn">${z.n}</div><div class="rt" style="background:${tierColor[z.t]}"></div><div class="rp">${z.room}</div>`;rl.appendChild(d)});
+
+const SCHOOLS={
+  centro:{n:'CENTRO',tipo:'priv',sub:'Diseño, Cine y TV',zones:['miguel_hidalgo','cuauhtemoc','alvaro_obregon'],col:'América, Tacubaya, San Miguel Chapultepec, Escandón, Condesa',price:'$5,000–9,000',feat:true},
+  unam:{n:'UNAM · CU',tipo:'pub',sub:'Ciudad Universitaria',zones:['coyoacan','benito_juarez','tlalpan','alvaro_obregon'],col:'Copilco, Coyoacán, Pedregal, Del Valle',price:'$4,500–7,500'},
+  ipn:{n:'IPN · Zacatenco',tipo:'pub',sub:'Gustavo A. Madero',zones:['gam','azcapotzalco'],col:'Lindavista, Zacatenco, N. Ind. Vallejo',price:'$3,000–5,500'},
+  uam_i:{n:'UAM Iztapalapa',tipo:'pub',sub:'Iztapalapa',zones:['iztapalapa','iztacalco','coyoacan'],col:'Vicentina, Cerro de la Estrella',price:'$2,800–5,000'},
+  uam_a:{n:'UAM Azcapotzalco',tipo:'pub',sub:'Azcapotzalco',zones:['azcapotzalco','gam','miguel_hidalgo'],col:'Clavería, San Álvaro, El Rosario',price:'$3,000–5,500'},
+  enah:{n:'ENAH',tipo:'pub',sub:'Antropología · Tlalpan',zones:['tlalpan','coyoacan','xochimilco'],col:'Villa Coapa, Pedregal de Sto. Domingo',price:'$3,500–6,000'},
+  uam_x:{n:'UAM Xochimilco',tipo:'pub',sub:'Calzada del Hueso',zones:['xochimilco','tlalpan','coyoacan'],col:'Villa Coapa, Cafetales, Xochimilco centro',price:'$3,000–6,000'},
+  uam_c:{n:'UAM Cuajimalpa',tipo:'pub',sub:'Santa Fe',zones:['cuajimalpa','alvaro_obregon','miguel_hidalgo'],col:'Santa Fe, Contadero, Lomas de Memetla, Tacubaya',price:'$4,500–8,500'},
+  uacm:{n:'UACM',tipo:'pub',sub:'Planteles CDMX',zones:['iztapalapa','cuauhtemoc','gam','benito_juarez'],col:'Centro, San Lorenzo Tezonco, Cuautepec o Del Valle según plantel',price:'$3,000–7,000'},
+  upn:{n:'UPN Ajusco',tipo:'pub',sub:'Carretera al Ajusco',zones:['tlalpan','coyoacan','magdalena'],col:'Tlalpan, Pedregal, Santo Domingo, San Jerónimo',price:'$3,500–6,500'},
+  ibero:{n:'Ibero',tipo:'priv',sub:'Santa Fe',zones:['cuajimalpa','alvaro_obregon'],col:'Santa Fe, Tarango, Olivar del Conde',price:'$5,000–9,000'},
+  cide:{n:'CIDE',tipo:'pub',sub:'Santa Fe',zones:['cuajimalpa','alvaro_obregon','miguel_hidalgo'],col:'Santa Fe, Contadero, Las Águilas, Tacubaya',price:'$4,500–8,500'},
+  colmex:{n:'El Colegio de México',tipo:'pub',sub:'Picacho Ajusco',zones:['tlalpan','coyoacan','magdalena'],col:'Tlalpan, Fuentes Brotantes, San Jerónimo, Pedregal',price:'$4,000–7,500'},
+  itam:{n:'ITAM',tipo:'priv',sub:'Río Hondo · San Ángel',zones:['alvaro_obregon','coyoacan','magdalena'],col:'San Ángel, Tlacopac, Guadalupe Inn',price:'$4,500–8,000'},
+  lasalle:{n:'La Salle',tipo:'priv',sub:'Condesa',zones:['cuauhtemoc','benito_juarez','miguel_hidalgo'],col:'Condesa, Roma, Juárez, San Rafael',price:'$5,000–9,000'},
+  up:{n:'Universidad Panamericana',tipo:'priv',sub:'Mixcoac',zones:['benito_juarez','alvaro_obregon','coyoacan'],col:'Mixcoac, Del Valle, Nápoles, San Pedro de los Pinos',price:'$5,000–9,500'},
+  uvm:{n:'UVM',tipo:'priv',sub:'Campus CDMX',zones:['coyoacan','tlalpan','miguel_hidalgo','benito_juarez'],col:'Depende del campus: Coyoacán, Tlalpan, San Rafael o Chapultepec',price:'$4,000–8,500'},
+  claustro:{n:'Claustro de Sor Juana',tipo:'priv',sub:'Centro Histórico',zones:['cuauhtemoc','benito_juarez','venustiano'],col:'Centro, Obrera, Roma, Juárez',price:'$4,000–8,000'},
+  tec:{n:'Tec · CCM',tipo:'priv',sub:'Tlalpan (Huipulco)',zones:['tlalpan','coyoacan','benito_juarez'],col:'Villa Coapa, Pedregal, Tlalpan',price:'$3,500–6,000'},
+  anahuac:{n:'Anáhuac Norte',tipo:'priv',sub:'Huixquilucan (Edomex)',zones:['miguel_hidalgo','azcapotzalco'],col:'Interlomas, Lomas Verdes, Satélite',price:'$5,000–9,000'},
+  tec_sfe:{n:'Tec · Santa Fe',tipo:'priv',sub:'Santa Fe',zones:['cuajimalpa','alvaro_obregon','miguel_hidalgo'],col:'Santa Fe, Contadero, San Pedro de los Pinos, Tacubaya',price:'$5,000–10,000'},
+  otra:{n:'Otra / No sé aún',tipo:'pub',sub:'Ver todo',zones:['benito_juarez','coyoacan','cuauhtemoc'],col:'Zonas estudiantiles céntricas',price:'$4,000–7,000'},
+};
+let selectedSchool=null;
+const sg=document.getElementById('schoolgrid');
+if(sg){ Object.entries(SCHOOLS).forEach(([k,s])=>{const b=document.createElement('button');b.dataset.s=k;b.innerHTML=`${s.n}<small>${s.tipo==='pub'?'Pública':'Privada'} · ${s.sub}</small>`;b.onclick=()=>selectSchool(k);sg.appendChild(b)}); }
+function selectSchool(k){selectedSchool=k;const s=SCHOOLS[k];
+  document.querySelectorAll('#schoolgrid button').forEach(b=>b.classList.toggle('on',b.dataset.s===k));
+  document.getElementById('persona').classList.add('show');
+  document.getElementById('personaText').innerHTML=`Para <b>${s.n}</b> te conviene vivir cerca, en colonias como <b>${s.col}</b>. Rango de cuarto: <b>${s.price}</b>.`;
+  document.getElementById('personaChips').innerHTML=s.zones.map(z=>`<span class="chip">${Z[z].n} · <b>${Z[z].room}</b></span>`).join('');}
+function applyReco(){document.querySelectorAll('.alc').forEach(a=>a.classList.remove('reco'));if(!selectedSchool)return;
+  SCHOOLS[selectedSchool].zones.forEach(z=>{const el=document.querySelector(`.alc[data-k="${z}"]`);if(el)el.classList.add('reco')});}
+
+const uc=document.getElementById('unis');
+function renderUnis(f){ if(!uc) return; uc.innerHTML='';
+  Object.entries(SCHOOLS).filter(([k])=>k!=='otra').filter(([k,s])=>f==='all'||s.tipo===f).forEach(([k,s])=>{
+    const el=document.createElement('div');el.className='uni'+(s.feat?' feat':'');
+    el.innerHTML=`<span class="tg">${s.tipo==='pub'?'Pública':'Privada'}</span><div class="un">${s.n}</div><div class="uz">${s.sub}</div><div class="uv"><strong>Vive cerca en</strong>${s.col}</div><div class="up">Cuarto ${s.price} / mes</div>`;
+    el.onclick=()=>{selectSchool(k);go('mapa')};uc.appendChild(el);});}
+renderUnis('all');
+document.querySelectorAll('#filter button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#filter button').forEach(x=>x.classList.remove('on'));b.classList.add('on');renderUnis(b.dataset.f)});
+
+const LINES=[
+ {n:'1',c:'#E2007C',route:'Observatorio ↔ Pantitlán',desc:'Cruza de poniente a oriente: Observatorio, Tacubaya, Sevilla, Insurgentes, Balderas, Pino Suárez, Candelaria y Pantitlán.',use:'Útil para conectar zona poniente, Centro y oriente.'},
+ {n:'2',c:'#0067B1',route:'Cuatro Caminos ↔ Tasqueña',desc:'Va del norte/poniente al sur: Cuatro Caminos, Tacuba, Hidalgo, Bellas Artes, Zócalo, Chabacano, Ermita y Tasqueña.',use:'Muy usada para Centro Histórico, Coyoacán/Tasqueña y conexión con Tren Ligero.'},
+ {n:'3',c:'#98A300',route:'Indios Verdes ↔ Universidad',desc:'Eje norte-sur: Indios Verdes, Guerrero, Hidalgo, Balderas, Centro Médico, Zapata, Coyoacán, Miguel Ángel de Quevedo, Copilco y Universidad.',use:'Clave para UNAM/CU y para quienes vienen del norte.'},
+ {n:'4',c:'#6CC0B4',route:'Martín Carrera ↔ Santa Anita',desc:'Línea corta al oriente: conecta Martín Carrera, Morelos, Candelaria, Jamaica y Santa Anita.',use:'Sirve como puente entre norte/oriente y líneas 1, 5, 8 y 9.'},
+ {n:'5',c:'#FFD200',route:'Politécnico ↔ Pantitlán',desc:'Une IPN/Politécnico con La Raza, Consulado, Terminal Aérea y Pantitlán.',use:'Buena para IPN, aeropuerto y conexiones al oriente.'},
+ {n:'6',c:'#E2231A',route:'El Rosario ↔ Martín Carrera',desc:'Recorre el norte: El Rosario, Azcapotzalco, Instituto del Petróleo, La Villa-Basílica y Martín Carrera.',use:'Útil para UAM Azcapotzalco, IPN y zonas del norte.'},
+ {n:'7',c:'#EE7F00',route:'El Rosario ↔ Barranca del Muerto',desc:'Línea del poniente: El Rosario, Tacuba, Polanco, Auditorio, Tacubaya, Mixcoac y Barranca del Muerto.',use:'Conecta zonas de trabajo/escuela del poniente.'},
+ {n:'8',c:'#00925F',route:'Garibaldi/Lagunilla ↔ Constitución de 1917',desc:'Centro hacia sur-oriente: Garibaldi, Bellas Artes, Salto del Agua, Chabacano, Atlalilco y Constitución de 1917.',use:'Entrada importante a Iztapalapa y conexiones con L12.'},
+ {n:'9',c:'#7B3F1D',route:'Tacubaya ↔ Pantitlán',desc:'Va por el sur del centro: Tacubaya, Patriotismo, Chilpancingo, Centro Médico, Chabacano, Jamaica y Pantitlán.',use:'Alternativa a Línea 1 y conexión rápida a Pantitlán.'},
+ {n:'A',c:'#8C1D82',route:'Pantitlán ↔ La Paz',desc:'Conecta Pantitlán con Los Reyes/La Paz, ya hacia el Estado de México.',use:'Muy útil para quienes viven al oriente del Edomex.'},
+ {n:'B',c:'#5C6770',route:'Buenavista ↔ Ciudad Azteca',desc:'Va de Buenavista al nororiente: Guerrero, Morelos, Oceanía, San Lázaro, Nezahualcóyotl, Ecatepec y Ciudad Azteca.',use:'Clave para Ecatepec, Neza norte y conexión con Buenavista/Suburbano.'},
+ {n:'12',c:'#C5A572',route:'Mixcoac ↔ Tláhuac',desc:'Recorre el sur: Mixcoac, Zapata, Ermita, Atlalilco, Periférico Oriente y Tláhuac.',use:'Importante para sur-oriente y transbordos con L3, L7, L8 y L2.'},
+];
+const ml=document.getElementById('mlines');
+if(ml){ LINES.forEach(({n,c,route,desc})=>{const el=document.createElement('div');el.className='ml'; el.innerHTML=`<div class="badge" style="background:${c}">${n}</div><div><div class="mlb">${route}</div><div class="mln">${desc}</div></div>`;ml.appendChild(el)}); }
+const lineLegend=document.getElementById('lineLegend');
+if(lineLegend){ lineLegend.innerHTML=LINES.map(({n,c,route,desc,use})=>`<div class="line-card"><div><div class="line-top"><div class="line-bubble" style="background:${c}">${n}</div><h3>${route}</h3></div><p><span class="line-label-small">Dato</span>${desc}</p></div><div class="mini-route"><span class="line-label-small">Recomendación</span>${use}</div></div>`).join(''); }
+
+const METROBUS=[
+ {n:'1',c:'#C8102E',route:'Indios Verdes ↔ El Caminero',desc:'Corredor de Av. Insurgentes, la línea más larga; cruza la ciudad de norte a sur.'},
+ {n:'2',c:'#C8102E',route:'Tacubaya ↔ Tepalcates',desc:'Eje 4 Sur; conecta poniente con el oriente de la ciudad.'},
+ {n:'3',c:'#C8102E',route:'Tenayuca ↔ Pueblo Santa Cruz Atoyac',desc:'Eje 1 Poniente; del norte (límite con Edomex) al sur.'},
+ {n:'4',c:'#C8102E',route:'Centro Histórico ↔ AICM (T1 y T2)',desc:'Pasa por el Centro y llega al aeropuerto. Al AICM la tarifa es $30.'},
+ {n:'5',c:'#C8102E',route:'Río de los Remedios ↔ Preparatoria 1',desc:'Eje 3 Oriente; conecta el norte con el sur-oriente.'},
+ {n:'6',c:'#C8102E',route:'Villa de Aragón ↔ El Rosario',desc:'Eje 5 Norte; cruza el norte de la ciudad de oriente a poniente.'},
+ {n:'7',c:'#C8102E',route:'Indios Verdes ↔ Campo Marte',desc:'Por Paseo de la Reforma, con autobuses de doble piso; muy turística.'},
+];
+const CABLEBUS=[
+ {n:'1',c:'#0096A6',route:'Cuautepec ↔ Indios Verdes',desc:'Gustavo A. Madero. Conecta zonas altas del norte con el Metro L3.'},
+ {n:'2',c:'#0096A6',route:'Constitución de 1917 ↔ Santa Marta',desc:'Iztapalapa. El teleférico urbano más largo; enlaza con Metro L8.'},
+ {n:'3',c:'#0096A6',route:'Bosque de Chapultepec (2ª y 3ª sección)',desc:'Línea turística y recreativa dentro de Chapultepec.'},
+];
+const mbLeg=document.getElementById('metrobusLegend');
+if(mbLeg){ mbLeg.innerHTML=METROBUS.map(({n,c,route,desc})=>`<div class="line-card"><div><div class="line-top"><div class="line-bubble" style="background:${c}">${n}</div><h3>${route}</h3></div><p>${desc}</p></div><div class="mini-route"><span class="line-label-small">Tarifa</span>$6 · transbordos gratis 2 h</div></div>`).join(''); }
+const cbLeg=document.getElementById('cablebusLegend');
+if(cbLeg){ cbLeg.innerHTML=CABLEBUS.map(({n,c,route,desc})=>`<div class="line-card"><div><div class="line-top"><div class="line-bubble" style="background:${c}">${n}</div><h3>${route}</h3></div><p>${desc}</p></div><div class="mini-route"><span class="line-label-small">Tarifa</span>$7 · con Tarjeta MI</div></div>`).join(''); }
+
+const fares={'Metro':5,'Metrobús':6,'Combi/micro':9,'Trolebús':4,'Tren Ligero':3,'Cablebús':7,'RTP':4};let mode='Metro';
+const modesEl=document.getElementById('modes');
+Object.keys(fares).forEach((k,i)=>{const b=document.createElement('button');b.textContent=k;if(i===0)b.classList.add('on');
+  b.onclick=()=>{mode=k;document.querySelectorAll('#modes button').forEach(x=>x.classList.remove('on'));b.classList.add('on');calc()}; if(modesEl) modesEl.appendChild(b)});
+const trips=document.getElementById('trips'),days=document.getElementById('days'),tripsv=document.getElementById('tripsv'),daysv=document.getElementById('daysv'),total=document.getElementById('total'),rnote=document.getElementById('rnote');
+function calc(){ if(!trips||!days||!tripsv||!daysv||!total||!rnote) return; const t=+trips.value,d=+days.value;tripsv.textContent=t;daysv.textContent=d;const m=fares[mode]*t*d;total.textContent=fmt(m);
+  const uber=Math.round(m/fares[mode]*70);rnote.innerHTML=`En <b>${mode}</b> gastas eso al mes. Los mismos viajes en Uber/Didi rondarían <b>$${fmt(uber)}</b>.`}
+if(trips&&days){ trips.oninput=calc; days.oninput=calc; calc(); }
+
+const LIVE={
+  solo:'<b>Vivir solo:</b> más privacidad y silencio para estudiar, pero más caro (cuarto/estudio completo) y la soledad pega más fuerte. Tips: elige edificio con portero/buena cerradura, ten un contacto de confianza que sepa dónde vives, no anuncies en redes que vives solo, y conoce a tus vecinos. Presupuesta luz, agua, gas e internet por tu cuenta.',
+  roomie:'<b>Con roomie:</b> mucho más barato (renta, servicios y despensa se dividen) y combate la soledad —lo más recomendado al llegar. Tips: pongan reglas claras desde el inicio (limpieza, gastos, visitas) y un grupo para dividir cuentas; firma un contrato donde quede claro quién responde por el depósito. Compartir mercado al mayoreo rinde muchísimo.'
+};
+const HEALTH={
+  solo:'<b>Si vives solo y te enfermas:</b> avisa de inmediato a alguien de confianza y comparte tu ubicación; ten a la mano tu tipo de sangre, alergias y un contacto de emergencia visible (en el celular como "ICE"). Deja ubicado el Centro de Salud, farmacia y hospital más cercanos. Para fiebre o algo que te impida salir, usa entrega a domicilio (farmacia por app) y la orientación médica de Locatel (*0311).',
+  roomie:'<b>Si vives con roomie:</b> acuerden desde antes a quién llamar en una emergencia y dónde están los documentos y el botiquín. Que tu roomie sepa tus alergias y tu seguro (Facultativo/IMSS/ISSSTE o de la uni). Tener a alguien que te traiga medicina o te acompañe a urgencias es una de las grandes ventajas de no vivir solo.'
+};
+function bindToggle(boxId,data){const box=document.getElementById(boxId); if(!box) return; const tg=box.previousElementSibling; if(!tg) return;
+  function set(r){box.innerHTML=data[r];tg.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.r===r))}
+  tg.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.r));set('solo');}
+bindToggle('livebox',LIVE);bindToggle('healthbox',HEALTH);
+
+const METRO_LINES=[
+ {id:'1',color:'#E2007C',name:'Línea 1',term:'Observatorio ↔ Pantitlán',stations:['Observatorio','Tacubaya','Juanacatlán','Chapultepec','Sevilla','Insurgentes','Cuauhtémoc','Balderas','Salto del Agua','Isabel la Católica','Pino Suárez','Merced','Candelaria','San Lázaro','Moctezuma','Balbuena','Boulevard Puerto Aéreo','Gómez Farías','Zaragoza','Pantitlán'],note:'Poniente-centro-oriente. Muy útil para cruzar la ciudad, pero revisa cierres o servicio provisional.'},
+ {id:'2',color:'#005EB8',name:'Línea 2',term:'Cuatro Caminos ↔ Tasqueña',stations:['Cuatro Caminos','Panteones','Tacuba','Cuitláhuac','Popotla','Colegio Militar','Normal','San Cosme','Revolución','Hidalgo','Bellas Artes','Allende','Zócalo/Tenochtitlan','Pino Suárez','San Antonio Abad','Chabacano','Viaducto','Xola','Villa de Cortés','Nativitas','Portales','Ermita','General Anaya','Tasqueña'],note:'Conecta norte-poniente, Centro Histórico y Taxqueña.'},
+ {id:'3',color:'#98A300',name:'Línea 3',term:'Indios Verdes ↔ Universidad',stations:['Indios Verdes','Deportivo 18 de Marzo','Potrero','La Raza','Tlatelolco','Guerrero','Hidalgo','Juárez','Balderas','Niños Héroes','Hospital General','Centro Médico','Etiopía/Plaza de la Transparencia','Eugenia','División del Norte','Zapata','Coyoacán','Viveros/Derechos Humanos','Miguel Ángel de Quevedo','Copilco','Universidad'],note:'Una de las más útiles para estudiantes: conecta norte, centro y CU.'},
+ {id:'4',color:'#00A3E0',name:'Línea 4',term:'Martín Carrera ↔ Santa Anita',stations:['Martín Carrera','Talismán','Bondojito','Consulado','Canal del Norte','Morelos','Candelaria','Fray Servando','Jamaica','Santa Anita'],note:'Línea corta del oriente-centro; útil para conexiones con Morelos, Candelaria y Jamaica.'},
+ {id:'5',color:'#FFD100',name:'Línea 5',term:'Politécnico ↔ Pantitlán',stations:['Politécnico','Instituto del Petróleo','Autobuses del Norte','La Raza','Misterios','Valle Gómez','Consulado','Eduardo Molina','Aragón','Oceanía','Terminal Aérea','Hangares','Pantitlán'],note:'Conecta IPN, Autobuses del Norte, aeropuerto y Pantitlán.'},
+ {id:'6',color:'#E87722',name:'Línea 6',term:'El Rosario ↔ Martín Carrera',stations:['El Rosario','Tezozómoc','Azcapotzalco','Ferrería/Arena Ciudad de México','Norte 45','Vallejo','Instituto del Petróleo','Lindavista','Deportivo 18 de Marzo','La Villa-Basílica','Martín Carrera'],note:'Norte de la ciudad; enlaza con Línea 3 y Línea 5.'},
+ {id:'7',color:'#F58220',name:'Línea 7',term:'El Rosario ↔ Barranca del Muerto',stations:['El Rosario','Aquiles Serdán','Camarones','Refinería','Tacuba','San Joaquín','Polanco','Auditorio','Constituyentes','Tacubaya','San Pedro de los Pinos','San Antonio','Mixcoac','Barranca del Muerto'],note:'Poniente. Útil para Polanco, Auditorio, Tacubaya y Mixcoac.'},
+ {id:'8',color:'#00843D',name:'Línea 8',term:'Garibaldi/Lagunilla ↔ Constitución de 1917',stations:['Garibaldi/Lagunilla','Bellas Artes','San Juan de Letrán','Salto del Agua','Doctores','Obrera','Chabacano','La Viga','Santa Anita','Coyuya','Iztacalco','Apatlaco','Aculco','Escuadrón 201','Atlalilco','Iztapalapa','Cerro de la Estrella','UAM-I','Constitución de 1917'],note:'Centro-suroriente; útil para llegar hacia Iztapalapa y Central de Abasto por Aculco/Apatlaco.'},
+ {id:'9',color:'#6A1B9A',name:'Línea 9',term:'Tacubaya ↔ Pantitlán',stations:['Tacubaya','Patriotismo','Chilpancingo','Centro Médico','Lázaro Cárdenas','Chabacano','Jamaica','Mixiuhca','Velódromo','Ciudad Deportiva','Puebla','Pantitlán'],note:'Alternativa para conectar poniente, centro-sur y Pantitlán.'},
+ {id:'A',color:'#7B3F00',name:'Línea A',term:'Pantitlán ↔ La Paz',stations:['Pantitlán','Agrícola Oriental','Canal de San Juan','Tepalcates','Guelatao','Peñón Viejo','Acatitla','Santa Martha','Los Reyes','La Paz'],note:'Entrada oriente desde Edomex: Los Reyes, La Paz, Ixtapaluca/Chalco por transporte externo.'},
+ {id:'B',color:'#BDBDBD',name:'Línea B',term:'Buenavista ↔ Ciudad Azteca',stations:['Buenavista','Guerrero','Garibaldi/Lagunilla','Lagunilla','Tepito','Morelos','San Lázaro','Ricardo Flores Magón','Romero Rubio','Oceanía','Deportivo Oceanía','Bosque de Aragón','Villa de Aragón','Nezahualcóyotl','Impulsora','Río de los Remedios','Múzquiz','Ecatepec','Olímpica','Plaza Aragón','Ciudad Azteca'],note:'Muy útil si vienes de Ecatepec, Neza o zona nororiente.'},
+ {id:'12',color:'#C5A572',name:'Línea 12',term:'Mixcoac ↔ Tláhuac',stations:['Mixcoac','Insurgentes Sur','Hospital 20 de Noviembre','Zapata','Parque de los Venados','Eje Central','Ermita','Mexicaltzingo','Atlalilco','Culhuacán','San Andrés Tomatlán','Lomas Estrella','Calle 11','Periférico Oriente','Tezonco','Olivos','Nopalera','Zapotitlán','Tlaltenco','Tláhuac'],note:'Conecta el suroriente con Mixcoac; revisa siempre el estado de servicio.'}
+];
+const linePositions={
+ '1':[[70,250],[150,250],[210,250],[265,230],[320,230],[375,230],[430,230],[485,230],[540,230],[595,230],[650,230],[705,230],[760,230],[815,230],[865,235],[910,245]],
+ '2':[[80,120],[155,125],[230,135],[300,150],[370,165],[440,180],[510,195],[580,215],[650,250],[705,290],[755,330],[805,370],[855,415]],
+ '3':[[190,35],[210,70],[230,105],[260,145],[315,185],[370,220],[430,245],[485,275],[520,315],[550,355],[580,405],[600,465]],
+ '4':[[720,70],[710,115],[700,160],[710,205],[735,250],[760,295],[780,340],[800,385]],
+ '5':[[430,40],[455,75],[500,100],[545,130],[590,160],[635,190],[680,220],[725,245],[775,260],[835,250],[900,250]],
+ '6':[[95,55],[150,70],[205,85],[260,100],[315,110],[370,105],[425,95],[485,80],[545,65],[610,60],[690,68]],
+ '7':[[90,90],[120,140],[150,185],[190,225],[235,265],[280,305],[325,345],[370,385],[420,420],[470,440],[520,455],[570,460],[620,460],[670,460]],
+ '8':[[540,120],[555,160],[575,200],[600,240],[625,280],[650,315],[675,350],[700,380],[725,405],[755,420],[785,430],[820,435],[855,440],[895,445]],
+ '9':[[220,310],[290,310],[360,310],[430,300],[500,290],[570,285],[640,280],[710,275],[780,265],[850,255],[915,250]],
+ 'A':[[900,250],[905,290],[910,325],[915,360],[920,395],[925,430],[930,465]],
+ 'B':[[390,110],[440,135],[500,160],[555,185],[610,210],[665,230],[720,245],[775,255],[830,265],[880,285],[925,310]],
+ '12':[[555,455],[605,440],[655,420],[700,400],[740,375],[780,350],[820,325],[855,300],[890,275],[920,250]]
+};
+function transferStations(){const c={}; METRO_LINES.forEach(l=>l.stations.forEach(s=>c[s]=(c[s]||0)+1)); return c;}
+const TRANSFERS=transferStations();
+function pathD(points){return points.map((p,i)=>(i?'L':'M')+p[0]+' '+p[1]).join(' ')}
+function stationXY(line,i){const pts=linePositions[line.id]||[[60,260],[920,260]]; const t=i/Math.max(line.stations.length-1,1); const idx=Math.min(Math.floor(t*(pts.length-1)),pts.length-2); const local=t*(pts.length-1)-idx; const a=pts[idx], b=pts[idx+1]; return [a[0]+(b[0]-a[0])*local, a[1]+(b[1]-a[1])*local];}
+function renderMetro(active='3'){
+ const svg=document.getElementById('metroMiniMap'), buttons=document.getElementById('metroLineButtons');
+ if(!buttons) return;
+ buttons.innerHTML=METRO_LINES.map(l=>`<button class="${l.id===active?'on':''}" style="background:${l.color};color:${l.id==='5'||l.id==='B'?'#17140E':'#fff'}" onclick="renderMetro('${l.id}')" title="${l.name}">${l.id}</button>`).join('');
+ if(svg){
+   svg.innerHTML='';
+   METRO_LINES.forEach(l=>{const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',pathD(linePositions[l.id]));p.setAttribute('stroke',l.color);p.setAttribute('class','metro-line-path '+(l.id===active?'active':''));p.addEventListener('click',()=>renderMetro(l.id));svg.appendChild(p);});
+ }
+ const l=METRO_LINES.find(x=>x.id===active)||METRO_LINES[0];
+ if(svg){
+   l.stations.forEach((s,i)=>{const [x,y]=stationXY(l,i); const c=document.createElementNS('http://www.w3.org/2000/svg','circle'); c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',TRANSFERS[s]>1?6:4);c.setAttribute('class','metro-station-dot '+(TRANSFERS[s]>1?'transfer':''));svg.appendChild(c); if(i===0||i===l.stations.length-1||TRANSFERS[s]>1||i%3===0){const tx=document.createElementNS('http://www.w3.org/2000/svg','text');tx.setAttribute('x',x+8);tx.setAttribute('y',y-7);tx.setAttribute('class','metro-station-label');tx.textContent=s;svg.appendChild(tx);}});
+ }
+ const info=document.getElementById('metroLineInfo'); if(info){const trans=l.stations.filter(s=>TRANSFERS[s]>1); info.innerHTML=`<div class="line-title"><span style="display:inline-flex;width:32px;height:32px;border-radius:50%;background:${l.color};color:${l.id==='5'||l.id==='B'?'#17140E':'#fff'};align-items:center;justify-content:center;margin-right:8px">${l.id}</span>${l.name}</div><div class="terminales">${l.term}</div><p>${l.note}</p><h3 class="kick3">Transbordos clave</h3><div class="station-list">${trans.length?trans.map(s=>`<span class="station-pill transfer">${s}</span>`).join(''):'<span class="station-pill">Sin transbordos directos en esta lista</span>'}</div><h3 class="kick3">Estaciones</h3><div class="station-list">${l.stations.map(s=>`<span class="station-pill ${TRANSFERS[s]>1?'transfer':''}">${s}</span>`).join('')}</div><div class="source-mini">Mapa de referencia (Wikimedia Commons, dominio público).</div>`;}
+}
+function setupMetroZoom(){
+ const img=document.getElementById('metroRealMap'), frame=document.getElementById('metroMapFrame'); if(!img||!frame) return;
+ let scale=1;
+ const apply=()=>{img.style.transform=`scale(${scale})`; img.style.marginBottom=((scale-1)*img.clientHeight)+'px'; img.style.marginRight=((scale-1)*img.clientWidth)+'px';};
+ const set=s=>{scale=Math.max(.75,Math.min(2.4,s)); apply();};
+ document.getElementById('metroZoomIn')?.addEventListener('click',()=>set(scale+.2));
+ document.getElementById('metroZoomOut')?.addEventListener('click',()=>set(scale-.2));
+ document.getElementById('metroZoomReset')?.addEventListener('click',()=>set(1));
+ let down=false,startX=0,startY=0,sl=0,st=0;
+ frame.addEventListener('pointerdown',e=>{down=true;startX=e.clientX;startY=e.clientY;sl=frame.scrollLeft;st=frame.scrollTop;frame.setPointerCapture(e.pointerId);});
+ frame.addEventListener('pointermove',e=>{if(!down)return;frame.scrollLeft=sl-(e.clientX-startX);frame.scrollTop=st-(e.clientY-startY);});
+ frame.addEventListener('pointerup',()=>down=false);
+ frame.addEventListener('pointercancel',()=>down=false);
+ apply();
+}
+function setupMetroPlanner(){const from=document.getElementById('metroFrom'), to=document.getElementById('metroTo'), btn=document.getElementById('metroPlanBtn'), out=document.getElementById('metroRouteResult'); if(!from||!to||!btn||!out) return; const stations=[...new Set(METRO_LINES.flatMap(l=>l.stations))].sort((a,b)=>a.localeCompare(b,'es')); const opts=stations.map(s=>`<option value="${s}">${s}</option>`).join(''); from.innerHTML=opts; to.innerHTML=opts; from.value='Pantitlán'; to.value='Universidad'; btn.onclick=()=>{const route=findMetroRoute(from.value,to.value); out.innerHTML=route?routeToHTML(route):'No encontré ruta en esta versión esquemática. Revisa el mapa oficial.';}; btn.click();}
+function findMetroRoute(a,b){if(a===b) return [a]; const adj={}; const add=(x,y)=>{(adj[x]||(adj[x]=new Set())).add(y);(adj[y]||(adj[y]=new Set())).add(x)}; METRO_LINES.forEach(l=>{for(let i=0;i<l.stations.length-1;i++) add(l.stations[i],l.stations[i+1]);}); const q=[a], prev={[a]:null}; while(q.length){const n=q.shift(); if(n===b) break; (adj[n]||[]).forEach(v=>{if(!(v in prev)){prev[v]=n;q.push(v);}});} if(!(b in prev)) return null; const path=[]; for(let x=b;x;x=prev[x]) path.push(x); return path.reverse();}
+function linesForPair(a,b){return METRO_LINES.filter(l=>l.stations.includes(a)&&l.stations.includes(b)).map(l=>l.id).join('/');}
+function lineInfoById(id){return METRO_LINES.find(l=>l.id===id)||{id:id,name:'Línea '+id,color:'#E20E6B'};}
+function routeSegments(path){
+  const segments=[]; if(path.length<2) return segments;
+  let currentLine=linesForPair(path[0],path[1]).split('/')[0]||'';
+  let start=path[0]; let stations=[path[0],path[1]];
+  for(let i=1;i<path.length-1;i++){
+    const nextLine=(linesForPair(path[i],path[i+1]).split('/')[0]||currentLine);
+    if(nextLine===currentLine){stations.push(path[i+1]);}
+    else{segments.push({line:currentLine,start:start,end:path[i],stations:[...stations]}); currentLine=nextLine; start=path[i]; stations=[path[i],path[i+1]];}
+  }
+  segments.push({line:currentLine,start:start,end:path[path.length-1],stations:[...stations]});
+  return segments;
+}
+function routeToHTML(path){
+  const from=document.getElementById('metroFrom')?.value||path[0];
+  const to=document.getElementById('metroTo')?.value||path[path.length-1];
+  const segs=routeSegments(path);
+  let html=`<div class="simple-route-title">${from} → ${to}</div><div class="simple-route-sub">Ruta guía del Metro. Revisa cierres, horarios y avisos oficiales antes de salir.</div>`;
+  html+='<div class="route-steps-clean">';
+  segs.forEach((seg,i)=>{
+    const l=lineInfoById(seg.line); const middle=seg.stations.slice(1,-1);
+    const extra=middle.length?` Pasas por ${middle.length} estación${middle.length>1?'es':''}: ${middle.slice(0,5).join(', ')}${middle.length>5?'…':''}.`:'';
+    html+=`<div class="route-step-clean"><div class="route-num">${i+1}</div><div><h4><span class="line-pill" style="border-color:${l.color}">L${l.id}</span> ${i===0?'Sube en':'Después toma'} ${seg.start}</h4><p>Ve hacia <b>${seg.end}</b>.${extra}</p>${i<segs.length-1?'<div class="transfer-note">Transbordo en '+seg.end+'</div>':''}</div></div>`;
+  });
+  html+=`<div class="route-step-clean"><div class="route-num">${segs.length+1}</div><div><h4>Baja en ${to}</h4><p>Al salir, revisa qué salida te acerca más a tu escuela o destino. Si es de noche, confirma transporte de regreso.</p></div></div>`;
+  html+='</div><div class="route-source-note">Metro CDMX · Movilidad Integrada</div>';
+  return html;
+}
+renderMetro('3'); setupMetroPlanner(); setupMetroZoom();
+
+const RES=[
+ ['Transporte',[
+   ['Metro CDMX','https://metro.cdmx.gob.mx','Mapa, líneas, horarios, tarjeta y avisos oficiales.'],
+   ['Metrobús CDMX','https://www.metrobus.cdmx.gob.mx','7 líneas BRT; tarifa $6, AICM $30, transbordos gratis 2 h.'],
+   ['STE · Trolebús, Tren Ligero y Cablebús','https://www.ste.cdmx.gob.mx','Transporte eléctrico de la ciudad: rutas, líneas y tarifas.'],
+   ['RTP','https://www.rtp.cdmx.gob.mx','Red de autobuses del gobierno; de lo más económico.'],
+   ['Tren Suburbano','https://www.fsuburbanos.com','Buenavista ↔ Cuautitlán (Edomex); usa tarjeta propia.'],
+   ['Semovi · Movilidad','https://www.semovi.cdmx.gob.mx','Tarjeta MI, tarifas y trámites de movilidad.'],
+   ['Ecobici','https://www.ecobici.cdmx.gob.mx','Registro y planes de bici pública (desc. estudiante).'],
+   ['App CDMX','https://app.cdmx.gob.mx','911, Tarjeta MI digital y servicios de la ciudad.'],
+ ]],
+ ['Vivienda',[
+   ['Iglu','https://www.iglu.com.mx','Cuartos amueblados verificados, muchas veces sin aval.'],
+   ['Homie','https://www.homie.mx','Rentas sin aval con contrato y verificación.'],
+   ['Inmuebles24','https://www.inmuebles24.com','El mayor buscador de cuartos y departamentos.'],
+   ['Lamudi','https://www.lamudi.com.mx','Buscador de renta con filtros por zona y precio.'],
+   ['Roomgo','https://www.roomgo.com.mx','Para encontrar roomies y compartir gastos.'],
+ ]],
+ ['Seguridad',[
+   ['C5 CDMX · 911','https://www.c5.cdmx.gob.mx/canales-de-atencion-emergencias/emergencias-9-1-1','Emergencias y canales oficiales de atención.'],
+   ['089 Denuncia Anónima','https://www.c5.cdmx.gob.mx/canales-de-atencion-emergencias/089-denuncia-anonima','Denuncia confidencial de delitos.'],
+   ['Locatel','https://locatel.cdmx.gob.mx','*0311 y 55 5658 1111; trámites, orientación, personas no localizadas.'],
+   ['Consejo Ciudadano','https://consejociudadanomx.org','Línea de Seguridad y Chat de Confianza: 55 5533 5533.'],
+   ['Protección Civil CDMX','https://www.proteccioncivil.cdmx.gob.mx','Emergencias: 55 5683 2222.'],
+ ]],
+ ['Salud',[
+   ['Secretaría de Salud CDMX (SEDESA)','https://www.salud.cdmx.gob.mx','Centros de Salud gratuitos y orientación.'],
+   ['Seguro Facultativo (IMSS)','https://www.imss.gob.mx/derechohabientes/seguro-facultativo','Seguro gratuito para estudiantes de escuela pública.'],
+   ['Directorio IMSS','https://www.imss.gob.mx/directorio','Ubica tu UMF, hospital o módulo del IMSS.'],
+   ['ISSSTE','https://www.issste.gob.mx/transparencia/transparenciafocalizada-um.html','Directorio de clínicas y hospitales. ISSSTE-Tel 55 4000 1000.'],
+   ['Locatel Médico','https://311locatel.cdmx.gob.mx/medico.xhtml','Orientación médica 24/7: *0311 o 55 5658 1111.'],
+ ]],
+ ['Trámites y bancos',[
+   ['CURP','https://www.gob.mx/curp/','Consulta y descarga oficial de CURP.'],
+   ['SAT · RFC','https://www.sat.gob.mx/portal/public/tramites/inscripcion-y-aviso-al-rfc','Inscripción y aviso al RFC. MarcaSAT: 55 627 22 728.'],
+   ['IMSS · NSS','https://www.imss.gob.mx/tramites/imss02008','Tramita o localiza tu Número de Seguridad Social.'],
+   ['Portal CDMX','https://www.cdmx.gob.mx/','Buscador de trámites, servicios y programas sociales.'],
+   ['Nu','https://nu.com.mx','Cuenta digital solo con INE y CURP.'],
+ ]],
+ ['Sismos',[
+   ['SASMEX (CIRES)','http://www.cires.org.mx','Sistema de Alerta Sísmica Mexicano, oficial.'],
+   ['Protección Civil CDMX','https://www.proteccioncivil.cdmx.gob.mx','Qué hacer antes, durante y después; simulacros.'],
+   ['CENAPRED','https://www.gob.mx/cenapred','Prevención de desastres y guías de preparación.'],
+ ]],
+ ['Comida y compras',[
+   ['Mercados públicos · SEDECO','https://www.sedeco.cdmx.gob.mx','Directorio de mercados públicos por alcaldía.'],
+   ['Tianguis CDMX','https://datos.cdmx.gob.mx/dataset/tianguis-de-la-ciudad-de-mexico','Base de datos de tianguis por zona.'],
+   ['Central de Abasto','https://ficeda.com.mx','El mercado de mayoreo más grande del país.'],
+   ['Profeco QQP','https://qqp.profeco.gob.mx','Compara precios de productos de consumo regular.'],
+ ]],
+ ['Cultura y comunidad',[
+   ['Cartelera Cultura CDMX','https://cartelera.cdmx.gob.mx','Eventos gratis y de paga en la ciudad.'],
+   ['Meetup CDMX','https://www.meetup.com/es/cities/mx/mexico_city/','Grupos por interés para hacer amigxs.'],
+   ['Bosque de Chapultepec','https://chapultepec.org.mx','El parque urbano más grande; planes gratis.'],
+ ]],
+ ['Apoyo emocional',[
+   ['Línea de la Vida','https://www.gob.mx/salud/conadic','Apoyo emocional y adicciones. 800 911 2000.'],
+   ['SAPTEL (Cruz Roja)','https://www.saptel.org.mx','Apoyo psicológico por teléfono 24/7. 55 5259 8121.'],
+ ]],
+];
+const rlists=document.getElementById('reslists');
+RES.forEach(([g,items])=>{const sec=document.createElement('div');sec.className='resgroup';
+  sec.innerHTML=`<h3 class="kick3">${g}</h3>`;const list=document.createElement('div');list.className='reslist';
+  items.forEach(([t,u,d])=>{const r=document.createElement('div');r.className='resrow';
+    r.innerHTML=`<a href="${u}" target="_blank" rel="noopener">${t} ↗</a><div class="rd">${d}</div>`;list.appendChild(r)});
+  sec.appendChild(list);rlists.appendChild(sec)});
+
+const EDOMEX_DESTS=[
+  {id:'centro',name:'Centro / Bellas Artes / Zócalo'},
+  {id:'unam',name:'UNAM CU / Copilco / Universidad'},
+  {id:'ipn',name:'IPN Zacatenco / Politécnico'},
+  {id:'uamx',name:'UAM Xochimilco / sur-oriente'},
+  {id:'uamazc',name:'UAM Azcapotzalco'},
+  {id:'poniente',name:'Santa Fe / poniente'},
+  {id:'aifa',name:'AIFA'},
+  {id:'norte',name:'Norte CDMX / Indios Verdes'}
+];
+const EDOMEX_ROUTES=[
+ {id:'neza',name:'Nezahualcóyotl / oriente',entry:['Combi o camión local','Pantitlán / San Lázaro'],routes:{centro:['Pantitlán','Metro L9','Chabacano','Metro L2','Zócalo / Bellas Artes'],unam:['Pantitlán','Metro L9','Centro Médico','Metro L3','Universidad'],ipn:['Pantitlán','Metro L5','Instituto del Petróleo','Metro L5/L6','Politécnico'],uamx:['Pantitlán','Metro L9','Chabacano','Metro L2','Tasqueña','Tren Ligero / transporte local'],uamazc:['San Lázaro','Metro B','Guerrero','Metro L3','La Raza','Metro L6','Azcapotzalco'],poniente:['Pantitlán','Metro L9','Tacubaya','Metro L1 / bus poniente','Santa Fe'],aifa:['Pantitlán','Metro L5','Terminal Aérea / Autobús AIFA'],norte:['San Lázaro','Metro B','Guerrero','Metro L3','Indios Verdes']}},
+ {id:'ecatepec',name:'Ecatepec / Tecámac',entry:['Mexibús L1/L2/L4 o combi','Ciudad Azteca / Indios Verdes'],routes:{centro:['Ciudad Azteca','Metro B','Garibaldi / Lagunilla','Metro L8','Bellas Artes'],unam:['Ciudad Azteca','Metro B','Guerrero','Metro L3','Universidad'],ipn:['Indios Verdes','Metro L3','Deportivo 18 de Marzo','Metro L6','Politécnico'],uamx:['Ciudad Azteca','Metro B','Morelos','Metro L4','Jamaica','Metro L9','Chabacano','Metro L2','Tasqueña'],uamazc:['Ciudad Azteca','Metro B','Instituto del Petróleo','Metro L6','Azcapotzalco'],poniente:['Ciudad Azteca','Metro B','Buenavista','Tren Suburbano / conexión poniente','Santa Fe'],aifa:['Mexibús / transporte hacia Tecámac','AIFA'],norte:['Mexibús L4','Indios Verdes']}},
+ {id:'chalco',name:'Chalco / Valle de Chalco / Ixtapaluca',entry:['Combi o autobús','Santa Martha / La Paz'],routes:{centro:['La Paz','Metro A','Pantitlán','Metro L1 o L9','Centro'],unam:['La Paz','Metro A','Pantitlán','Metro L9','Centro Médico','Metro L3','Universidad'],ipn:['La Paz','Metro A','Pantitlán','Metro L5','Instituto del Petróleo','Metro L5/L6','Politécnico'],uamx:['Santa Martha','Metro A','Pantitlán','Metro L9','Chabacano','Metro L2','Tasqueña','Tren Ligero / transporte local'],uamazc:['La Paz','Metro A','Pantitlán','Metro L5','Instituto del Petróleo','Metro L6','Azcapotzalco'],poniente:['La Paz','Metro A','Pantitlán','Metro L9','Tacubaya','bus poniente'],aifa:['Santa Martha / La Paz','Pantitlán','Metro L5','Terminal Aérea / Autobús AIFA'],norte:['La Paz','Metro A','Pantitlán','Metro L5','La Raza','Metro L3','Indios Verdes']}},
+ {id:'texcoco',name:'Texcoco / Los Reyes',entry:['Autobús o combi','La Paz / Pantitlán'],routes:{centro:['La Paz','Metro A','Pantitlán','Metro L1/L9','Centro'],unam:['La Paz','Metro A','Pantitlán','Metro L9','Centro Médico','Metro L3','Universidad'],ipn:['Pantitlán','Metro L5','Instituto del Petróleo','Politécnico'],uamx:['La Paz','Metro A','Pantitlán','Metro L9','Chabacano','Metro L2','Tasqueña'],uamazc:['Pantitlán','Metro L5','Instituto del Petróleo','Metro L6','Azcapotzalco'],poniente:['Pantitlán','Metro L9','Tacubaya','bus poniente'],aifa:['Texcoco','Transporte regional hacia AIFA'],norte:['Pantitlán','Metro L5','La Raza','Metro L3','Indios Verdes']}},
+ {id:'naucalpan',name:'Naucalpan / Tlalnepantla',entry:['Combi / Tren Suburbano','Cuatro Caminos / Buenavista'],routes:{centro:['Cuatro Caminos','Metro L2','Bellas Artes / Zócalo'],unam:['Cuatro Caminos','Metro L2','Hidalgo','Metro L3','Universidad'],ipn:['Cuatro Caminos','Metro L2','Tacuba','Metro L7','El Rosario','Metro L6','Politécnico'],uamx:['Cuatro Caminos','Metro L2','Tasqueña','Tren Ligero / transporte local'],uamazc:['Cuatro Caminos','Metro L2','Tacuba','Metro L7','El Rosario','Metro L6','Azcapotzalco'],poniente:['Toreo / Cuatro Caminos','bus poniente','Polanco / Santa Fe'],aifa:['Buenavista','Tren Suburbano / conexión hacia AIFA según servicio disponible'],norte:['Cuatro Caminos','Metro L2','Hidalgo','Metro L3','Indios Verdes']}},
+ {id:'cuautitlan',name:'Cuautitlán / Tultitlán / Lechería',entry:['Tren Suburbano o Mexibús','Buenavista / Lechería'],routes:{centro:['Buenavista','Metro B','Guerrero','Metro L3','Hidalgo / Centro'],unam:['Buenavista','Metro B','Guerrero','Metro L3','Universidad'],ipn:['Buenavista','Metro B','Instituto del Petróleo','Metro L6','Politécnico'],uamx:['Buenavista','Metro B','Morelos','Metro L4','Jamaica','Metro L9','Chabacano','Metro L2','Tasqueña'],uamazc:['Buenavista','Metro B','Instituto del Petróleo','Metro L6','Azcapotzalco'],poniente:['Buenavista','Metro B / transporte poniente','Santa Fe'],aifa:['Lechería','conexión hacia AIFA según servicio disponible'],norte:['Buenavista','Metro B','Guerrero','Metro L3','Indios Verdes']}},
+ {id:'satelite',name:'Satélite / Lomas Verdes / Atizapán',entry:['Combi o autobús','Toreo / Cuatro Caminos'],routes:{centro:['Cuatro Caminos','Metro L2','Centro'],unam:['Cuatro Caminos','Metro L2','Hidalgo','Metro L3','Universidad'],ipn:['Cuatro Caminos','Metro L2','Tacuba','Metro L7','El Rosario','Metro L6','Politécnico'],uamx:['Cuatro Caminos','Metro L2','Tasqueña','Tren Ligero / transporte local'],uamazc:['Cuatro Caminos','Metro L2','Tacuba','Metro L7','El Rosario','Metro L6','Azcapotzalco'],poniente:['Satélite / Lomas Verdes','Periférico / Palmas / Santa Fe'],aifa:['Cuatro Caminos','Metro L2/L5','Terminal Aérea / Autobús AIFA'],norte:['Cuatro Caminos','Metro L2','Hidalgo','Metro L3','Indios Verdes']}},
+ {id:'coacalco',name:'Coacalco / Tultepec',entry:['Mexibús / combi','Indios Verdes / Ciudad Azteca / Lechería'],routes:{centro:['Ciudad Azteca','Metro B','Garibaldi / Lagunilla','Metro L8','Centro'],unam:['Ciudad Azteca','Metro B','Guerrero','Metro L3','Universidad'],ipn:['Indios Verdes','Metro L3','Deportivo 18 de Marzo','Metro L6','Politécnico'],uamx:['Ciudad Azteca','Metro B','Morelos','Metro L4','Jamaica','Metro L9','Chabacano','Metro L2','Tasqueña'],uamazc:['Ciudad Azteca','Metro B','Instituto del Petróleo','Metro L6','Azcapotzalco'],poniente:['Lechería / Buenavista','conexión poniente','Santa Fe'],aifa:['Coacalco / Tultepec','Transporte regional hacia AIFA'],norte:['Indios Verdes / Ciudad Azteca']}},
+ {id:'huixquilucan',name:'Huixquilucan / Interlomas',entry:['Combi o autobús','Observatorio / Tacubaya / Santa Fe'],routes:{centro:['Observatorio / Tacubaya','Metro L1/L9','Centro'],unam:['Tacubaya','Metro L9','Centro Médico','Metro L3','Universidad'],ipn:['Tacubaya','Metro L7','El Rosario','Metro L6','Politécnico'],uamx:['Tacubaya','Metro L9','Chabacano','Metro L2','Tasqueña','Tren Ligero / transporte local'],uamazc:['Tacubaya','Metro L7','El Rosario','Metro L6','Azcapotzalco'],poniente:['Interlomas / Santa Fe','destino poniente'],aifa:['Observatorio / Tacubaya','Metro L1/L5','Terminal Aérea / Autobús AIFA'],norte:['Tacubaya','Metro L7','El Rosario / conexión norte']}},
+ {id:'toluca',name:'Toluca / Lerma / Metepec',entry:['Tren El Insurgente o autobús','Santa Fe / Observatorio'],routes:{centro:['Observatorio','Metro L1','Centro'],unam:['Observatorio','Metro L1','Balderas','Metro L3','Universidad'],ipn:['Observatorio','Metro L1','Tacubaya','Metro L7','El Rosario','Metro L6','Politécnico'],uamx:['Observatorio','Metro L1','Balderas','Metro L3','Zapata','Metro L12 / Tren Ligero según destino'],uamazc:['Observatorio','Metro L1','Tacubaya','Metro L7','El Rosario','Metro L6','Azcapotzalco'],poniente:['Tren El Insurgente','Santa Fe / Vasco de Quiroga'],aifa:['Toluca / Observatorio','conexión CDMX + autobús AIFA'],norte:['Observatorio','Metro L1','Balderas','Metro L3','Indios Verdes']}},
+ {id:'zumpango',name:'Zumpango / AIFA',entry:['Transporte regional / Mexibús según zona','AIFA / Tecámac / Indios Verdes'],routes:{centro:['AIFA / Tecámac','Mexibús o autobús','Indios Verdes','Metro L3','Centro'],unam:['Indios Verdes','Metro L3','Universidad'],ipn:['Indios Verdes','Metro L3','Deportivo 18 de Marzo','Metro L6','Politécnico'],uamx:['Indios Verdes','Metro L3','Hidalgo','Metro L2','Tasqueña'],uamazc:['Indios Verdes','Metro L3','La Raza','Metro L5/L6','Azcapotzalco'],poniente:['AIFA / Indios Verdes','Metro L3/L1','Observatorio / Santa Fe'],aifa:['Zumpango','AIFA'],norte:['Zumpango / AIFA','Indios Verdes / Tecámac']}}
+];
+const routeTabs=document.getElementById('routeTabs'), routeBox=document.getElementById('routeBox'), edomexOrigin=document.getElementById('edomexOrigin'), edomexDest=document.getElementById('edomexDest');
+function renderRoute(id){
+  if(!routeTabs||!routeBox) return;
+  const currentId=id || (edomexOrigin&&edomexOrigin.value) || 'neza';
+  const dest=(edomexDest&&edomexDest.value)||'centro';
+  const r=EDOMEX_ROUTES.find(x=>x.id===currentId)||EDOMEX_ROUTES[0];
+  if(edomexOrigin && edomexOrigin.value!==r.id) edomexOrigin.value=r.id;
+  routeTabs.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===r.id));
+  const route=r.routes[dest]||r.routes.centro;
+  const destName=(EDOMEX_DESTS.find(d=>d.id===dest)||EDOMEX_DESTS[0]).name;
+  const start=route[0]||r.name, end=route[route.length-1]||destName;
+  const middle=route.slice(1,-1);
+  routeBox.innerHTML=`
+    <div class="edomex-simple-head"><h3>${r.name} → ${destName}</h3><p>Esta es una ruta base para ubicarte. Puede cambiar según tu colonia exacta, hora y servicio disponible.</p></div>
+    <div class="edomex-steps">
+      <div class="edomex-step"><span class="label">1 · Salida</span><b>${r.entry[0]}</b><p>Primero llega a <b>${r.entry[1]}</b>. Ese será tu punto de entrada a la CDMX o al Metro.</p></div>
+      <div class="edomex-step"><span class="label">2 · Ruta principal</span><b>${start} → ${end}</b><p>Usa Metro, Mexibús, Suburbano o camión según la zona. Abajo está el orden completo.</p></div>
+      <div class="edomex-step"><span class="label">3 · Llegada</span><b>${destName}</b><p>Antes de regresar revisa el último transporte y cuánto tardas en volver a casa.</p></div>
+    </div>
+    <h3 class="kick3">Orden de la ruta</h3>
+    <div class="route-list-clean">${route.map((s,i)=>`<div class="route-list-item"><span>${i+1}</span><p>${s}</p></div>`).join('')}</div>
+    <div class="route-warning"><b>Tip:</b> no lo tomes como ruta única. Úsalo como guía para saber por dónde entrar, dónde transbordar y qué revisar en Google Maps, Moovit o la página oficial antes de salir.</div>`;
+}
+if(routeTabs){
+  if(edomexOrigin) edomexOrigin.innerHTML=EDOMEX_ROUTES.map(r=>`<option value="${r.id}">${r.name}</option>`).join('');
+  if(edomexDest) edomexDest.innerHTML=EDOMEX_DESTS.map(d=>`<option value="${d.id}">${d.name}</option>`).join('');
+  routeTabs.innerHTML=EDOMEX_ROUTES.map(r=>`<button data-id="${r.id}" onclick="renderRoute('${r.id}')">${r.name}</button>`).join('');
+  if(edomexOrigin) edomexOrigin.addEventListener('change',()=>renderRoute(edomexOrigin.value));
+  if(edomexDest) edomexDest.addEventListener('change',()=>renderRoute((edomexOrigin&&edomexOrigin.value)||'neza'));
+  renderRoute('neza');
+}
+
+const survivalIds=['rent','food','transport','services','extra'];
+let livingMode='roomie';
+function updateSurvival(){
+  const vals={}; let total=0;
+  survivalIds.forEach(k=>{ const el=document.getElementById(k+'Range'); const out=document.getElementById(k+'Val'); if(el&&out){ vals[k]=+el.value; total+=vals[k]; out.textContent=fmt(vals[k]); }});
+  const totalEl=document.getElementById('survivalTotal'); if(totalEl) totalEl.textContent=fmt(total);
+  const b=document.getElementById('survivalBreakdown');
+  if(b){ b.innerHTML='<div class="moneyline"><span>Renta</span><b>$'+fmt(vals.rent||0)+'</b></div><div class="moneyline"><span>Comida</span><b>$'+fmt(vals.food||0)+'</b></div><div class="moneyline"><span>Transporte</span><b>$'+fmt(vals.transport||0)+'</b></div><div class="moneyline"><span>Servicios</span><b>$'+fmt(vals.services||0)+'</b></div><div class="moneyline"><span>Extras</span><b>$'+fmt(vals.extra||0)+'</b></div>'; }
+  const advisor=document.getElementById('budgetAdvisor');
+  if(advisor){
+    const incomeNeeded=Math.ceil(total/0.35/500)*500;
+    const rentShare=Math.round((vals.rent||0)/Math.max(total,1)*100);
+    const warnings=[];
+    if((vals.rent||0)>15000) warnings.push('renta de depa completo: revisa contrato, servicios y distancia antes de pagar');
+    if(rentShare>45) warnings.push('la renta se está comiendo más del 45% del presupuesto');
+    if(livingMode==='solo' && (vals.extra||0)<800) warnings.push('sube el fondo de emergencia si vas a vivir solo');
+    const modeText={roomie:'Compartir gastos ayuda a bajar renta, servicios y despensa.',solo:'Vivir solo da independencia, pero exige más colchón y red de apoyo.',familia:'Con familia baja la renta, pero calcula transporte y acuerdos de casa.'}[livingMode];
+    advisor.innerHTML='<b>Lectura rápida:</b> '+modeText+' Para que el presupuesto no te ahogue, idealmente necesitarías ingresos o apoyo de al menos <b>$'+fmt(incomeNeeded)+'</b> al mes. '+(warnings.length?'Ojo: '+warnings.join('; ')+'.':'Vas balanceado si el trayecto también es razonable.');
+  }
+}
+survivalIds.forEach(k=>{ const el=document.getElementById(k+'Range'); if(el) el.addEventListener('input',updateSurvival); });
+const livingModeEl=document.getElementById('livingMode');
+if(livingModeEl){ livingModeEl.querySelectorAll('button').forEach(btn=>btn.addEventListener('click',()=>{ livingMode=btn.dataset.mode; livingModeEl.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b===btn)); updateSurvival(); })); }
+updateSurvival();
+
+const FOOD_ZONES=[
+  {id:'centro',name:'Centro / Cuauhtémoc / Roma / Doctores',best:{diario:'Mercado cercano + fonda',despensa:'Mercado público o súper pequeño',volumen:'La Merced / CEDA si vas acompañada',emergencia:'Súper, farmacia o tienda 24 h'},places:[['Mercado San Juan','Centro · comida preparada, ingredientes y compras especiales'],['Mercado Medellín','Roma Sur · fruta, verduras, comida y productos variados'],['La Merced','Centro-oriente · abasto tradicional; mejor ir de día y con lista']]},
+  {id:'sur',name:'Sur / Coyoacán / Tlalpan / Xochimilco',best:{diario:'Mercado de barrio',despensa:'Mercado + tianguis semanal',volumen:'CEDA si compras con roomies',emergencia:'Súper cerca de avenida principal'},places:[['Mercado de Coyoacán','Coyoacán · comida, fruta, verdura y compras del día'],['Mercado Portales','Benito Juárez/sur-centro · buena opción si estás cerca de Eje Central'],['Mercados de Xochimilco','Sur · verdura, flores, comida y productos locales']]},
+  {id:'oriente',name:'Oriente / Iztapalapa / Iztacalco / Venustiano',best:{diario:'Mercado público o tianguis',despensa:'Mercado + súper para empacados',volumen:'Central de Abasto',emergencia:'Tienda de conveniencia o súper'},places:[['Central de Abasto','Iztapalapa · mayoreo, fruta, verdura y abarrotes'],['Mercado Jamaica','Venustiano Carranza · comida, flores, fruta y conexiones'],['Mercado local de colonia','Iztapalapa/Iztacalco · suele convenir para comida diaria']]},
+  {id:'norte',name:'Norte / GAM / Azcapotzalco / IPN',best:{diario:'Mercado cercano al campus o colonia',despensa:'Tianguis + mercado público',volumen:'CEDA o compras compartidas',emergencia:'Súper cerca de Metro o avenida'},places:[['Mercado Pro-Hogar','Azcapotzalco · compras de barrio y comida'],['Mercados cerca de La Raza / Lindavista','GAM · útiles si estudias por IPN/Zacatenco'],['Tianguis de alcaldía','Busca día y ubicación en Datos CDMX antes de ir']]},
+  {id:'poniente',name:'Poniente / Miguel Hidalgo / Álvaro Obregón / Santa Fe',best:{diario:'Mercado de colonia',despensa:'Súper comparando precios',volumen:'CEDA si el traslado lo justifica',emergencia:'Súper o tienda de conveniencia'},places:[['Mercado Tacubaya','Poniente-centro · comida y compras de barrio'],['Mercado San Pedro de los Pinos','Benito Juárez/Mixcoac · útil si estás cerca de L7/L12'],['Santa Fe','Mejor comparar súper; mercados pueden quedar más lejos según zona']]},
+  {id:'edomex',name:'Edomex → CDMX',best:{diario:'Compra cerca de casa antes de entrar a CDMX',despensa:'Tianguis local + mercado',volumen:'CEDA solo si tu ruta pasa cerca',emergencia:'Compra cerca del Metro/terminal'},places:[['Neza / Pantitlán','Compra base cerca de casa y evita cargar mucho en transbordos'],['Ecatepec / Indios Verdes','Revisa tianguis local y solo compra pesado si regresas directo'],['Chalco / La Paz','Calcula carga + transporte; conviene comprar pesado cerca de casa']]}
+];
+const foodZone=document.getElementById('foodZone'), foodNeed=document.getElementById('foodNeed'), foodZoneResult=document.getElementById('foodZoneResult');
+const NEED_OPTIONS={
+  diario:[
+    ['Mercado de la zona','Fruta, verdura, tortillas, pollo, huevo y comida preparada del día.'],
+    ['Fonda o comida corrida','Buena opción si estudias muchas horas y no te da tiempo de cocinar.'],
+    ['Tortillería + guisado','Rinde bastante y suele ser una comida económica.'],
+    ['Cocina básica en casa','Arroz, pasta, huevo, frijol, verduras y tortillas para varios días.'],
+    ['Puesto cerca de escuela','Útil para salir del paso; compara higiene, porciones y precio.'],
+    ['Comida preparada del mercado','Suele ser más barata que comer diario en cafetería o apps.']
+  ],
+  despensa:[
+    ['Mercado público','Para fruta, verdura, pollo, carne, huevo, tortillas y productos frescos.'],
+    ['Tianguis semanal','Conviene para fruta y verdura de temporada; lleva efectivo y bolsa.'],
+    ['Súper para empacados','Útil para limpieza, enlatados, papel, higiene personal y ofertas.'],
+    ['Bodega o mayoreo pequeño','Sirve para arroz, aceite, jabón, papel, garrafón y productos básicos.'],
+    ['Lista semanal','Evita comprar de más y ayuda a no gastar en comida rápida.'],
+    ['Compra compartida','Con roomies conviene dividir productos grandes sin desperdiciar.']
+  ],
+  volumen:[
+    ['Central de Abasto','Conviene para compras grandes de fruta, verdura, abarrotes o productos para compartir.'],
+    ['Mayoreo en mercado','Pregunta precio por kilo, caja o paquete; a veces baja bastante.'],
+    ['Compra entre varios','Dividan arroz, aceite, papel, jabón, garrafón, verduras y fruta.'],
+    ['Bodegas cercanas','Sirven para productos de limpieza, despensa seca y compras del mes.'],
+    ['Congelar porciones','Ayuda a que no se eche a perder si compras mucho.'],
+    ['Comprar con lista','Evita cargar de más o gastar en cosas que no necesitas.']
+  ],
+  emergencia:[
+    ['Tienda de conveniencia','Para lo básico si sales tarde, aunque suele ser más caro.'],
+    ['Súper cercano','Mejor para compras rápidas si está cerca de Metro, Metrobús o avenida principal.'],
+    ['Farmacia con abarrotes','Puede servir para agua, pan, leche, medicina básica o higiene.'],
+    ['Comida preparada segura','Elige lugares con movimiento y buena higiene.'],
+    ['App de entrega','Úsala solo si no puedes salir; considera envío y comisiones.'],
+    ['Despensa de emergencia','Ten arroz, pasta, atún, frijoles, avena, agua y algo fácil de preparar.']
+  ]
+};
+function renderFoodZone(){
+  if(!foodZone||!foodNeed||!foodZoneResult) return;
+  const z=FOOD_ZONES.find(x=>x.id===foodZone.value)||FOOD_ZONES[0];
+  const need=foodNeed.value;
+  const opts=NEED_OPTIONS[need]||NEED_OPTIONS.diario;
+  foodZoneResult.innerHTML=`<div style="grid-column:1 / -1"><h3>${z.name}</h3><p class="note"><b>Opciones recomendadas:</b></p><div class="food-place-list">${opts.map(o=>`<div class="food-place"><b>${o[0]}</b><span>${o[1]}</span></div>`).join('')}</div><p class="note" style="margin-top:14px"><b>Mercados o lugares que puedes revisar cerca:</b></p><div class="food-place-list">${z.places.map(p=>`<div class="food-place"><b>${p[0]}</b><span>${p[1]}</span></div>`).join('')}</div><p class="note" style="margin-top:14px">Antes de ir, revisa dirección, horario y día de tianguis porque puede cambiar por zona o temporada.</p><div class="food-actions"><a href="https://datos.cdmx.gob.mx/dataset/tianguis-de-la-ciudad-de-mexico" target="_blank" rel="noopener">Tianguis CDMX</a><a href="https://www.sedeco.cdmx.gob.mx" target="_blank" rel="noopener">Mercados SEDECO</a><a href="https://qqp.profeco.gob.mx/" target="_blank" rel="noopener">Profeco QQP</a><a href="https://ficeda.com.mx/" target="_blank" rel="noopener">CEDA</a></div></div>`;
+}
+if(foodZone){ foodZone.innerHTML=FOOD_ZONES.map(z=>`<option value="${z.id}">${z.name}</option>`).join(''); foodZone.addEventListener('change',renderFoodZone); }
+if(foodNeed){ foodNeed.addEventListener('change',renderFoodZone); }
+renderFoodZone();
+
+const zoneMeta={
+  azcapotzalco:['barato','conectado','universidades'], gam:['barato','conectado','universidades','precaucion'], miguel_hidalgo:['conectado','universidades','vida'], cuauhtemoc:['conectado','vida','precaucion'], venustiano:['conectado','precaucion'], cuajimalpa:['suelo','sinmetro'], alvaro_obregon:['universidades','suelo','vida'], benito_juarez:['conectado','universidades','vida'], iztacalco:['barato','conectado'], iztapalapa:['barato','conectado','universidades','precaucion'], magdalena:['suelo','sinmetro'], coyoacan:['universidades','suelo','vida'], tlalpan:['universidades','suelo','vida'], xochimilco:['barato','universidades'], tlahuac:['barato','precaucion'], milpa_alta:['barato','suelo','sinmetro']
+};
+function safeEnv(z){
+  return (z.seg||'').replace('segura','con mejor percepción de seguridad').replace('tranquilo','con ambiente tranquilo').replace('tranquila','con ambiente tranquilo');
+}
+function selectZone(k){
+  document.querySelectorAll('.alc').forEach(a=>a.classList.toggle('sel',a.dataset.k===k));
+  const detail=document.getElementById('detail');
+  const z=Z[k];
+  if(!detail || !z) return;
+  const tags=(zoneMeta[k]||[]).map(x=>`<span class="tag${x==='precaucion'?' rosa':''}">${x}</span>`).join('');
+  detail.innerHTML=`<div class="dn">${z.n}</div><span class="badge" style="background:${tierColor[z.t]}">${tierWord[z.t]}</span><div class="tags">${tags}</div>
+    <div class="row"><span class="k">Renta cuarto</span><span class="v"><b>${z.room}</b></span></div>
+    <div class="row"><span class="k">Departamento</span><span class="v"><b>${z.depa}</b></span></div>
+    <div class="row"><span class="k">Colonias</span><span class="v">${z.col}</span></div>
+    <div class="row"><span class="k">Conectividad</span><span class="v">${z.trans}</span></div>
+    <div class="row"><span class="k">Tipo de suelo</span><span class="v">${z.seis}</span></div>
+    <div class="row"><span class="k">Ambiente</span><span class="v">${safeEnv(z)}</span></div>
+    <div class="row"><span class="k">Ideal para</span><span class="v">${z.uni}</span></div>
+    <div class="row"><span class="k">Precaución</span><span class="v">Revisa de día y de noche antes de rentar; compara trayectos reales.</span></div>`;
+}
+function applyZoneFilter(filter){
+  document.querySelectorAll('.alc').forEach(a=>{
+    const k=a.dataset.k; const ok=filter==='all'||(zoneMeta[k]||[]).includes(filter)||Z[k].t===filter;
+    a.classList.toggle('hide',!ok);
+  });
+}
+document.querySelectorAll('#zoneFilters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#zoneFilters button').forEach(x=>x.classList.remove('on')); b.classList.add('on'); applyZoneFilter(b.dataset.filter);
+}));
+const alt=document.getElementById('altZoneList');
+if(alt){ alt.innerHTML=Object.keys(Z).sort((a,b)=>Z[a].n.localeCompare(Z[b].n,'es')).map(k=>`<div class="rrow" role="button" tabindex="0" onclick="selectZone('${k}')" onkeydown="if(event.key==='Enter')selectZone('${k}')"><div class="rn">${Z[k].n}</div><div class="rp">${Z[k].room}</div><div class="rt" style="background:${tierColor[Z[k].t]}"></div></div>`).join(''); }
+document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-label','Abrir sección '+b.textContent));
+</script>
+</body>
+</html>
