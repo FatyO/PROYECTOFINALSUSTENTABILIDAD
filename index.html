@@ -275,176 +275,6 @@
   .route-warning{border-left:4px solid var(--rosa);background:rgba(226,14,107,.06);padding:11px 13px;margin-top:14px;font-size:.88rem;line-height:1.35;color:#2b271f}
   @media(max-width:820px){.edomex-steps{grid-template-columns:1fr}.route-step-clean{grid-template-columns:36px 1fr}.simple-route-title,.edomex-simple-head h3{font-size:1.25rem}}
 
-
-
-/* === REDISEÑO LIMPIO / EDITORIAL — FÁTIMA ===
-   Inspiración: páginas editoriales tipo The Manifest + navegación exploratoria tipo San Rita.
-   Mantiene toda tu estructura y funciones, pero baja lo saturado y lo hace más personal. */
-:root{
-  --bg:#F4EFE4;
-  --bg-2:#E9E0D0;
-  --ink:#12100C;
-  --ink-soft:#6D6559;
-  --rosa:#E2186D;
-  --rosa-deep:#B80E56;
-  --line:rgba(18,16,12,.18);
-}
-body{
-  background:
-    radial-gradient(circle at 78% 18%, rgba(226,24,109,.09), transparent 26rem),
-    linear-gradient(180deg,#F7F1E7 0%, var(--bg) 100%);
-  letter-spacing:-.005em;
-}
-body::before{opacity:.025;mix-blend-mode:multiply}
-.wrap{max-width:1240px;padding:0 30px}
-header.bar{
-  background:rgba(244,239,228,.86);
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid var(--ink);
-}
-.barin{max-width:1240px;padding:14px 30px;gap:24px}
-.brand{font-size:1rem;letter-spacing:-.035em}
-.brand span{font-size:.52rem;color:var(--ink-soft)}
-.tabs{margin-left:auto}
-.tabs button{
-  border:1px solid transparent;
-  border-radius:999px;
-  padding:8px 12px;
-  color:var(--ink-soft);
-  font-size:.58rem;
-  letter-spacing:.11em;
-}
-.tabs button.on{background:var(--ink);color:var(--bg)}
-.tabs button:hover{border-color:var(--line);background:rgba(255,255,255,.35)}
-.tab{padding:52px 0 72px}
-.hero{min-height:72vh;justify-content:flex-start;padding-top:54px}
-.kick{font-size:.62rem;letter-spacing:.18em;color:var(--rosa);margin-bottom:18px}
-.kick .dot{width:6px;height:6px}
-h1.big{
-  font-size:clamp(4.8rem,15vw,12.8rem);
-  line-height:.75;
-  letter-spacing:-.085em;
-  max-width:9ch;
-}
-h1.big .x{color:var(--rosa);font-style:italic}
-.lede{
-  font-size:clamp(1.25rem,2.4vw,2.05rem);
-  line-height:1.18;
-  max-width:43ch;
-  margin-top:28px;
-  color:var(--ink);
-}
-.lede em{color:var(--rosa-deep)}
-.hero-actions{margin-top:28px;gap:12px}
-.btn,.gobtn{
-  border-radius:999px;
-  padding:13px 20px;
-  font-size:.62rem;
-  letter-spacing:.13em;
-  box-shadow:none;
-}
-.btn.primary,.gobtn{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.btn.primary:hover,.gobtn:hover{background:var(--rosa);border-color:var(--rosa)}
-.schoolbox,
-.intro-panel,
-.stats,
-.mapcard,
-.detail,
-.card,
-.info-card,
-.quickcard,
-.mini,
-.site-preview,
-.health-card,
-.calc,
-.survival-calc,
-.metro-explorer,
-.route-box{
-  border:1px solid var(--ink)!important;
-  box-shadow:10px 10px 0 rgba(18,16,12,.04);
-}
-.schoolbox{
-  margin-top:56px;
-  border-radius:28px;
-  padding:30px;
-  background:rgba(255,255,255,.22);
-}
-.schoolbox .q,.sec-head h2,.sh{letter-spacing:-.055em}
-.schoolbox .q{font-size:clamp(1.5rem,3vw,2.4rem)}
-.schoolbox .qs{max-width:78ch;color:var(--ink-soft)}
-.schoolgrid{grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px}
-.schoolgrid button{
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.18);
-  border-radius:18px;
-  padding:15px 16px;
-}
-.schoolgrid button:hover,.quickcard:hover,.uni:hover,.site-preview:hover{transform:translateY(-3px);background:rgba(255,255,255,.34)}
-#persona{border-radius:22px;background:rgba(226,24,109,.055)}
-.intro-panel{
-  border-radius:32px;
-  overflow:hidden;
-  background:var(--ink);
-  margin-top:54px;
-}
-.intro-panel>div{padding:34px;background:rgba(255,255,255,.18)}
-.profile-card{background:var(--ink)!important;color:var(--bg)}
-.profile-card .name{letter-spacing:-.06em}
-.stats{
-  border-radius:32px;
-  overflow:hidden;
-  background:rgba(255,255,255,.14);
-}
-.stat{border-right:1px solid var(--line);padding:26px 24px}
-.stat .num{letter-spacing:-.07em}
-.quickgrid{gap:12px}
-.quickcard{
-  border-radius:24px;
-  background:rgba(255,255,255,.16);
-  min-height:150px;
-}
-.quickcard .ico{
-  font-family:var(--mono);
-  font-size:.68rem;
-  color:var(--rosa);
-  letter-spacing:.12em;
-}
-.quickcard h3{font-size:1.35rem;letter-spacing:-.04em}
-.sec-head{
-  border-bottom:1px solid var(--ink);
-  margin-bottom:26px;
-}
-.cards,.unis,.emer{gap:10px;background:transparent;border:none!important}
-.card,.uni,.info-card,.mini,.site-preview,.health-card,.food-option,.kit-item,.rent-step,.check,.line-card{
-  border:1px solid var(--line)!important;
-  border-radius:22px;
-  background:rgba(255,255,255,.18);
-}
-.card h3,.info-card h3,.mini h3,.site-preview h3,.health-card h3{letter-spacing:-.04em}
-.callout,.brief,.sources-note{
-  border-left:0;
-  border:1px solid var(--line);
-  border-radius:22px;
-  background:rgba(226,24,109,.055);
-}
-table.tbl th,table.tbl td{border-bottom:1px solid var(--line)}
-.calc,.survival-calc{border-radius:30px;overflow:hidden;background:var(--ink)}
-.calc .controls,.survival-calc .controls{background:rgba(255,255,255,.16)}
-.calc .result,.survival-calc .survival-result{background:var(--ink)}
-input[type=range]{accent-color:var(--rosa)}
-.detail{border-radius:26px;background:rgba(255,255,255,.16)}
-.rrow{border-bottom:1px solid var(--line)}
-.metro-canvas-wrap,.real-map-frame{border-radius:24px;background:#FBF7EF}
-footer{border-top:1px solid var(--ink);padding:54px 0}
-.fwm{letter-spacing:-.075em}.footer-credit{max-width:70ch}
-@media(max-width:760px){
-  .wrap,.barin{padding-left:18px;padding-right:18px}
-  h1.big{font-size:clamp(4rem,23vw,6.2rem)}
-  .lede{font-size:1.2rem}
-  .schoolbox,.intro-panel,.stats{border-radius:22px}
-  .hero-actions .btn{width:100%;justify-content:center}
-}
-
 </style>
 </head>
 <body>
@@ -454,7 +284,7 @@ footer{border-top:1px solid var(--ink);padding:54px 0}
     <div class="hero">
       <div class="kick"><span class="dot"></span> Guía práctica · CDMX · Ed. 2026</div>
       <h1 class="big">ATERRI<span class="x">Z</span>A <span style="font-size:.35em;letter-spacing:-.04em">CDMX</span></h1>
-      <p class="lede">Llegar a la CDMX cuando vienes de otro lugar puede sentirse enorme al principio. <em>Esta guía reúne lo que a mí me hubiera gustado tener claro desde el inicio: dónde vivir, cómo moverte, cuánto gastar, qué trámites revisar y qué hacer si algo sale mal.</em></p>
+      <p class="lede">Llegar a la CDMX puede ser complicado cuando vienes de otro lugar. <em>Por eso reuní información práctica sobre renta, transporte, gastos, seguridad, salud y adaptación a la ciudad, tomando en cuenta testimonios de personas foráneas que ya pasaron por este proceso.</em></p>
       <div class="hero-actions">
         <button class="btn primary" onclick="go('guia')">Empezar guía rápida</button>
         <button class="btn" onclick="go('mapa')">Comparar zonas para vivir</button>
@@ -462,7 +292,7 @@ footer{border-top:1px solid var(--ink);padding:54px 0}
       </div>
       <div class="schoolbox">
         <div class="q">¿En qué escuela estudias?</div>
-        <div class="qs">Elige tu escuela y revisa zonas que podrían quedarte cerca. Los precios son rangos: cambian por colonia, temporada, servicios incluidos y cercanía al transporte.</div>
+        <div class="qs">Elige tu escuela y te recomendamos zonas cercanas. Los precios son rangos: cambian por colonia, temporada, servicios incluidos y cercanía al transporte.</div>
         <div class="schoolgrid" id="schoolgrid"></div>
         <div id="persona"><div class="pt" id="personaText"></div><div class="chips" id="personaChips"></div><button class="gobtn" onclick="go('mapa')">Comparar estas zonas →</button></div>
       </div>
@@ -472,8 +302,8 @@ footer{border-top:1px solid var(--ink);padding:54px 0}
       <div>
         <div class="kick"><span class="dot"></span> Quién soy · por qué hice esta guía</div>
         <h2 class="sh">Una guía para llegar con más claridad</h2>
-        <p class="body">Soy <b>Fátima Yatziri Oviedo Contreras</b>. Hice esta guía pensando en personas foráneas que llegan a estudiar o vivir a la CDMX y no saben por dónde empezar. Mudarse no es solo buscar renta: también es aprender a moverse, calcular gastos, ubicar servicios básicos y tener un plan si algo sale mal.</p>
-        <p class="body">La organicé por partes para que sea fácil de usar: primero eliges qué necesitas resolver, después comparas zonas y al final revisas rutas, gastos, salud, seguridad y trámites. La información está pensada para consultarse rápido, sin vueltas y con datos que puedas verificar.</p>
+        <p class="body">Soy <b>Fátima Yatziri Oviedo Contreras</b>. Hice esta guía porque mudarse a la CDMX no solo implica encontrar una escuela o un lugar donde vivir. También significa aprender a moverse, organizar los gastos, ubicar zonas seguras y saber qué hacer ante una emergencia. Son cosas que muchas veces se aprenden hasta que ya estás ahí.</p>
+        <p class="body">La realicé con testimonios de personas foráneas y con información consultada en fuentes oficiales. La idea es que puedas revisarla por partes: primero identificar qué necesitas resolver, después comparar zonas y finalmente revisar rutas, gastos y trámites.</p>
       </div>
       <div class="profile-card">
         <div class="name">Fátima Yatziri<br>Oviedo Contreras</div>
@@ -492,17 +322,17 @@ footer{border-top:1px solid var(--ink);padding:54px 0}
       <div class="stat"><div class="num" data-to="75"><small>%</small></div><div class="lbl">usa Metro o Metrobús a diario</div></div>
       <div class="stat"><div class="num" data-to="16">0</div><div class="lbl">alcaldías para comparar</div></div>
     </div>
-    <p class="body" style="margin-top:38px;max-width:76ch">No tienes que entender toda la ciudad desde el primer día. Para empezar, enfócate en tres cosas: <b>dónde vivir, cómo moverte y qué hacer si algo sale mal</b>. Lo demás se va acomodando poco a poco.</p>
+    <p class="body" style="margin-top:38px;max-width:76ch">Algo que se repitió en varios testimonios fue que no necesitas conocer toda la ciudad desde el primer día. Lo más importante es resolver tres cosas: <b>dónde vivir, cómo moverte y qué hacer si algo sale mal</b>. A partir de eso, adaptarte se vuelve más sencillo.</p>
   </section>
 
   <section class="tab" id="guia">
     <div class="sec-head"><h2 class="sh">¿Qué necesitas resolver primero?</h2><div class="idx mono">Guía rápida</div></div>
     <p class="body">Elige el tema que necesites revisar. Cada tarjeta te lleva directamente a la información correspondiente.</p>
     <div class="quickgrid">
-      <button class="quickcard" onclick="go('mapa')"><div class="ico">01</div><h3>Dónde vivir</h3><p>Compara alcaldías por renta, transporte, suelo y ambiente estudiantil.</p></button>
-      <button class="quickcard" onclick="go('transporte')"><div class="ico">02</div><h3>Cómo moverme</h3><p>Tarjeta MI, rutas, hora pico y cálculo mensual.</p></button>
-      <button class="quickcard" onclick="go('supervivencia')"><div class="ico">03</div><h3>Cuánto gastaré</h3><p>Calcula renta, comida, transporte, servicios y extras.</p></button>
-      <button class="quickcard" onclick="go('salud')"><div class="ico">04</div><h3>Si me enfermo</h3><p>Árbol de decisión: leve, consulta, urgencia o sin seguro.</p></button>
+      <button class="quickcard" onclick="go('mapa')"><div class="ico">🏠</div><h3>Dónde vivir</h3><p>Compara alcaldías por renta, transporte, suelo y ambiente estudiantil.</p></button>
+      <button class="quickcard" onclick="go('transporte')"><div class="ico">🚇</div><h3>Cómo moverme</h3><p>Tarjeta MI, rutas, hora pico y cálculo mensual.</p></button>
+      <button class="quickcard" onclick="go('supervivencia')"><div class="ico">💸</div><h3>Cuánto gastaré</h3><p>Calcula renta, comida, transporte, servicios y extras.</p></button>
+      <button class="quickcard" onclick="go('salud')"><div class="ico">🩺</div><h3>Si me enfermo</h3><p>Árbol de decisión: leve, consulta, urgencia o sin seguro.</p></button>
       <button class="quickcard" onclick="go('seguridad')"><div class="ico">🛡️</div><h3>Seguridad</h3><p>Hábitos de cuidado para moverte con más seguridad.</p></button>
       <button class="quickcard" onclick="go('comunidad')"><div class="ico">🫂</div><h3>Hacer amigos</h3><p>Actividades, grupos, cultura gratis y apoyo emocional.</p></button>
       <button class="quickcard" onclick="go('tramites')"><div class="ico">📄</div><h3>Trámites</h3><p>CURP, RFC, NSS, cuenta bancaria y comprobante.</p></button>
